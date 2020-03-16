@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" Reentrancy="Stateless" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="38" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]50" Id="39" Width="[float]50">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="40" TemplateName="GrayNoText">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="41" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="42" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="43">
+                    <Path Data="[PathGeometry]M 0,0 L 0,5 L 5,5 L 5,0 L 0,0 Z M 4,3 L 3,3 L 3,4 L 2,4 L 2,3 L 1,3 L 1,2 L 2,2 L 2,1 L 3,1 L 3,2 L 4,2 L 4,3 Z M 0,6 L 0,11 L 5,11 L 5,6 L 0,6 Z M 4,9 L 1,9 L 1,8 L 4,8 L 4,9 Z M 6,0 L 6,11 L 11,11 L 11,0 L 6,0 Z M 10,7 L 7,7 L 7,6 L 10,6 L 10,7 Z M 10,5 L 7,5 L 7,4 L 10,4 L 10,5 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]11" Id="73" Left="[float]8" MinHeight="[float]1" MinWidth="[float]1" Top="[float]9" Width="[float]11" />
+                    <Path Data="[PathGeometry]M 27,7 C 26.312,7 26.039,6.572 25.457,4.59 C 24.92,2.762 24.109,0 21,0 C 17.866,0 17.069,2.765 16.541,4.595 C 15.971,6.572 15.696,6.999 14.998,7 C 14.997,7 14.995,7 14.994,7 C 14.327,7 14.06,6.701 13.468,4.617 C 12.947,2.787 12.16,0.022 9.011,0 C 8.998,0 8.985,0 8.973,0 C 5.861,0 5.066,2.761 4.54,4.59 C 3.97,6.572 3.696,7 3,7 L 0,7 L 0,10 L 3,10 C 6.105,10 6.898,7.243 7.423,5.419 C 8.029,3.313 8.302,3 8.974,3 C 8.979,3 8.985,3 8.99,3 C 9.74,3.005 10.008,3.415 10.583,5.438 C 11.1,7.255 11.88,10 14.994,10 C 14.997,10 15,10 15.002,10 C 18.106,9.995 18.898,7.246 19.424,5.427 C 20.006,3.408 20.271,3 21,3 C 21.71,3 21.99,3.433 22.578,5.435 C 23.112,7.253 23.919,10 27,10 L 30,10 L 30,7 L 27,7 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]10" Id="74" Left="[float]12" MinHeight="[float]1" MinWidth="[float]1" Top="[float]31" Width="[float]30" />
+                    <Path Data="[PathGeometry]M 3,5 L 3,11 L 5,11 L 5,5 L 8,7 L 4,0 L 0,7 L 3,5 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]11" Id="75" Left="[float]5" MinHeight="[float]1" MinWidth="[float]1" Top="[float]30" Width="[float]8" />
+                </Canvas>
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="50" Id="9" ListViewHeight="60" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="17" />
+            <ConnectorPaneTerminal Hotspot="0 15" />
+            <ConnectorPaneTerminal Hotspot="0 25" />
+            <ConnectorPaneTerminal Hotspot="0 35" />
+            <ConnectorPaneTerminal Hotspot="0 45" />
+            <ConnectorPaneTerminal Hotspot="15 0" />
+            <ConnectorPaneTerminal Hotspot="25 0" />
+            <ConnectorPaneTerminal Hotspot="35 0" />
+            <ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 50" Parameter="23" />
+            <ConnectorPaneTerminal Hotspot="50 15" />
+            <ConnectorPaneTerminal Hotspot="50 25" />
+            <ConnectorPaneTerminal Hotspot="50 35" />
+            <ConnectorPaneTerminal Hotspot="50 45" />
+            <ConnectorPaneTerminal Hotspot="15 50" />
+            <ConnectorPaneTerminal Hotspot="25 50" />
+            <ConnectorPaneTerminal Hotspot="35 50" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="10" />
+        <FrontPanelUnplacedItems Id="11" />
+        <BlockDiagram Bounds="0 0 420 85" Id="12">
+            <DataAccessor Bounds="55 20 40 15" DataItem="17" Id="18" Label="28">
+                <Terminal DataType="ComplexDouble[]" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="380 40 40 15" DataItem="23" Id="24" Label="29">
+                <Terminal DataType="Double[]" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <TextNode AttachedTo="18" Bounds="11 20 39 16" Id="28" Text="IQ data" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="24" Bounds="425 40 96 16" Id="29" Text="power level (dBm)" xmlns="http://www.ni.com/PlatformFramework" />
+            <ComplexToRealImaginary Bounds="110 10 30 30" Id="34" />
+            <Square Bounds="150 0 30 30" Id="35" />
+            <Square Bounds="150 40 30 30" Id="36" />
+            <Add Bounds="195 10 30 30" Id="37" Terminals="o=46, c0t0v=48, c1t0v=47" />
+            <Wire Id="46" Joints="N(37:o) N(53:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="47" Joints="N(36:x^2) h(5) v(-25) N(37:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="48" Joints="N(35:x^2) N(37:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="49" Joints="N(34:y) h(5) v(25) N(36:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="50" Joints="N(34:x) N(35:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="51" Joints="N(18:Value) N(34:x + iy)" xmlns="http://www.ni.com/PlatformFramework" />
+            <LogarithmBase10 Bounds="290 30 30 30" Id="52" />
+            <Multiply Bounds="240 20 30 30" Id="53" Terminals="o=58, c0t0v=46, c1t0v=56" />
+            <Literal Bounds="190 50 40 15" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="54" Label="55" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4024000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="54" Bounds="190 50 0 0" Id="55" Text="input 1" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="56" Joints="N(54:Out) h(5) v(-15) N(53:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="58" Joints="N(53:o) N(52:x)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Multiply Bounds="335 30 30 30" Id="59" Terminals="o=72, c0t0v=63, c1t0v=62" />
+            <Literal Bounds="285 70 40 15" DataType="Double" Facade="NationalInstruments.MocCommon.Modeling.INumericBehavior" Id="60" Label="61" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>0x4024000000000000</p.Data>
+                <NumericBehavior Interpretation="Exact" ValueFormatter="LV:" />
+            </Literal>
+            <TextNode AttachedTo="60" Bounds="285 70 0 0" Id="61" Text="input 1" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="62" Joints="N(60:Out) h(5) v(-25) N(59:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="63" Joints="N(52:log(x\)) N(59:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="72" Joints="N(59:o) N(24:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="13" Width="[float]2000">
+            <ArrayViewer ArrayElement="[UIModel]16" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="19" Label="[UIModel]26" Left="[float]266" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]36" Value="{DataItemBinding Id=17}" Width="[float]129" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0;0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="16" InteractionMode="[NumericTextBoxInteractionModes]ArrowKeys, ScrollWheel, ButtonClicks, TextInput" Left="[float]53" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" Top="[float]7" Value="[ComplexDouble]50 + 0i" ValueType="[Type]ComplexDouble" Width="[float]69" />
+            </ArrayViewer>
+            <ArrayViewer ArrayElement="[UIModel]22" BaseName="[string]Array" Columns="[int]1" Dimensions="[int]1" Height="[float]36" Id="25" Label="[UIModel]27" Left="[float]415" Orientation="[SMOrientation]Horizontal" Rows="[int]1" Top="[float]36" Value="{DataItemBinding Id=23}" Width="[float]114" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <p.DefaultElementValue>0x0</p.DefaultElementValue>
+                <NumericText BaseName="[string]Numeric" Height="[float]22" Id="22" InteractionMode="[NumericTextBoxInteractionModes]ReadOnly" Name="[string]Child" RadixVisibility="[SMVisibility]Collapsed" ValueFormatter="[string]LV:G6" ValueType="[Type]Double" Width="[float]54" />
+            </ArrayViewer>
+            <Label Id="26" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]19" Left="[float]266" Locked="[bool]True" Text="[string]IQ data" Top="[float]13" />
+            <Label Id="27" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]25" Left="[float]415" Locked="[bool]True" Text="[string]power level (dBm)" Top="[float]13" />
+        </CPFrontPanel>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="ComplexDouble[]" Id="17" Name="IQ data" />
+        <DataItem CallDirection="Output" CallIndex="1" DataType="Double[]" Id="23" Name="power level (dBm)" />
+    </VirtualInstrument>
+</SourceFile>

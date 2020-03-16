@@ -1,0 +1,2431 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7AE35ECF17006FB4C219B45BFAFD1489" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="4.5.2.50317" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.50317" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="4.5.0.49156" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.50317" FeatureSetName="Common Language Components" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/MocCommon" Version="4.5.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.50317" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PanelCommon" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="4.5.2.50317" FeatureSetName="Editor" MinimumParsableVersion="4.5.0.0" MinimumSemanticallyEquivalentVersion="4.5.0.0" Name="http://www.ni.com/PlatformFramework" Version="4.5.0.49153" />
+		<ApplicationVersionInfo Build="4.5.2.50317" Name="LabVIEW Communications System Design Suite" Version="2.0.1" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<p.UserDescription xmlns="http://www.ni.com/PlatformFramework">"&lt;p&gt;Creates and initializes resources for the instrument design libraries.&lt;/p&gt;\n\n&lt;p&gt;&lt;b&gt;Output Parameters&lt;/b&gt;&lt;/p&gt;\n\n&lt;p&gt;&lt;b&gt;config.resources&lt;/b&gt; contains references to the configuration registers.&lt;/p&gt;\n\n&lt;p&gt;&lt;b&gt;sync.resources&lt;/b&gt; contains references to the synchronization registers.&lt;/p&gt;\n\n&lt;p&gt;&lt;b&gt;time.resources&lt;/b&gt; contains references to the time registers.&lt;/p&gt;"</p.UserDescription>
+		<Icon Id="303" ListViewIconCrop="0 0 50 50" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]50" Id="304" Left="[float]0" Top="[float]0" Width="[float]50">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="305" Left="[float]0" TemplateName="GrayNoText" Top="[float]0">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="306" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="307" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+				</IconTemplate>
+				<Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Height="[float]50" Id="308" Left="[float]0" Top="[float]0" Width="[float]50">
+					<Path Data="[PathGeometry]M 10.497,5.455 L 14.75,3.243 L 12.532,7.49 L 17.984,8.933 L 12.53,10.37 L 14.742,14.624 L 10.492,12.406 L 9.051,17.858 L 7.614,12.403 L 3.36,14.619 L 5.578,10.368 L 0,8.925 L 5.578,7.488 L 3.366,3.235 L 7.616,5.453 L 9.06,0 L 10.497,5.455 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]17.858" Id="367" Left="[float]16" MinHeight="[float]1" MinWidth="[float]1" Top="[float]16" Width="[float]17.984" />
+				</Canvas>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="50" Id="9" ListViewHeight="60" ListViewWidth="150" Width="50" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal />
+			<ConnectorPaneTerminal Hotspot="0 15" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
+			<ConnectorPaneTerminal Hotspot="15 0" />
+			<ConnectorPaneTerminal Hotspot="25 0" />
+			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="50 5" ListViewHotspot="150 35" Parameter="14" />
+			<ConnectorPaneTerminal Hotspot="50 15" ListViewHotspot="150 65" Parameter="316" />
+			<ConnectorPaneTerminal Hotspot="50 25" ListViewHotspot="150 50" Parameter="503" />
+			<ConnectorPaneTerminal Hotspot="50 35" />
+			<ConnectorPaneTerminal Hotspot="50 45" />
+			<ConnectorPaneTerminal Hotspot="15 50" />
+			<ConnectorPaneTerminal Hotspot="25 50" />
+			<ConnectorPaneTerminal Hotspot="35 50" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="10" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Id="11" Left="[float]0" Top="[float]0" />
+		<BlockDiagram Id="12">
+			<DataAccessor Bounds="365 70 40 15" DataItem="14" Id="15" Label="242" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@8d5f7f3975a3454e99e65fe49ee9e6db" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<MethodCall Bounds="60 200 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="245" Target="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Create\ Time\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R0" Desc="time.resources" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@ca817d5f78be43b2888e43248f91dac0" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="60 320 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="246" Target="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Create\ Future\ Event\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R0" Desc="future event.resources" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@3eec8d52129a424ea687ffe6288ddd3f" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="60 260 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="247" Target="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Create\ Future\ Event\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R0" Desc="future event.resources" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@3eec8d52129a424ea687ffe6288ddd3f" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="60 70 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="248" Target="niUsrpRio\ Config\ v1\ FPGA\.lvlib__Create\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R0" Desc="resources" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@8d5f7f3975a3454e99e65fe49ee9e6db" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="60 135 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="249" Target="niUsrpRio\ Synchronization\ v1\ FPGA\.lvlib__Create\.gvi" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="R0" Desc="sync.resources" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@45c8d736658b4db384f8ba115200ea9e" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<PropertyNode Bounds="150 190 191 65" HasErrorTerminals="False" Id="250" InstanceDataType="@a4feb86d46fe4473ba72fbcb9d3bb976" Mode="InstanceProperties" Template="List">
+				<PropertyItemTerminal Action="Write" DataType="@ca817d5f78be43b2888e43248f91dac0" Hotspot="0 15" Id="c0t0v" Path="time.resources" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@3eec8d52129a424ea687ffe6288ddd3f" Hotspot="0 30" Id="c1t0v" Path="future event.resources" Usage="Required" />
+				<PropertyItemTerminal Action="Write" DataType="@3eec8d52129a424ea687ffe6288ddd3f" Hotspot="0 45" Id="c2t0v" Path="future event.resources_2" Usage="Required" />
+			</PropertyNode>
+			<ClusterLiteral Bounds="138 190 12 10" DataType="@a4feb86d46fe4473ba72fbcb9d3bb976" Facade="DockedConstantFacade" Id="251" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>
+					<Cluster>
+						<Field1>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>""</Field2>
+								<Field3>""</Field3>
+								<Field4>""</Field4>
+								<Field5>""</Field5>
+								<Field6>""</Field6>
+								<Field7>""</Field7>
+								<Field8>""</Field8>
+								<Field9>""</Field9>
+								<Field10>""</Field10>
+							</Cluster>
+						</Field1>
+						<Field2>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>""</Field2>
+								<Field3>""</Field3>
+								<Field4>""</Field4>
+								<Field5>""</Field5>
+								<Field6>""</Field6>
+							</Cluster>
+						</Field2>
+						<Field3>
+							<Cluster>
+								<Field1>""</Field1>
+								<Field2>""</Field2>
+								<Field3>""</Field3>
+								<Field4>""</Field4>
+								<Field5>""</Field5>
+								<Field6>""</Field6>
+							</Cluster>
+						</Field3>
+					</Cluster>
+				</p.Data>
+				<ClusterBehavior AutoArrange="ArrangeVertically" />
+				<ClusterLiteral Bounds="5 19 127 452" DataType="@ca817d5f78be43b2888e43248f91dac0" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="481" Label="502">
+					<p.Data>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+							<Field7>""</Field7>
+							<Field8>""</Field8>
+							<Field9>""</Field9>
+							<Field10>""</Field10>
+						</Cluster>
+					</p.Data>
+					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+						<TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Time\ Resources\.gtype" />
+					</p.TypeDefinitionTargets>
+					<ClusterBehavior AutoArrange="ArrangeVertically" />
+					<IONameConstant Bounds="5 19 71 27" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="482" Label="483" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="482" Bounds="5 2 28 14" Id="483" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 63 71 27" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="484" Label="485" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="484" Bounds="5 46 25 14" Id="485" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>time</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 107 71 27" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="486" Label="487" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="486" Bounds="5 90 102 14" Id="487" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>time.previous cptr</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 151 71 27" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="488" Label="489" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="488" Bounds="5 134 51 14" Id="489" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>new time</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 195 71 27" DataType="@8f1afd859d774ae0977325cfcf7663d3" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="490" Label="491" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="490" Bounds="5 178 85 14" Id="491" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>new time.when</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 239 71 27" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="492" Label="493" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="492" Bounds="5 222 72 14" Id="493" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>new time.set</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 283 71 27" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="494" Label="495" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="494" Bounds="5 266 96 14" Id="495" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>which edge of ref</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 327 71 27" DataType="@8f1afd859d774ae0977325cfcf7663d3" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="496" Label="497" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="496" Bounds="5 310 60 14" Id="497" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>pps source</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 371 71 27" DataType="@bc7fc7d0ee444ab89e9170246239fa72" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="498" Label="499" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="498" Bounds="5 354 104 14" Id="499" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>internal pps period</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 415 71 27" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="500" Label="501" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="500" Bounds="5 398 36 14" Id="501" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>time 2</p.Text>
+					</NodeLabel>
+				</ClusterLiteral>
+				<NodeLabel AttachedTo="481" Bounds="5 2 82 14" Id="502" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>time.resources</p.Text>
+				</NodeLabel>
+				<NodeLabel AttachedTo="644" Bounds="58 471 126 14" Id="287" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>future event.resources</p.Text>
+				</NodeLabel>
+				<NodeLabel AttachedTo="658" Bounds="58 764 140 14" Id="301" xmlns="http://www.ni.com/PlatformFramework">
+					<p.Text>future event.resources_2</p.Text>
+				</NodeLabel>
+				<DockedConstantFacade UndockedSize="176 1067" />
+				<ClusterLiteral Bounds="58 488 100 274" DataType="@3eec8d52129a424ea687ffe6288ddd3f" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="644" Label="287">
+					<p.Data>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+						</Cluster>
+					</p.Data>
+					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+						<TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Future\ Event\ Resources\.gtype" />
+					</p.TypeDefinitionTargets>
+					<ClusterBehavior AutoArrange="ArrangeVertically" />
+					<IONameConstant Bounds="5 20 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="645" Label="646" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="645" Bounds="5 2 30 15" Id="646" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 50 65 29" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="647" Label="648" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="647" Bounds="5 32 30 15" Id="648" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.time</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 80 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="649" Label="650" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="649" Bounds="5 62 30 15" Id="650" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.ready</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 110 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="651" Label="652" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="651" Bounds="5 92 30 15" Id="652" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.set</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 140 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="653" Label="654" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="653" Bounds="5 122 30 15" Id="654" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.clear</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 170 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="655" Label="656" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="655" Bounds="5 152 30 15" Id="656" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.set in past</p.Text>
+					</NodeLabel>
+				</ClusterLiteral>
+				<ClusterLiteral Bounds="58 781 100 274" DataType="@3eec8d52129a424ea687ffe6288ddd3f" Facade="NationalInstruments.MocCommon.SourceModel.IClusterBehavior" Id="658" Label="301">
+					<p.Data>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+						</Cluster>
+					</p.Data>
+					<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+						<TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Future\ Event\ Resources\.gtype" />
+					</p.TypeDefinitionTargets>
+					<ClusterBehavior AutoArrange="ArrangeVertically" />
+					<IONameConstant Bounds="5 20 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="659" Label="660" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="659" Bounds="5 2 30 15" Id="660" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>reset</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 50 65 29" DataType="@e118ed2132df428c800375c573183c3d" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="661" Label="662" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="661" Bounds="5 32 30 15" Id="662" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.time</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 80 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="663" Label="664" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="663" Bounds="5 62 30 15" Id="664" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.ready</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 110 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="665" Label="666" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="665" Bounds="5 92 30 15" Id="666" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.set</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 140 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="667" Label="668" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="667" Bounds="5 122 30 15" Id="668" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.clear</p.Text>
+					</NodeLabel>
+					<IONameConstant Bounds="5 170 65 29" DataType="@1e8392ea97d641bf853cbf4bc82b08b8" Facade="NationalInstruments.MocCommon.SourceModel.IIONameConstantBehavior" Id="669" Label="670" UdrClass="Register" UdrNamespace="FPGA">
+						<p.Data>""</p.Data>
+						<IONameConstantBehavior />
+					</IONameConstant>
+					<NodeLabel AttachedTo="669" Bounds="5 152 30 15" Id="670" xmlns="http://www.ni.com/PlatformFramework">
+						<p.Text>future event.set in past</p.Text>
+					</NodeLabel>
+				</ClusterLiteral>
+			</ClusterLiteral>
+			<Wire Facade="WireInvisibleFacade" Id="302" Joints="N(251:Out) N(250:instance in)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="310" Joints="N(248:R0) N(15:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="313" Joints="N(246:R0) h(35) v(-90) N(250:c2t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="314" Joints="N(247:R0) h(25) v(-45) N(250:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="315" Joints="N(245:R0) N(250:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="365 135 40 15" DataItem="316" Id="318" Label="364" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@45c8d736658b4db384f8ba115200ea9e" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<Wire Id="365" Joints="N(249:R0) N(318:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="15" Bounds="410 70 91 14" Id="242" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>config.resources</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="318" Bounds="410 135 83 14" Id="364" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>sync.resources</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="365 190 40 15" DataItem="503" Id="505" Label="560" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@a4feb86d46fe4473ba72fbcb9d3bb976" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="505" Bounds="410 190 82 14" Id="560" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>time.resources</p.Text>
+			</NodeLabel>
+			<Wire Id="561" Joints="N(250:instance out) N(505:Value)" xmlns="http://www.ni.com/PlatformFramework" />
+		</BlockDiagram>
+		<CPFrontPanel Height="[float]1600" Id="13" Left="[float]0" Top="[float]0" Width="[float]2000">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@8d5f7f3975a3454e99e65fe49ee9e6db" Height="[float]811" Id="16" Label="[UIModel]185" Left="[float]415" Top="[float]23" Value="{DataItemBinding Id=14}" Width="[float]172" xmlns="http://www.ni.com/PanelCommon">
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="19" Label="[UIModel]188" Left="[float]5" SelectedResource="{ClusterBinding FieldName=DAC\ FIFO\ Reset}" Top="[float]23" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="22" Label="[UIModel]189" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Rx\ Swap\ IQ}" Top="[float]65" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="25" Label="[UIModel]190" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Rx\ Negate\ I}" Top="[float]107" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="28" Label="[UIModel]191" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Rx\ Negate\ Q}" Top="[float]149" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="31" Label="[UIModel]192" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Rx\ Data\ Valid}" Top="[float]191" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="34" Label="[UIModel]193" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Rx\ Data\ Ever\ Invalid}" Top="[float]233" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="37" Label="[UIModel]194" Left="[float]5" SelectedResource="{ClusterBinding FieldName=clear\ RF\ 0\ Rx\ Data\ Ever\ Invalid}" Top="[float]275" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="40" Label="[UIModel]195" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Tx\ Swap\ IQ}" Top="[float]317" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="43" Label="[UIModel]196" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Tx\ Negate\ I}" Top="[float]359" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="46" Label="[UIModel]197" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 0\ Tx\ Negate\ Q}" Top="[float]401" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="49" Label="[UIModel]198" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Rx\ Swap\ IQ}" Top="[float]443" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="52" Label="[UIModel]199" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Rx\ Negate\ I}" Top="[float]485" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="55" Label="[UIModel]200" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Rx\ Negate\ Q}" Top="[float]527" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="58" Label="[UIModel]201" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Rx\ Data\ Valid}" Top="[float]569" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="61" Label="[UIModel]202" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Rx\ Data\ Ever\ Invalid}" Top="[float]611" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="64" Label="[UIModel]203" Left="[float]5" SelectedResource="{ClusterBinding FieldName=clear\ RF\ 1\ Rx\ Data\ Ever\ Invalid}" Top="[float]653" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="67" Label="[UIModel]204" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Tx\ Swap\ IQ}" Top="[float]695" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="70" Label="[UIModel]205" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Tx\ Negate\ I}" Top="[float]737" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]22" Id="73" Label="[UIModel]206" Left="[float]5" SelectedResource="{ClusterBinding FieldName=RF\ 1\ Tx\ Negate\ Q}" Top="[float]779" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]62" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<Label Height="[float]16" Id="188" LabelOwner="[UIModel]19" Left="[float]5" Text="[string]DAC FIFO Reset" Top="[float]0" Width="[float]84" />
+				<Label Height="[float]16" Id="189" LabelOwner="[UIModel]22" Left="[float]5" Text="[string]RF 0 Rx Swap IQ" Top="[float]42" Width="[float]86" />
+				<Label Height="[float]16" Id="190" LabelOwner="[UIModel]25" Left="[float]5" Text="[string]RF 0 Rx Negate I" Top="[float]84" Width="[float]88" />
+				<Label Height="[float]16" Id="191" LabelOwner="[UIModel]28" Left="[float]5" Text="[string]RF 0 Rx Negate Q" Top="[float]126" Width="[float]94" />
+				<Label Height="[float]16" Id="192" LabelOwner="[UIModel]31" Left="[float]5" Text="[string]RF 0 Rx Data Valid" Top="[float]168" Width="[float]97" />
+				<Label Height="[float]16" Id="193" LabelOwner="[UIModel]34" Left="[float]5" Text="[string]RF 0 Rx Data Ever Invalid" Top="[float]210" Width="[float]131" />
+				<Label Height="[float]16" Id="194" LabelOwner="[UIModel]37" Left="[float]5" Text="[string]clear RF 0 Rx Data Ever Invalid" Top="[float]252" Width="[float]159" />
+				<Label Height="[float]16" Id="195" LabelOwner="[UIModel]40" Left="[float]5" Text="[string]RF 0 Tx Swap IQ" Top="[float]294" Width="[float]85" />
+				<Label Height="[float]16" Id="196" LabelOwner="[UIModel]43" Left="[float]5" Text="[string]RF 0 Tx Negate I" Top="[float]336" Width="[float]87" />
+				<Label Height="[float]16" Id="197" LabelOwner="[UIModel]46" Left="[float]5" Text="[string]RF 0 Tx Negate Q" Top="[float]378" Width="[float]93" />
+				<Label Height="[float]16" Id="198" LabelOwner="[UIModel]49" Left="[float]5" Text="[string]RF 1 Rx Swap IQ" Top="[float]420" Width="[float]86" />
+				<Label Height="[float]16" Id="199" LabelOwner="[UIModel]52" Left="[float]5" Text="[string]RF 1 Rx Negate I" Top="[float]462" Width="[float]88" />
+				<Label Height="[float]16" Id="200" LabelOwner="[UIModel]55" Left="[float]5" Text="[string]RF 1 Rx Negate Q" Top="[float]504" Width="[float]94" />
+				<Label Height="[float]16" Id="201" LabelOwner="[UIModel]58" Left="[float]5" Text="[string]RF 1 Rx Data Valid" Top="[float]546" Width="[float]97" />
+				<Label Height="[float]16" Id="202" LabelOwner="[UIModel]61" Left="[float]5" Text="[string]RF 1 Rx Data Ever Invalid" Top="[float]588" Width="[float]131" />
+				<Label Height="[float]16" Id="203" LabelOwner="[UIModel]64" Left="[float]5" Text="[string]clear RF 1 Rx Data Ever Invalid" Top="[float]630" Width="[float]159" />
+				<Label Height="[float]16" Id="204" LabelOwner="[UIModel]67" Left="[float]5" Text="[string]RF 1 Tx Swap IQ" Top="[float]672" Width="[float]85" />
+				<Label Height="[float]16" Id="205" LabelOwner="[UIModel]70" Left="[float]5" Text="[string]RF 1 Tx Negate I" Top="[float]714" Width="[float]87" />
+				<Label Height="[float]16" Id="206" LabelOwner="[UIModel]73" Left="[float]5" Text="[string]RF 1 Tx Negate Q" Top="[float]756" Width="[float]93" />
+			</Cluster>
+			<Label Height="[float]16" Id="185" LabelOwner="[UIModel]16" Left="[float]415" Text="[string]config.resources" Top="[float]0" Width="[float]87" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@45c8d736658b4db384f8ba115200ea9e" Height="[float]716" Id="619" Label="[UIModel]642" Left="[float]415" Top="[float]854" Value="{DataItemBinding Id=316}" Width="[float]173" p4:ControlDefinitionChecksum="Rt63Xp19Lvl7AZTX6BCKnQ==" xmlns:p4="http://www.ni.com/PanelCommon" xmlns="http://www.ni.com/PanelCommon">
+				<p4:p.TypeDefinitionTargets>
+					<p4:TypeDefinitionTarget TargetName="niUsrpRio\ Synchronization\ v1\ FPGA\.lvlib__Resources\.gtype:ControlDefinition" />
+				</p4:p.TypeDefinitionTargets>
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="620" Label="[UIModel]631" Left="[float]5" SelectedResource="{ClusterBinding FieldName=master}" Top="[float]25" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="621" Label="[UIModel]632" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.enable}" Top="[float]89" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="622" Label="[UIModel]633" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.ready}" Top="[float]153" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="623" Label="[UIModel]634" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.reset}" Top="[float]217" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="624" Label="[UIModel]635" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.arm}" Top="[float]281" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="625" Label="[UIModel]636" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.valid}" Top="[float]345" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@dac50db0bfba4684a50688d4e97650a5" Height="[float]41" Id="626" Label="[UIModel]637" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.value}" Top="[float]409" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@dac50db0bfba4684a50688d4e97650a5" Height="[float]41" Id="627" Label="[UIModel]638" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.oversample\ factor}" Top="[float]473" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="628" Label="[UIModel]639" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr}" Top="[float]537" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@dac50db0bfba4684a50688d4e97650a5" Height="[float]41" Id="629" Label="[UIModel]640" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr.adjust}" Top="[float]601" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<FpgaNameControl BaseName="[string]Register" DataType="[Type]@dac50db0bfba4684a50688d4e97650a5" Height="[float]41" Id="630" Label="[UIModel]641" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr.period}" Top="[float]665" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+				<p4:Label Height="[float]16" Id="631" LabelOwner="[UIModel]620" Left="[float]5" Text="[string]master" Top="[float]2" Width="[float]37" />
+				<p4:Label Height="[float]16" Id="632" LabelOwner="[UIModel]621" Left="[float]5" Text="[string]meas.enable" Top="[float]66" Width="[float]66" />
+				<p4:Label Height="[float]16" Id="633" LabelOwner="[UIModel]622" Left="[float]5" Text="[string]meas.ready" Top="[float]130" Width="[float]60" />
+				<p4:Label Height="[float]16" Id="634" LabelOwner="[UIModel]623" Left="[float]5" Text="[string]meas.reset" Top="[float]194" Width="[float]57" />
+				<p4:Label Height="[float]16" Id="635" LabelOwner="[UIModel]624" Left="[float]5" Text="[string]meas.arm" Top="[float]258" Width="[float]52" />
+				<p4:Label Height="[float]16" Id="636" LabelOwner="[UIModel]625" Left="[float]5" Text="[string]meas.valid" Top="[float]322" Width="[float]56" />
+				<p4:Label Height="[float]16" Id="637" LabelOwner="[UIModel]626" Left="[float]5" Text="[string]meas.value" Top="[float]386" Width="[float]59" />
+				<p4:Label Height="[float]16" Id="638" LabelOwner="[UIModel]627" Left="[float]5" Text="[string]meas.oversample factor" Top="[float]450" Width="[float]126" />
+				<p4:Label Height="[float]16" Id="639" LabelOwner="[UIModel]628" Left="[float]5" Text="[string]cptr" Top="[float]514" Width="[float]21" />
+				<p4:Label Height="[float]16" Id="640" LabelOwner="[UIModel]629" Left="[float]5" Text="[string]cptr.adjust" Top="[float]578" Width="[float]56" />
+				<p4:Label Height="[float]16" Id="641" LabelOwner="[UIModel]630" Left="[float]5" Text="[string]cptr.period" Top="[float]642" Width="[float]58" />
+			</Cluster>
+			<Label Height="[float]16" Id="642" LabelOwner="[UIModel]619" Left="[float]415" Text="[string]sync.resources" Top="[float]831" Width="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@a4feb86d46fe4473ba72fbcb9d3bb976" Height="[float]1525" Id="506" Label="[UIModel]562" Left="[float]618" Top="[float]23" Value="{DataItemBinding Id=503}" Width="[float]196" xmlns="http://www.ni.com/PanelCommon">
+				<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@ca817d5f78be43b2888e43248f91dac0" Height="[float]652" Id="595" Label="[UIModel]616" Left="[float]5" Top="[float]25" Value="{ClusterBinding FieldName=time.resources}" Width="[float]173" p5:ControlDefinitionChecksum="ZGspdle+8YM2octaCWaM0g==" xmlns:p5="http://www.ni.com/PanelCommon">
+					<p5:p.TypeDefinitionTargets>
+						<p5:TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Time\ Resources\.gtype:ControlDefinition" />
+					</p5:p.TypeDefinitionTargets>
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="596" IsReadOnly="[bool]True" Label="[UIModel]605" Left="[float]5" SelectedResource="{ClusterBinding FieldName=reset}" Top="[float]25" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="597" IsReadOnly="[bool]True" Label="[UIModel]606" Left="[float]5" SelectedResource="{ClusterBinding FieldName=time}" Top="[float]89" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="598" IsReadOnly="[bool]True" Label="[UIModel]607" Left="[float]5" SelectedResource="{ClusterBinding FieldName=time.previous\ cptr}" Top="[float]153" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="599" IsReadOnly="[bool]True" Label="[UIModel]608" Left="[float]5" SelectedResource="{ClusterBinding FieldName=new\ time}" Top="[float]217" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@8f1afd859d774ae0977325cfcf7663d3" Height="[float]41" Id="600" IsReadOnly="[bool]True" Label="[UIModel]609" Left="[float]5" SelectedResource="{ClusterBinding FieldName=new\ time.when}" Top="[float]281" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="601" IsReadOnly="[bool]True" Label="[UIModel]610" Left="[float]5" SelectedResource="{ClusterBinding FieldName=new\ time.set}" Top="[float]345" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="602" IsReadOnly="[bool]True" Label="[UIModel]611" Left="[float]5" SelectedResource="{ClusterBinding FieldName=which\ edge\ of\ ref}" Top="[float]409" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@8f1afd859d774ae0977325cfcf7663d3" Height="[float]41" Id="603" IsReadOnly="[bool]True" Label="[UIModel]612" Left="[float]5" SelectedResource="{ClusterBinding FieldName=pps\ source}" Top="[float]473" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@bc7fc7d0ee444ab89e9170246239fa72" Height="[float]41" Id="604" IsReadOnly="[bool]True" Label="[UIModel]613" Left="[float]5" SelectedResource="{ClusterBinding FieldName=internal\ pps\ period}" Top="[float]537" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<p5:Label Height="[float]16" Id="605" LabelOwner="[UIModel]596" Left="[float]5" Text="[string]reset" Top="[float]2" Width="[float]26" />
+					<p5:Label Height="[float]16" Id="606" LabelOwner="[UIModel]597" Left="[float]5" Text="[string]time" Top="[float]66" Width="[float]24" />
+					<p5:Label Height="[float]16" Id="607" LabelOwner="[UIModel]598" Left="[float]5" Text="[string]time.previous cptr" Top="[float]130" Width="[float]96" />
+					<p5:Label Height="[float]16" Id="608" LabelOwner="[UIModel]599" Left="[float]5" Text="[string]new time" Top="[float]194" Width="[float]49" />
+					<p5:Label Height="[float]16" Id="609" LabelOwner="[UIModel]600" Left="[float]5" Text="[string]new time.when" Top="[float]258" Width="[float]80" />
+					<p5:Label Height="[float]16" Id="610" LabelOwner="[UIModel]601" Left="[float]5" Text="[string]new time.set" Top="[float]322" Width="[float]67" />
+					<p5:Label Height="[float]16" Id="611" LabelOwner="[UIModel]602" Left="[float]5" Text="[string]which edge of ref" Top="[float]386" Width="[float]93" />
+					<p5:Label Height="[float]16" Id="612" LabelOwner="[UIModel]603" Left="[float]5" Text="[string]pps source" Top="[float]450" Width="[float]58" />
+					<p5:Label Height="[float]16" Id="613" LabelOwner="[UIModel]604" Left="[float]5" Text="[string]internal pps period" Top="[float]514" Width="[float]101" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="614" IsReadOnly="[bool]True" Label="[UIModel]615" Left="[float]5" SelectedResource="{ClusterBinding FieldName=time\ 2}" Top="[float]601" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<p5:Label Height="[float]16" Id="615" LabelOwner="[UIModel]614" Left="[float]5" Text="[string]time 2" Top="[float]578" Width="[float]34" />
+				</Cluster>
+				<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3eec8d52129a424ea687ffe6288ddd3f" Height="[float]396" Id="563" Label="[UIModel]576" Left="[float]5" Top="[float]700" Value="{ClusterBinding FieldName=future\ event.resources}" Width="[float]173" p5:ControlDefinitionChecksum="cRcVZPIKzYSuxOJbllNvcA==" xmlns:p5="http://www.ni.com/PanelCommon">
+					<p5:p.TypeDefinitionTargets>
+						<p5:TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Future\ Event\ Resources\.gtype:ControlDefinition" />
+					</p5:p.TypeDefinitionTargets>
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="564" IsReadOnly="[bool]True" Label="[UIModel]570" Left="[float]5" SelectedResource="{ClusterBinding FieldName=reset}" Top="[float]25" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="565" IsReadOnly="[bool]True" Label="[UIModel]571" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.time}" Top="[float]89" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="566" IsReadOnly="[bool]True" Label="[UIModel]572" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.ready}" Top="[float]153" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="567" IsReadOnly="[bool]True" Label="[UIModel]573" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.set}" Top="[float]217" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="568" IsReadOnly="[bool]True" Label="[UIModel]574" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.clear}" Top="[float]281" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="569" IsReadOnly="[bool]True" Label="[UIModel]575" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.set\ in\ past}" Top="[float]345" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<p5:Label Height="[float]16" Id="570" LabelOwner="[UIModel]564" Left="[float]5" Text="[string]reset" Top="[float]2" Width="[float]26" />
+					<p5:Label Height="[float]16" Id="571" LabelOwner="[UIModel]565" Left="[float]5" Text="[string]future event.time" Top="[float]66" Width="[float]91" />
+					<p5:Label Height="[float]16" Id="572" LabelOwner="[UIModel]566" Left="[float]5" Text="[string]future event.ready" Top="[float]130" Width="[float]97" />
+					<p5:Label Height="[float]16" Id="573" LabelOwner="[UIModel]567" Left="[float]5" Text="[string]future event.set" Top="[float]194" Width="[float]83" />
+					<p5:Label Height="[float]16" Id="574" LabelOwner="[UIModel]568" Left="[float]5" Text="[string]future event.clear" Top="[float]258" Width="[float]92" />
+					<p5:Label Height="[float]16" Id="575" LabelOwner="[UIModel]569" Left="[float]5" Text="[string]future event.set in past" Top="[float]322" Width="[float]121" />
+				</Cluster>
+				<Cluster AutoArrange="[AutoArrange]ArrangeVertically" BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@3eec8d52129a424ea687ffe6288ddd3f" Height="[float]396" Id="579" Label="[UIModel]592" Left="[float]5" Top="[float]1119" Value="{ClusterBinding FieldName=future\ event.resources_2}" Width="[float]173" p5:ControlDefinitionChecksum="cRcVZPIKzYSuxOJbllNvcA==" xmlns:p5="http://www.ni.com/PanelCommon">
+					<p5:p.TypeDefinitionTargets>
+						<p5:TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Future\ Event\ Resources\.gtype:ControlDefinition" />
+					</p5:p.TypeDefinitionTargets>
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="580" IsReadOnly="[bool]True" Label="[UIModel]586" Left="[float]5" SelectedResource="{ClusterBinding FieldName=reset}" Top="[float]25" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@e118ed2132df428c800375c573183c3d" Height="[float]41" Id="581" IsReadOnly="[bool]True" Label="[UIModel]587" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.time}" Top="[float]89" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="582" IsReadOnly="[bool]True" Label="[UIModel]588" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.ready}" Top="[float]153" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="583" IsReadOnly="[bool]True" Label="[UIModel]589" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.set}" Top="[float]217" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="584" IsReadOnly="[bool]True" Label="[UIModel]590" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.clear}" Top="[float]281" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<FpgaNameControl BaseName="[string]Register" DataType="[Type]@1e8392ea97d641bf853cbf4bc82b08b8" Height="[float]41" Id="585" IsReadOnly="[bool]True" Label="[UIModel]591" Left="[float]5" SelectedResource="{ClusterBinding FieldName=future\ event.set\ in\ past}" Top="[float]345" UdrClass="[string]Register" UdrNamespace="[string]FPGA" Width="[float]150" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+					<p5:Label Height="[float]16" Id="586" LabelOwner="[UIModel]580" Left="[float]5" Text="[string]reset" Top="[float]2" Width="[float]26" />
+					<p5:Label Height="[float]16" Id="587" LabelOwner="[UIModel]581" Left="[float]5" Text="[string]future event.time" Top="[float]66" Width="[float]91" />
+					<p5:Label Height="[float]16" Id="588" LabelOwner="[UIModel]582" Left="[float]5" Text="[string]future event.ready" Top="[float]130" Width="[float]97" />
+					<p5:Label Height="[float]16" Id="589" LabelOwner="[UIModel]583" Left="[float]5" Text="[string]future event.set" Top="[float]194" Width="[float]83" />
+					<p5:Label Height="[float]16" Id="590" LabelOwner="[UIModel]584" Left="[float]5" Text="[string]future event.clear" Top="[float]258" Width="[float]92" />
+					<p5:Label Height="[float]16" Id="591" LabelOwner="[UIModel]585" Left="[float]5" Text="[string]future event.set in past" Top="[float]322" Width="[float]121" />
+				</Cluster>
+				<Label Height="[float]16" Id="616" LabelOwner="[UIModel]595" Left="[float]5" Text="[string]time.resources" Top="[float]2" Width="[float]77" />
+				<Label Height="[float]16" Id="576" LabelOwner="[UIModel]563" Left="[float]5" Text="[string]future event.resources" Top="[float]677" Width="[float]118" />
+				<Label Height="[float]16" Id="592" LabelOwner="[UIModel]579" Left="[float]5" Text="[string]future event.resources_2" Top="[float]1096" Width="[float]118" />
+			</Cluster>
+			<Label Height="[float]16" Id="562" LabelOwner="[UIModel]506" Left="[float]618" Text="[string]time.resources" Top="[float]0" Width="[float]77" xmlns="http://www.ni.com/PanelCommon" />
+		</CPFrontPanel>
+		<DataItem CallDirection="Output" CallIndex="1" DataType="@8d5f7f3975a3454e99e65fe49ee9e6db" Id="14" Name="config.resources" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>""</Field3>
+					<Field4>""</Field4>
+					<Field5>""</Field5>
+					<Field6>""</Field6>
+					<Field7>""</Field7>
+					<Field8>""</Field8>
+					<Field9>""</Field9>
+					<Field10>""</Field10>
+					<Field11>""</Field11>
+					<Field12>""</Field12>
+					<Field13>""</Field13>
+					<Field14>""</Field14>
+					<Field15>""</Field15>
+					<Field16>""</Field16>
+					<Field17>""</Field17>
+					<Field18>""</Field18>
+					<Field19>""</Field19>
+				</Cluster>
+			</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="0" DataType="@45c8d736658b4db384f8ba115200ea9e" Id="316" Name="sync.resources" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>""</Field1>
+					<Field2>""</Field2>
+					<Field3>""</Field3>
+					<Field4>""</Field4>
+					<Field5>""</Field5>
+					<Field6>""</Field6>
+					<Field7>""</Field7>
+					<Field8>""</Field8>
+					<Field9>""</Field9>
+					<Field10>""</Field10>
+					<Field11>""</Field11>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="niUsrpRio\ Synchronization\ v1\ FPGA\.lvlib__Resources\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<DataItem CallDirection="Output" CallIndex="2" DataType="@a4feb86d46fe4473ba72fbcb9d3bb976" Id="503" Name="time.resources" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>
+				<Cluster>
+					<Field1>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+							<Field7>""</Field7>
+							<Field8>""</Field8>
+							<Field9>""</Field9>
+							<Field10>""</Field10>
+						</Cluster>
+					</Field1>
+					<Field2>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+						</Cluster>
+					</Field2>
+					<Field3>
+						<Cluster>
+							<Field1>""</Field1>
+							<Field2>""</Field2>
+							<Field3>""</Field3>
+							<Field4>""</Field4>
+							<Field5>""</Field5>
+							<Field6>""</Field6>
+						</Cluster>
+					</Field3>
+				</Cluster>
+			</p.DefaultValue>
+			<p.TypeDefinitionTargets xmlns="http://www.ni.com/PanelCommon">
+				<TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Time\ Resources\.gtype" />
+				<TypeDefinitionTarget TargetName="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Future\ Event\ Resources\.gtype" />
+			</p.TypeDefinitionTargets>
+		</DataItem>
+		<IconTable xmlns="http://www.ni.com/PlatformFramework">
+			<p.IconModel Target="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Create\ Time\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]niUsrpRio Time v1 FPGA.lvlib__Create Time" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top">
+										<FontSetting FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+									<Path Data="[PathGeometry]M 49,46 C 49,47.65 47.65,49 46,49 L 4,49 C 2.35,49 1,47.65 1,46 L 1,4 C 1,2.35 2.35,1 4,1 L 46,1 C 47.65,1 49,2.35 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 46,1 C 47.654,1 49,2.346 49,4 L 49,46 C 49,47.654 47.654,49 46,49 L 4,49 C 2.346,49 1,47.654 1,46 L 1,4 C 1,2.346 2.346,1 4,1 L 46,1  M 46,0 L 4,0 C 1.8,0 0,1.8 0,4 L 0,46 C 0,48.2 1.8,50 4,50 L 46,50 C 48.2,50 50,48.2 50,46 L 50,4 C 50,1.8 48.2,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 48,46 C 48,47.1 47.1,48 46,48 L 4,48 C 2.9,48 2,47.1 2,46 L 2,4 C 2,2.9 2.9,2 4,2 L 46,2 C 47.1,2 48,2.9 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 37,12 L 2,12 L 2,4 C 2,2.9 2.9,2 4,2 L 37,2 L 37,12 Z M 13.176,4.184 L 11.668,4.184 L 11.668,7.813 C 11.668,8.233 11.582,8.538 11.408,8.727 C 11.235,8.917 10.961,9.012 10.586,9.012 C 10.206,9.012 9.931,8.913 9.762,8.715 C 9.592,8.518 9.508,8.217 9.508,7.813 L 9.508,4.184 L 8,4.184 L 8,7.899 C 8,8.616 8.218,9.165 8.654,9.547 C 9.09,9.929 9.734,10.121 10.586,10.121 C 11.438,10.121 12.082,9.93 12.52,9.547 C 12.958,9.164 13.176,8.613 13.176,7.895 L 13.176,4.184 Z M 19.384,8.172 C 19.384,7.772 19.278,7.445 19.066,7.193 C 18.854,6.942 18.525,6.744 18.08,6.597 C 17.853,6.525 17.642,6.467 17.445,6.425 C 17.248,6.384 17.043,6.341 16.83,6.296 C 16.504,6.229 16.283,6.153 16.166,6.071 C 16.049,5.989 15.99,5.872 15.99,5.717 C 15.99,5.615 16.027,5.526 16.099,5.446 C 16.172,5.367 16.259,5.307 16.361,5.268 C 16.476,5.221 16.595,5.19 16.718,5.172 C 16.842,5.155 16.966,5.147 17.091,5.147 C 17.445,5.147 17.792,5.21 18.132,5.336 C 18.472,5.463 18.759,5.619 18.993,5.807 L 19.153,5.807 L 19.153,4.467 C 18.88,4.356 18.556,4.262 18.182,4.188 C 17.808,4.114 17.43,4.077 17.047,4.077 C 16.284,4.077 15.66,4.249 15.174,4.591 C 14.688,4.934 14.445,5.376 14.445,5.917 C 14.445,6.321 14.552,6.659 14.767,6.931 C 14.982,7.203 15.334,7.419 15.824,7.577 C 16.037,7.647 16.266,7.706 16.51,7.751 C 16.754,7.797 16.985,7.846 17.203,7.897 C 17.411,7.947 17.57,8.018 17.678,8.11 C 17.786,8.203 17.84,8.313 17.84,8.44 C 17.84,8.579 17.803,8.682 17.729,8.753 C 17.655,8.824 17.561,8.882 17.446,8.929 C 17.352,8.966 17.231,8.992 17.083,9.007 C 16.935,9.022 16.815,9.03 16.724,9.03 C 16.37,9.03 16.001,8.964 15.617,8.831 C 15.233,8.698 14.886,8.509 14.576,8.261 L 14.412,8.261 L 14.412,9.656 C 14.725,9.787 15.06,9.894 15.418,9.978 C 15.776,10.063 16.196,10.105 16.678,10.105 C 17.511,10.105 18.171,9.926 18.657,9.568 C 19.141,9.211 19.384,8.745 19.384,8.172 Z M 26.19,10 L 24.249,7.508 C 24.619,7.328 24.903,7.104 25.103,6.832 C 25.302,6.561 25.402,6.211 25.402,5.781 C 25.402,5.468 25.338,5.209 25.209,5.002 C 25.08,4.795 24.906,4.627 24.688,4.496 C 24.472,4.366 24.24,4.281 23.993,4.242 C 23.746,4.203 23.45,4.183 23.106,4.183 L 20.59,4.183 L 20.59,10 L 22.082,10 L 22.082,7.867 L 22.777,7.867 L 24.358,10 L 26.19,10 Z M 31.867,6.02 C 31.867,5.684 31.805,5.397 31.681,5.157 C 31.557,4.918 31.378,4.721 31.144,4.567 C 30.949,4.44 30.724,4.344 30.47,4.28 C 30.216,4.217 29.904,4.184 29.534,4.184 L 27.065,4.184 L 27.065,10 L 28.565,10 L 28.565,8.105 L 29.5,8.105 C 29.924,8.105 30.279,8.046 30.564,7.929 C 30.849,7.812 31.107,7.639 31.339,7.409 C 31.508,7.24 31.638,7.031 31.73,6.782 C 31.821,6.535 31.867,6.28 31.867,6.02 Z M 29.875,5.383 C 29.719,5.32 29.566,5.286 29.418,5.279 C 29.27,5.273 29.072,5.269 28.824,5.269 L 28.566,5.269 L 28.566,7.007 L 28.996,7.007 C 29.251,7.007 29.461,6.991 29.627,6.96 C 29.793,6.929 29.931,6.867 30.043,6.773 C 30.139,6.69 30.209,6.59 30.252,6.474 C 30.295,6.359 30.316,6.218 30.316,6.051 C 30.316,5.888 30.272,5.746 30.183,5.628 C 30.094,5.51 29.992,5.43 29.875,5.383 Z M 23.452,5.344 C 23.35,5.303 23.232,5.278 23.097,5.268 C 22.962,5.259 22.804,5.254 22.624,5.254 L 22.081,5.254 L 22.081,6.82 L 22.542,6.82 C 22.782,6.82 22.982,6.808 23.144,6.785 C 23.306,6.762 23.441,6.709 23.55,6.625 C 23.654,6.545 23.73,6.455 23.779,6.357 C 23.828,6.259 23.851,6.128 23.851,5.964 C 23.851,5.818 23.821,5.693 23.761,5.589 C 23.701,5.486 23.598,5.404 23.452,5.344 Z M 40,5 L 44.999,5.001 L 45,10 L 40,10 L 40,5 Z M 38,9 L 39,9 L 39,10 L 38,10 L 38,9 Z M 38,7 L 39,7 L 39,8 L 38,8 L 38,7 Z M 40,3 L 41,3 L 41,4 L 40,4 L 40,3 Z M 42,3 L 43,3 L 43,4 L 42,4 L 42,3 Z M 44,3 L 45,3 L 45,4 L 44,4 L 44,3 Z M 47,6 L 46,6 L 46,5 L 47,5 L 47,6 Z M 47,8 L 46,8 L 46,7 L 47,7 L 47,8 Z M 47,10 L 46,10 L 46,9 L 47,9 L 47,10 Z M 45,12 L 44,12 L 44,11 L 45,11 L 45,12 Z M 43,12 L 42,12 L 42,11 L 43,11 L 43,12 Z M 41,12 L 40,12 L 40,11 L 41,11 L 41,12 Z M 38,5 L 39,5 L 39,6 L 38,6 L 38,5 Z M 11.028,24.622 L 13.852,23.153 L 12.379,25.974 L 16,26.932 L 12.378,27.886 L 13.847,30.71 L 11.025,29.237 L 10.068,32.858 L 9.114,29.236 L 6.29,30.707 L 7.763,27.884 L 4.059,26.926 L 7.763,25.972 L 6.294,23.148 L 9.116,24.621 L 10.074,21 L 11.028,24.622 Z" Fill="[SMSolidColorBrush]#ff002469" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 25.5,25.056 C 21.395,25.056 18.056,28.396 18.056,32.5 C 18.056,36.604 21.396,39.944 25.5,39.944 C 29.605,39.944 32.944,36.604 32.944,32.5 C 32.944,28.396 29.605,25.056 25.5,25.056 Z M 29.469,29.237 L 26.853,31.853 C 26.857,31.861 26.859,31.871 26.863,31.88 C 26.892,31.944 26.913,32.011 26.933,32.079 C 26.943,32.113 26.957,32.145 26.964,32.18 C 26.987,32.284 27,32.39 27,32.5 C 27,33.328 26.328,34 25.5,34 C 24.672,34 24,33.328 24,32.5 C 24,32.39 24.013,32.284 24.036,32.181 C 24.045,32.139 24.061,32.101 24.073,32.061 C 24.091,32.003 24.108,31.944 24.133,31.889 C 24.138,31.877 24.14,31.864 24.146,31.853 L 24.162,31.837 C 24.308,31.543 24.545,31.306 24.839,31.16 L 24.855,31.144 C 24.866,31.139 24.88,31.137 24.891,31.131 C 24.947,31.106 25.006,31.089 25.065,31.071 C 25.105,31.059 25.142,31.043 25.183,31.034 C 25.284,31.013 25.39,31 25.5,31 C 25.61,31 25.716,31.013 25.819,31.036 C 25.86,31.045 25.898,31.061 25.937,31.073 C 25.996,31.091 26.055,31.108 26.111,31.133 C 26.123,31.138 26.136,31.14 26.147,31.146 L 28.763,28.532 C 29.293,28 30,28 30,28 C 30,28 30,28.707 29.469,29.237 Z M 32.751,26.37 L 33.711,25.41 C 34.096,25.025 34.096,24.401 33.711,24.015 L 32.984,23.288 C 32.599,22.903 31.975,22.903 31.589,23.288 L 30.465,24.412 C 29.598,23.879 28.634,23.498 27.615,23.262 C 28.453,22.628 29,21.633 29,20.5 C 29,18.567 27.433,17 25.5,17 C 23.567,17 22,18.567 22,20.5 C 22,21.633 22.547,22.628 23.384,23.263 C 22.364,23.499 21.4,23.88 20.534,24.413 L 19.41,23.289 C 19.025,22.904 18.401,22.904 18.015,23.289 L 17.288,24.016 C 16.903,24.401 16.903,25.025 17.288,25.411 L 18.248,26.371 C 16.848,28.025 16,30.162 16,32.5 C 16,37.747 20.253,42 25.5,42 C 30.747,42 35,37.747 35,32.5 C 35,30.162 34.152,28.025 32.751,26.37 Z M 23,20.5 C 23,19.122 24.122,18 25.5,18 C 26.879,18 28,19.122 28,20.5 C 28,21.314 27.603,22.03 27,22.487 L 27,20.986 C 27,20.441 26.559,20 26.014,20 L 24.986,20 C 24.441,20 24,20.441 24,20.986 L 24,22.487 C 23.397,22.03 23,21.313 23,20.5 Z M 25.5,40.944 C 20.836,40.944 17.056,37.163 17.056,32.5 C 17.056,27.837 20.837,24.056 25.5,24.056 C 30.164,24.056 33.944,27.837 33.944,32.5 C 33.944,37.163 30.164,40.944 25.5,40.944 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="niUsrpRio\ Time\ v1\ FPGA\.lvlib__Create\ Future\ Event\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Gray" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]niUsrpRio Time v1 FPGA.lvlib__Create Future Event" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top">
+										<FontSetting FontSize="6" />
+									</FileNameText>
+								</IconTemplate>
+								<Canvas Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+									<Path Data="[PathGeometry]M 49,46 C 49,47.65 47.65,49 46,49 L 4,49 C 2.35,49 1,47.65 1,46 L 1,4 C 1,2.35 2.35,1 4,1 L 46,1 C 47.65,1 49,2.35 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 46,1 C 47.654,1 49,2.346 49,4 L 49,46 C 49,47.654 47.654,49 46,49 L 4,49 C 2.346,49 1,47.654 1,46 L 1,4 C 1,2.346 2.346,1 4,1 L 46,1  M 46,0 L 4,0 C 1.8,0 0,1.8 0,4 L 0,46 C 0,48.2 1.8,50 4,50 L 46,50 C 48.2,50 50,48.2 50,46 L 50,4 C 50,1.8 48.2,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 48,46 C 48,47.1 47.1,48 46,48 L 4,48 C 2.9,48 2,47.1 2,46 L 2,4 C 2,2.9 2.9,2 4,2 L 46,2 C 47.1,2 48,2.9 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 18,19 C 17.266,20.546 17,22.275 17,24.1 C 17,30.672 22.328,36 28.9,36 C 30.725,36 32.454,35.734 34,35 L 18,19 Z M 29,22 C 30.103,22 31,22.897 31,24 C 31,24.495 30.813,24.942 30.514,25.292 L 31.222,26 C 31.7,25.468 32,24.772 32,24 C 32,22.343 30.657,21 29,21 C 28.228,21 27.532,21.3 27,21.778 L 27.708,22.486 C 28.058,22.187 28.505,22 29,22  M 18,40 L 28,40 L 25.895,36.632 C 24.249,36.237 22.728,35.53 21.394,34.57 L 18,40 Z M 30,24 C 30,24.552 29.552,25 29,25 L 29,28.586 L 24.414,24 L 28,24 C 28,23.448 28.448,23 29,23 C 29.552,23 30,23.448 30,24 " Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 37,12 L 2,12 L 2,4 C 2,2.9 2.9,2 4,2 L 37,2 L 37,12 Z M 13.176,4.184 L 11.668,4.184 L 11.668,7.813 C 11.668,8.233 11.582,8.538 11.408,8.727 C 11.235,8.917 10.961,9.012 10.586,9.012 C 10.206,9.012 9.931,8.913 9.762,8.715 C 9.592,8.518 9.508,8.217 9.508,7.813 L 9.508,4.184 L 8,4.184 L 8,7.899 C 8,8.616 8.218,9.165 8.654,9.547 C 9.09,9.929 9.734,10.121 10.586,10.121 C 11.438,10.121 12.082,9.93 12.52,9.547 C 12.958,9.164 13.176,8.613 13.176,7.895 L 13.176,4.184 Z M 19.384,8.172 C 19.384,7.772 19.278,7.445 19.066,7.193 C 18.854,6.942 18.525,6.744 18.08,6.597 C 17.853,6.525 17.642,6.467 17.445,6.425 C 17.248,6.384 17.043,6.341 16.83,6.296 C 16.504,6.229 16.283,6.153 16.166,6.071 C 16.049,5.989 15.99,5.872 15.99,5.717 C 15.99,5.615 16.027,5.526 16.099,5.446 C 16.172,5.367 16.259,5.307 16.361,5.268 C 16.476,5.221 16.595,5.19 16.718,5.172 C 16.842,5.155 16.966,5.147 17.091,5.147 C 17.445,5.147 17.792,5.21 18.132,5.336 C 18.472,5.463 18.759,5.619 18.993,5.807 L 19.153,5.807 L 19.153,4.467 C 18.88,4.356 18.556,4.262 18.182,4.188 C 17.808,4.114 17.43,4.077 17.047,4.077 C 16.284,4.077 15.66,4.249 15.174,4.591 C 14.688,4.934 14.445,5.376 14.445,5.917 C 14.445,6.321 14.552,6.659 14.767,6.931 C 14.982,7.203 15.334,7.419 15.824,7.577 C 16.037,7.647 16.266,7.706 16.51,7.751 C 16.754,7.797 16.985,7.846 17.203,7.897 C 17.411,7.947 17.57,8.018 17.678,8.11 C 17.786,8.203 17.84,8.313 17.84,8.44 C 17.84,8.579 17.803,8.682 17.729,8.753 C 17.655,8.824 17.561,8.882 17.446,8.929 C 17.352,8.966 17.231,8.992 17.083,9.007 C 16.935,9.022 16.815,9.03 16.724,9.03 C 16.37,9.03 16.001,8.964 15.617,8.831 C 15.233,8.698 14.886,8.509 14.576,8.261 L 14.412,8.261 L 14.412,9.656 C 14.725,9.787 15.06,9.894 15.418,9.978 C 15.776,10.063 16.196,10.105 16.678,10.105 C 17.511,10.105 18.171,9.926 18.657,9.568 C 19.141,9.211 19.384,8.745 19.384,8.172 Z M 26.19,10 L 24.249,7.508 C 24.619,7.328 24.903,7.104 25.103,6.832 C 25.302,6.561 25.402,6.211 25.402,5.781 C 25.402,5.468 25.338,5.209 25.209,5.002 C 25.08,4.795 24.906,4.627 24.688,4.496 C 24.472,4.366 24.24,4.281 23.993,4.242 C 23.746,4.203 23.45,4.183 23.106,4.183 L 20.59,4.183 L 20.59,10 L 22.082,10 L 22.082,7.867 L 22.777,7.867 L 24.358,10 L 26.19,10 Z M 31.867,6.02 C 31.867,5.684 31.805,5.397 31.681,5.157 C 31.557,4.918 31.378,4.721 31.144,4.567 C 30.949,4.44 30.724,4.344 30.47,4.28 C 30.216,4.217 29.904,4.184 29.534,4.184 L 27.065,4.184 L 27.065,10 L 28.565,10 L 28.565,8.105 L 29.5,8.105 C 29.924,8.105 30.279,8.046 30.564,7.929 C 30.849,7.812 31.107,7.639 31.339,7.409 C 31.508,7.24 31.638,7.031 31.73,6.782 C 31.821,6.535 31.867,6.28 31.867,6.02 Z M 29.875,5.383 C 29.719,5.32 29.566,5.286 29.418,5.279 C 29.27,5.273 29.072,5.269 28.824,5.269 L 28.566,5.269 L 28.566,7.007 L 28.996,7.007 C 29.251,7.007 29.461,6.991 29.627,6.96 C 29.793,6.929 29.931,6.867 30.043,6.773 C 30.139,6.69 30.209,6.59 30.252,6.474 C 30.295,6.359 30.316,6.218 30.316,6.051 C 30.316,5.888 30.272,5.746 30.183,5.628 C 30.094,5.51 29.992,5.43 29.875,5.383 Z M 23.452,5.344 C 23.35,5.303 23.232,5.278 23.097,5.268 C 22.962,5.259 22.804,5.254 22.624,5.254 L 22.081,5.254 L 22.081,6.82 L 22.542,6.82 C 22.782,6.82 22.982,6.808 23.144,6.785 C 23.306,6.762 23.441,6.709 23.55,6.625 C 23.654,6.545 23.73,6.455 23.779,6.357 C 23.828,6.259 23.851,6.128 23.851,5.964 C 23.851,5.818 23.821,5.693 23.761,5.589 C 23.701,5.486 23.598,5.404 23.452,5.344 Z M 40,5 L 44.999,5.001 L 45,10 L 40,10 L 40,5 Z M 38,9 L 39,9 L 39,10 L 38,10 L 38,9 Z M 38,7 L 39,7 L 39,8 L 38,8 L 38,7 Z M 40,3 L 41,3 L 41,4 L 40,4 L 40,3 Z M 42,3 L 43,3 L 43,4 L 42,4 L 42,3 Z M 44,3 L 45,3 L 45,4 L 44,4 L 44,3 Z M 47,6 L 46,6 L 46,5 L 47,5 L 47,6 Z M 47,8 L 46,8 L 46,7 L 47,7 L 47,8 Z M 47,10 L 46,10 L 46,9 L 47,9 L 47,10 Z M 45,12 L 44,12 L 44,11 L 45,11 L 45,12 Z M 43,12 L 42,12 L 42,11 L 43,11 L 43,12 Z M 41,12 L 40,12 L 40,11 L 41,11 L 41,12 Z M 38,5 L 39,5 L 39,6 L 38,6 L 38,5 Z M 10.028,20.622 L 12.852,19.153 L 11.379,21.974 L 15,22.932 L 11.378,23.886 L 12.847,26.71 L 10.025,25.237 L 9.068,28.858 L 8.114,25.236 L 5.29,26.707 L 6.763,23.884 L 3.059,22.926 L 6.763,21.972 L 5.294,19.148 L 8.116,20.621 L 9.074,17 L 10.028,20.622 Z" Fill="[SMSolidColorBrush]#ff002469" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="niUsrpRio\ Config\ v1\ FPGA\.lvlib__Create\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 50 50">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+								<Canvas Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+									<Path Data="[PathGeometry]M 49,46 C 49,47.65 47.65,49 46,49 L 4,49 C 2.35,49 1,47.65 1,46 L 1,4 C 1,2.35 2.35,1 4,1 L 46,1 C 47.65,1 49,2.35 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 46,1 C 47.654,1 49,2.346 49,4 L 49,46 C 49,47.654 47.654,49 46,49 L 4,49 C 2.346,49 1,47.654 1,46 L 1,4 C 1,2.346 2.346,1 4,1 L 46,1  M 46,0 L 4,0 C 1.8,0 0,1.8 0,4 L 0,46 C 0,48.2 1.8,50 4,50 L 46,50 C 48.2,50 50,48.2 50,46 L 50,4 C 50,1.8 48.2,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 48,46 C 48,47.1 47.1,48 46,48 L 4,48 C 2.9,48 2,47.1 2,46 L 2,4 C 2,2.9 2.9,2 4,2 L 46,2 C 47.1,2 48,2.9 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 37,12 L 2,12 L 2,4 C 2,2.9 2.9,2 4,2 L 37,2 L 37,12 Z M 13.176,4.184 L 11.668,4.184 L 11.668,7.813 C 11.668,8.233 11.582,8.538 11.408,8.727 C 11.235,8.917 10.961,9.012 10.586,9.012 C 10.206,9.012 9.931,8.913 9.762,8.715 C 9.592,8.518 9.508,8.217 9.508,7.813 L 9.508,4.184 L 8,4.184 L 8,7.899 C 8,8.616 8.218,9.165 8.654,9.547 C 9.09,9.929 9.734,10.121 10.586,10.121 C 11.438,10.121 12.082,9.93 12.52,9.547 C 12.958,9.164 13.176,8.613 13.176,7.895 L 13.176,4.184 Z M 19.384,8.172 C 19.384,7.772 19.278,7.445 19.066,7.193 C 18.854,6.942 18.525,6.744 18.08,6.597 C 17.853,6.525 17.642,6.467 17.445,6.425 C 17.248,6.384 17.043,6.341 16.83,6.296 C 16.504,6.229 16.283,6.153 16.166,6.071 C 16.049,5.989 15.99,5.872 15.99,5.717 C 15.99,5.615 16.027,5.526 16.099,5.446 C 16.172,5.367 16.259,5.307 16.361,5.268 C 16.476,5.221 16.595,5.19 16.718,5.172 C 16.842,5.155 16.966,5.147 17.091,5.147 C 17.445,5.147 17.792,5.21 18.132,5.336 C 18.472,5.463 18.759,5.619 18.993,5.807 L 19.153,5.807 L 19.153,4.467 C 18.88,4.356 18.556,4.262 18.182,4.188 C 17.808,4.114 17.43,4.077 17.047,4.077 C 16.284,4.077 15.66,4.249 15.174,4.591 C 14.688,4.934 14.445,5.376 14.445,5.917 C 14.445,6.321 14.552,6.659 14.767,6.931 C 14.982,7.203 15.334,7.419 15.824,7.577 C 16.037,7.647 16.266,7.706 16.51,7.751 C 16.754,7.797 16.985,7.846 17.203,7.897 C 17.411,7.947 17.57,8.018 17.678,8.11 C 17.786,8.203 17.84,8.313 17.84,8.44 C 17.84,8.579 17.803,8.682 17.729,8.753 C 17.655,8.824 17.561,8.882 17.446,8.929 C 17.352,8.966 17.231,8.992 17.083,9.007 C 16.935,9.022 16.815,9.03 16.724,9.03 C 16.37,9.03 16.001,8.964 15.617,8.831 C 15.233,8.698 14.886,8.509 14.576,8.261 L 14.412,8.261 L 14.412,9.656 C 14.725,9.787 15.06,9.894 15.418,9.978 C 15.776,10.063 16.196,10.105 16.678,10.105 C 17.511,10.105 18.171,9.926 18.657,9.568 C 19.141,9.211 19.384,8.745 19.384,8.172 Z M 26.19,10 L 24.249,7.508 C 24.619,7.328 24.903,7.104 25.103,6.832 C 25.302,6.561 25.402,6.211 25.402,5.781 C 25.402,5.468 25.338,5.209 25.209,5.002 C 25.08,4.795 24.906,4.627 24.688,4.496 C 24.472,4.366 24.24,4.281 23.993,4.242 C 23.746,4.203 23.45,4.183 23.106,4.183 L 20.59,4.183 L 20.59,10 L 22.082,10 L 22.082,7.867 L 22.777,7.867 L 24.358,10 L 26.19,10 Z M 31.867,6.02 C 31.867,5.684 31.805,5.397 31.681,5.157 C 31.557,4.918 31.378,4.721 31.144,4.567 C 30.949,4.44 30.724,4.344 30.47,4.28 C 30.216,4.217 29.904,4.184 29.534,4.184 L 27.065,4.184 L 27.065,10 L 28.565,10 L 28.565,8.105 L 29.5,8.105 C 29.924,8.105 30.279,8.046 30.564,7.929 C 30.849,7.812 31.107,7.639 31.339,7.409 C 31.508,7.24 31.638,7.031 31.73,6.782 C 31.821,6.535 31.867,6.28 31.867,6.02 Z M 29.875,5.383 C 29.719,5.32 29.566,5.286 29.418,5.279 C 29.27,5.273 29.072,5.269 28.824,5.269 L 28.566,5.269 L 28.566,7.007 L 28.996,7.007 C 29.251,7.007 29.461,6.991 29.627,6.96 C 29.793,6.929 29.931,6.867 30.043,6.773 C 30.139,6.69 30.209,6.59 30.252,6.474 C 30.295,6.359 30.316,6.218 30.316,6.051 C 30.316,5.888 30.272,5.746 30.183,5.628 C 30.094,5.51 29.992,5.43 29.875,5.383 Z M 23.452,5.344 C 23.35,5.303 23.232,5.278 23.097,5.268 C 22.962,5.259 22.804,5.254 22.624,5.254 L 22.081,5.254 L 22.081,6.82 L 22.542,6.82 C 22.782,6.82 22.982,6.808 23.144,6.785 C 23.306,6.762 23.441,6.709 23.55,6.625 C 23.654,6.545 23.73,6.455 23.779,6.357 C 23.828,6.259 23.851,6.128 23.851,5.964 C 23.851,5.818 23.821,5.693 23.761,5.589 C 23.701,5.486 23.598,5.404 23.452,5.344 Z M 40,5 L 44.999,5.001 L 45,10 L 40,10 L 40,5 Z M 38,9 L 39,9 L 39,10 L 38,10 L 38,9 Z M 38,7 L 39,7 L 39,8 L 38,8 L 38,7 Z M 40,3 L 41,3 L 41,4 L 40,4 L 40,3 Z M 42,3 L 43,3 L 43,4 L 42,4 L 42,3 Z M 44,3 L 45,3 L 45,4 L 44,4 L 44,3 Z M 47,6 L 46,6 L 46,5 L 47,5 L 47,6 Z M 47,8 L 46,8 L 46,7 L 47,7 L 47,8 Z M 47,10 L 46,10 L 46,9 L 47,9 L 47,10 Z M 45,12 L 44,12 L 44,11 L 45,11 L 45,12 Z M 43,12 L 42,12 L 42,11 L 43,11 L 43,12 Z M 41,12 L 40,12 L 40,11 L 41,11 L 41,12 Z M 38,5 L 39,5 L 39,6 L 38,6 L 38,5 Z" Fill="[SMSolidColorBrush]#ffe88934" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 26.023,24.429 L 31.705,21.474 L 28.742,27.149 L 36.026,29.076 L 28.739,30.996 L 31.694,36.679 L 26.016,33.715 L 24.092,41 L 22.172,33.712 L 16.489,36.672 L 19.452,30.993 L 12,29.065 L 19.452,27.145 L 16.497,21.463 L 22.175,24.426 L 24.103,17.142 L 26.023,24.429 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								</Canvas>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+			<p.IconModel Target="niUsrpRio\ Synchronization\ v1\ FPGA\.lvlib__Create\.gvi">
+				<MergeScript>
+					<MergeItem Path="." IsPrimary="True">
+						<Icon ListViewIconCrop="0 0 40 40">
+							<IconPanel Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50">
+								<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Left="[float]0" TemplateName="Custom2" Top="[float]0">
+									<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+									<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+									<FileNameText Attached="[bool]True" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]niUsrpRio Synchronization v1 FPGA.lvlib__Create" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top">
+										<FontSetting FontSize="6" />
+									</FileNameText>
+									<Path Data="[PathGeometry]M 49,46 C 49,47.65 47.65,49 46,49 L 4,49 C 2.35,49 1,47.65 1,46 L 1,4 C 1,2.35 2.35,1 4,1 L 46,1 C 47.65,1 49,2.35 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 46,1 C 47.654,1 49,2.346 49,4 L 49,46 C 49,47.654 47.654,49 46,49 L 4,49 C 2.346,49 1,47.654 1,46 L 1,4 C 1,2.346 2.346,1 4,1 L 46,1  M 46,0 L 4,0 C 1.8,0 0,1.8 0,4 L 0,46 C 0,48.2 1.8,50 4,50 L 46,50 C 48.2,50 50,48.2 50,46 L 50,4 C 50,1.8 48.2,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 48,46 C 48,47.1 47.1,48 46,48 L 4,48 C 2.9,48 2,47.1 2,46 L 2,4 C 2,2.9 2.9,2 4,2 L 46,2 C 47.1,2 48,2.9 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 37,12 L 2,12 L 2,4 C 2,2.9 2.9,2 4,2 L 37,2 L 37,12 Z M 13.176,4.184 L 11.668,4.184 L 11.668,7.813 C 11.668,8.233 11.582,8.538 11.408,8.727 C 11.235,8.917 10.961,9.012 10.586,9.012 C 10.206,9.012 9.931,8.913 9.762,8.715 C 9.592,8.518 9.508,8.217 9.508,7.813 L 9.508,4.184 L 8,4.184 L 8,7.899 C 8,8.616 8.218,9.165 8.654,9.547 C 9.09,9.929 9.734,10.121 10.586,10.121 C 11.438,10.121 12.082,9.93 12.52,9.547 C 12.958,9.164 13.176,8.613 13.176,7.895 L 13.176,4.184 Z M 19.384,8.172 C 19.384,7.772 19.278,7.445 19.066,7.193 C 18.854,6.942 18.525,6.744 18.08,6.597 C 17.853,6.525 17.642,6.467 17.445,6.425 C 17.248,6.384 17.043,6.341 16.83,6.296 C 16.504,6.229 16.283,6.153 16.166,6.071 C 16.049,5.989 15.99,5.872 15.99,5.717 C 15.99,5.615 16.027,5.526 16.099,5.446 C 16.172,5.367 16.259,5.307 16.361,5.268 C 16.476,5.221 16.595,5.19 16.718,5.172 C 16.842,5.155 16.966,5.147 17.091,5.147 C 17.445,5.147 17.792,5.21 18.132,5.336 C 18.472,5.463 18.759,5.619 18.993,5.807 L 19.153,5.807 L 19.153,4.467 C 18.88,4.356 18.556,4.262 18.182,4.188 C 17.808,4.114 17.43,4.077 17.047,4.077 C 16.284,4.077 15.66,4.249 15.174,4.591 C 14.688,4.934 14.445,5.376 14.445,5.917 C 14.445,6.321 14.552,6.659 14.767,6.931 C 14.982,7.203 15.334,7.419 15.824,7.577 C 16.037,7.647 16.266,7.706 16.51,7.751 C 16.754,7.797 16.985,7.846 17.203,7.897 C 17.411,7.947 17.57,8.018 17.678,8.11 C 17.786,8.203 17.84,8.313 17.84,8.44 C 17.84,8.579 17.803,8.682 17.729,8.753 C 17.655,8.824 17.561,8.882 17.446,8.929 C 17.352,8.966 17.231,8.992 17.083,9.007 C 16.935,9.022 16.815,9.03 16.724,9.03 C 16.37,9.03 16.001,8.964 15.617,8.831 C 15.233,8.698 14.886,8.509 14.576,8.261 L 14.412,8.261 L 14.412,9.656 C 14.725,9.787 15.06,9.894 15.418,9.978 C 15.776,10.063 16.196,10.105 16.678,10.105 C 17.511,10.105 18.171,9.926 18.657,9.568 C 19.141,9.211 19.384,8.745 19.384,8.172 Z M 26.19,10 L 24.249,7.508 C 24.619,7.328 24.903,7.104 25.103,6.832 C 25.302,6.561 25.402,6.211 25.402,5.781 C 25.402,5.468 25.338,5.209 25.209,5.002 C 25.08,4.795 24.906,4.627 24.688,4.496 C 24.472,4.366 24.24,4.281 23.993,4.242 C 23.746,4.203 23.45,4.183 23.106,4.183 L 20.59,4.183 L 20.59,10 L 22.082,10 L 22.082,7.867 L 22.777,7.867 L 24.358,10 L 26.19,10 Z M 31.867,6.02 C 31.867,5.684 31.805,5.397 31.681,5.157 C 31.557,4.918 31.378,4.721 31.144,4.567 C 30.949,4.44 30.724,4.344 30.47,4.28 C 30.216,4.217 29.904,4.184 29.534,4.184 L 27.065,4.184 L 27.065,10 L 28.565,10 L 28.565,8.105 L 29.5,8.105 C 29.924,8.105 30.279,8.046 30.564,7.929 C 30.849,7.812 31.107,7.639 31.339,7.409 C 31.508,7.24 31.638,7.031 31.73,6.782 C 31.821,6.535 31.867,6.28 31.867,6.02 Z M 29.875,5.383 C 29.719,5.32 29.566,5.286 29.418,5.279 C 29.27,5.273 29.072,5.269 28.824,5.269 L 28.566,5.269 L 28.566,7.007 L 28.996,7.007 C 29.251,7.007 29.461,6.991 29.627,6.96 C 29.793,6.929 29.931,6.867 30.043,6.773 C 30.139,6.69 30.209,6.59 30.252,6.474 C 30.295,6.359 30.316,6.218 30.316,6.051 C 30.316,5.888 30.272,5.746 30.183,5.628 C 30.094,5.51 29.992,5.43 29.875,5.383 Z M 23.452,5.344 C 23.35,5.303 23.232,5.278 23.097,5.268 C 22.962,5.259 22.804,5.254 22.624,5.254 L 22.081,5.254 L 22.081,6.82 L 22.542,6.82 C 22.782,6.82 22.982,6.808 23.144,6.785 C 23.306,6.762 23.441,6.709 23.55,6.625 C 23.654,6.545 23.73,6.455 23.779,6.357 C 23.828,6.259 23.851,6.128 23.851,5.964 C 23.851,5.818 23.821,5.693 23.761,5.589 C 23.701,5.486 23.598,5.404 23.452,5.344 Z M 40,5 L 44.999,5.001 L 45,10 L 40,10 L 40,5 Z M 38,9 L 39,9 L 39,10 L 38,10 L 38,9 Z M 38,7 L 39,7 L 39,8 L 38,8 L 38,7 Z M 40,3 L 41,3 L 41,4 L 40,4 L 40,3 Z M 42,3 L 43,3 L 43,4 L 42,4 L 42,3 Z M 44,3 L 45,3 L 45,4 L 44,4 L 44,3 Z M 47,6 L 46,6 L 46,5 L 47,5 L 47,6 Z M 47,8 L 46,8 L 46,7 L 47,7 L 47,8 Z M 47,10 L 46,10 L 46,9 L 47,9 L 47,10 Z M 45,12 L 44,12 L 44,11 L 45,11 L 45,12 Z M 43,12 L 42,12 L 42,11 L 43,11 L 43,12 Z M 41,12 L 40,12 L 40,11 L 41,11 L 41,12 Z M 38,5 L 39,5 L 39,6 L 38,6 L 38,5 Z" Fill="[SMSolidColorBrush]#ff669966" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+									<Path Data="[PathGeometry]M 26.023,24.429 L 31.705,21.474 L 28.742,27.149 L 36.026,29.076 L 28.739,30.996 L 31.694,36.679 L 26.016,33.715 L 24.092,41 L 22.172,33.712 L 16.489,36.672 L 19.452,30.993 L 12,29.065 L 19.452,27.145 L 16.497,21.463 L 22.175,24.426 L 24.103,17.142 L 26.023,24.429 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+								</IconTemplate>
+							</IconPanel>
+						</Icon>
+					</MergeItem>
+				</MergeScript>
+			</p.IconModel>
+		</IconTable>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="8d5f7f3975a3454e99e65fe49ee9e6db">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="DAC FIFO Reset">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="RegisterDataType" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+														<Members>
+															<Function Id="4" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+															<Function Id="5" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+														</Members>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<Boolean />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="6" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+											<Function Id="7" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Rx Swap IQ">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Rx Negate I">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Rx Negate Q">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Rx Data Valid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Rx Data Ever Invalid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="clear RF 0 Rx Data Ever Invalid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Tx Swap IQ">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Tx Negate I">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0 Tx Negate Q">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Rx Swap IQ">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Rx Negate I">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Rx Negate Q">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Rx Data Valid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Rx Data Ever Invalid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="clear RF 1 Rx Data Ever Invalid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Tx Swap IQ">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Tx Negate I">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1 Tx Negate Q">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ca817d5f78be43b2888e43248f91dac0">
+			<Typedef TypedefName="niUsrpRio Time v1 FPGA.lvlib__Time Resources.gtype" UnderlyingType="@a46cf89fd51148daab26c2b6e287210b" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3eec8d52129a424ea687ffe6288ddd3f">
+			<Typedef TypedefName="niUsrpRio Time v1 FPGA.lvlib__Future Event Resources.gtype" UnderlyingType="@013c96e081684018c22bc1d5f028304d" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="45c8d736658b4db384f8ba115200ea9e">
+			<Typedef TypedefName="niUsrpRio Synchronization v1 FPGA.lvlib__Resources.gtype" UnderlyingType="@392be66786ddf9ffce0e5fdd4c3d202e" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="a4feb86d46fe4473ba72fbcb9d3bb976">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="time.resources">
+						<DataType>
+							<Typedef TypedefName="niUsrpRio Time v1 FPGA.lvlib__Time Resources.gtype" UnderlyingType="@a46cf89fd51148daab26c2b6e287210b" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.resources">
+						<DataType>
+							<Typedef TypedefName="niUsrpRio Time v1 FPGA.lvlib__Future Event Resources.gtype" UnderlyingType="@013c96e081684018c22bc1d5f028304d" />
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.resources_2">
+						<DataType>
+							<Typedef TypedefName="niUsrpRio Time v1 FPGA.lvlib__Future Event Resources.gtype" UnderlyingType="@013c96e081684018c22bc1d5f028304d" />
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1e8392ea97d641bf853cbf4bc82b08b8">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<Boolean />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e118ed2132df428c800375c573183c3d">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt64 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt64" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt64" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8f1afd859d774ae0977325cfcf7663d3">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt8 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt8" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt8" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="bc7fc7d0ee444ab89e9170246239fa72">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt32 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt32" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt32" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dac50db0bfba4684a50688d4e97650a5">
+			<Attributed>
+				<AttributedType>
+					<Composite Id="1" Name="RegisterDataType" ReferenceClass="">
+						<GenericTypeDefinition>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Composite RefId="2" />
+										</GenericTypeDefinition>
+										<GenericParameters>
+											<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+										</GenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="3" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+											<Function Id="4" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+														<DataType>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</DataType>
+													</Parameter>
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</GenericTypeDefinition>
+						<ClosedGenericParameters>
+							<UInt16 />
+						</ClosedGenericParameters>
+						<BaseType>
+							<Void />
+						</BaseType>
+						<Members>
+							<Function Id="5" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt16" />
+								</Parameters>
+							</Function>
+							<Function Id="6" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+								<DeclaringType>
+									<Composite RefId="1" />
+								</DeclaringType>
+								<GenericTypeDefinition>
+									<Void />
+								</GenericTypeDefinition>
+								<Parameters>
+									<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt16" />
+								</Parameters>
+							</Function>
+						</Members>
+					</Composite>
+				</AttributedType>
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="afa95de9248f4d0a921501886d19191e">
+			<Generic />
+		</p.TypeReference>
+		<p.TypeReference TypeId="a46cf89fd51148daab26c2b6e287210b">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reset">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="RegisterDataType" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+														<Members>
+															<Function Id="4" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+															<Function Id="5" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+														</Members>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<Boolean />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="6" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+											<Function Id="7" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="time">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="8" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt64 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="9" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt64" />
+												</Parameters>
+											</Function>
+											<Function Id="10" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt64" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="time.previous cptr">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="new time">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="new time.when">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="11" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt8 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="12" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="11" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt8" />
+												</Parameters>
+											</Function>
+											<Function Id="13" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="11" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt8" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="new time.set">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="which edge of ref">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="pps source">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="11" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="internal pps period">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="14" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt32 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="15" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="14" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt32" />
+												</Parameters>
+											</Function>
+											<Function Id="16" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="14" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt32" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="time 2">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="013c96e081684018c22bc1d5f028304d">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reset">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="RegisterDataType" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+														<Members>
+															<Function Id="4" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+															<Function Id="5" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+														</Members>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<Boolean />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="6" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+											<Function Id="7" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.time">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="8" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt64 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="9" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt64" />
+												</Parameters>
+											</Function>
+											<Function Id="10" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt64" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.ready">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.set">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.clear">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="future event.set in past">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="392be66786ddf9ffce0e5fdd4c3d202e">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="master">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="2" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite Id="3" Name="RegisterDataType" ReferenceClass="">
+														<GenericTypeDefinition>
+															<Composite RefId="3" />
+														</GenericTypeDefinition>
+														<GenericParameters>
+															<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+														</GenericParameters>
+														<BaseType>
+															<Void />
+														</BaseType>
+														<Members>
+															<Function Id="4" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+															<Function Id="5" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+																<DeclaringType>
+																	<Composite RefId="3" />
+																</DeclaringType>
+																<GenericTypeDefinition>
+																	<Void />
+																</GenericTypeDefinition>
+																<Parameters>
+																	<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+																		<DataType>
+																			<Typedef TypedefName="Element" UnderlyingType="@afa95de9248f4d0a921501886d19191e" />
+																		</DataType>
+																	</Parameter>
+																</Parameters>
+															</Function>
+														</Members>
+													</Composite>
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<Boolean />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="6" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+											<Function Id="7" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="2" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="Boolean" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.enable">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.ready">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.reset">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.arm">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.valid">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.value">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite Id="8" Name="RegisterDataType" ReferenceClass="">
+										<GenericTypeDefinition>
+											<Attributed>
+												<AttributedType>
+													<Composite RefId="3" />
+												</AttributedType>
+												<AttributeValues>
+													<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+													<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+													<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+												</AttributeValues>
+											</Attributed>
+										</GenericTypeDefinition>
+										<ClosedGenericParameters>
+											<UInt16 />
+										</ClosedGenericParameters>
+										<BaseType>
+											<Void />
+										</BaseType>
+										<Members>
+											<Function Id="9" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data" DataType="UInt16" />
+												</Parameters>
+											</Function>
+											<Function Id="10" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void">
+												<DeclaringType>
+													<Composite RefId="8" />
+												</DeclaringType>
+												<GenericTypeDefinition>
+													<Void />
+												</GenericTypeDefinition>
+												<Parameters>
+													<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data" DataType="UInt16" />
+												</Parameters>
+											</Function>
+										</Members>
+									</Composite>
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="meas.oversample factor">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="cptr">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="2" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="cptr.adjust">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+					<Field FieldAccessPolicy="ReadWrite" Name="cptr.period">
+						<DataType>
+							<Attributed>
+								<AttributedType>
+									<Composite RefId="8" />
+								</AttributedType>
+								<AttributeValues>
+									<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+									<AttributeValue Name="NI_UdrClass" Value="[string]Register" />
+									<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+								</AttributeValues>
+							</Attributed>
+						</DataType>
+					</Field>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

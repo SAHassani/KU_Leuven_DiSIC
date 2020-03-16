@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job OutputType="Bitfile">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Bitfile</ComponentSubtypeIdentifier>
+      <BuildId>87b870b5-4376-4e9d-ac42-a0e2dc37cd1b</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Bitfile</ComponentSubtypeIdentifier>
+      <BuildId>87b870b5-4376-4e9d-ac42-a0e2dc37cd1b</BuildId>
+    </RootBuildId>
+    <OutputPath>..\LabVIEWcomms4 - Copy (2)\Builds\FPGA_VI_USRP\FPGA_VI-0001.lvbitx</OutputPath>
+    <BuildName>FPGA_VI</BuildName>
+    <JobInfo>
+      <SessionId>EMZpjl7</SessionId>
+      <JobId>zb8deiq</JobId>
+    </JobInfo>
+    <State>Success</State>
+    <SourceFolder>C:\NIFPGA\compilation\lbup15mw.ktr\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\lbup15mw.ktr</BuildFolder>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <CompileServer>localhost</CompileServer>
+    <IsStale>False</IsStale>
+    <StartTime>2020-03-13T13:39:38.5229557Z</StartTime>
+    <LastTotalTime>00:51:28</LastTotalTime>
+  </Job>
+</JobList>

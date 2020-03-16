@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="A3B1AB6277E2ED30D8CD11CB4F44E87FEBBF4A06FAC4E5D5389F11705F69F67C501299E8FB0CF711AD0925C13793CE32BFADA905404A60539B9FBAB1176083F4" Timestamp="1D5B407253F655A" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="4a7b90382b734069b6709ff2f550f473" RootNamespaceId="30decf6648584e3497e894200e616705" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="aab9f22367ce4e51bd0f108a1ec442bb" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="48662add88f146cba4fc8cb52aba4b35" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="27faf916c6954d4684162f846481d920" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="ff0f3dbdd7734cdcae680759da22e09d" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="ea5f081960e14ffa941c1dc8b5b98ea5" Name="Configuration1">
+			<CompilerSymbolTable Id="b452add83e4d4db890fe6dc3651707f4" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="7a9248d1483e492ab3e6a264c0df9c5e" Exported="True" Id="7de43c28a9c948b194b6961d7486d50e" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="82973521044e4a29a49039c00c280054" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="a9b8a55a8b745bea258c6d9374becfa" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="4e5aa8c3aaf042d0bc5a910383e185a3" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="30decf6648584e3497e894200e616705" Name="USRP Resources">
+				<SourceFileReference Bindings="EnvoyManager,ContentKind_{http://www.ni.com/SharedResourceCollection/SystemModel}Process.SharedResourceCollection,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="7a9248d1483e492ab3e6a264c0df9c5e" ModelDefinitionType="SharedResourceCollection" Name="USRP Resources.grsc" StoragePath="USRP Resources.grsc" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="12bc68cc26d44e1bb517698e18164715" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="USRP Resources.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="ea5f081960e14ffa941c1dc8b5b98ea5" Id="d80c1c73cf04ec1927e98c1ca583853" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

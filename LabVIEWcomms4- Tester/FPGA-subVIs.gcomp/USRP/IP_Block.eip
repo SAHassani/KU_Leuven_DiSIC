@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009"
+    xmlns:chrec="http://ccl.ee.byu.edu"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009
+    ../schemas/IP-XACT/index.xsd
+    http://ccl.ee.byu.edu
+    ../schemas/chrecxml/chrecExtension.xsd">
+    <spirit:vendor>NationalInstruments</spirit:vendor>
+    <spirit:library>basic</spirit:library>
+    <spirit:name>IP_Block</spirit:name>
+    <spirit:version>1.0</spirit:version>
+    <spirit:model>
+        <spirit:views>
+            <spirit:view>
+                <spirit:name>rtl</spirit:name>
+                <spirit:envIdentifier>:ni.labview:</spirit:envIdentifier>
+                <spirit:language>vhdl</spirit:language>
+                <spirit:modelName>IP_Block(rtl)</spirit:modelName>
+            </spirit:view>
+        </spirit:views>
+		<spirit:ports>
+            <spirit:port>
+                <spirit:name>sdatain</spirit:name>
+                <spirit:wire>
+                    <spirit:direction>in</spirit:direction>
+                    <spirit:wireTypeDefs>
+                        <spirit:wireTypeDef>
+                            <spirit:typeName>std_logic</spirit:typeName>
+                            <spirit:typeDefinition>ieee.std_logic_1164.all</spirit:typeDefinition>
+                            <spirit:viewNameRef>rtl</spirit:viewNameRef>
+                        </spirit:wireTypeDef>
+                    </spirit:wireTypeDefs>
+                </spirit:wire>
+                <spirit:vendorExtensions>
+                    <chrec:portExtension>
+						<chrec:highLevelType>B</chrec:highLevelType>
+                        <chrec:portCategory>data</chrec:portCategory>
+                    </chrec:portExtension>
+                </spirit:vendorExtensions>
+            </spirit:port>
+			<spirit:port>
+                <spirit:name>sdataout</spirit:name>
+                <spirit:wire>
+                    <spirit:direction>out</spirit:direction>
+                    <spirit:wireTypeDefs>
+                        <spirit:wireTypeDef>
+                            <spirit:typeName>std_logic</spirit:typeName>
+                            <spirit:typeDefinition>ieee.std_logic_1164.all</spirit:typeDefinition>
+                            <spirit:viewNameRef>rtl</spirit:viewNameRef>
+                        </spirit:wireTypeDef>
+                    </spirit:wireTypeDefs>
+                </spirit:wire>
+                <spirit:vendorExtensions>
+                    <chrec:portExtension>
+						<chrec:highLevelType>B</chrec:highLevelType>
+                        <chrec:portCategory>data</chrec:portCategory>
+                    </chrec:portExtension>
+                </spirit:vendorExtensions>
+            </spirit:port>
+            <spirit:port>
+                <spirit:name>sampleclk</spirit:name>
+                <spirit:wire>
+                    <spirit:direction>in</spirit:direction>
+                    <spirit:wireTypeDefs>
+                        <spirit:wireTypeDef>
+                            <spirit:typeName>std_logic</spirit:typeName>
+                            <spirit:typeDefinition>ieee.std_logic_1164.all</spirit:typeDefinition>
+                            <spirit:viewNameRef>rtl</spirit:viewNameRef>
+                        </spirit:wireTypeDef>
+                    </spirit:wireTypeDefs>
+                </spirit:wire>
+                <spirit:vendorExtensions>
+                    <chrec:portExtension>
+                        <chrec:portCategory>clock</chrec:portCategory>
+                    </chrec:portExtension>
+                </spirit:vendorExtensions>
+            </spirit:port>
+        </spirit:ports>
+		<!--
+		<spirit:modelParameters>
+			<spirit:modelParameter spirit:dataType="integer">
+				<spirit:name>kInputSamplesPerCycle</spirit:name>
+				<spirit:value spirit:resolve="user" spirit:id="kInputSamplesPerCycle">1</spirit:value>
+			</spirit:modelParameter>
+			<spirit:modelParameter spirit:dataType="integer">
+				<spirit:name>kOverclockFactor</spirit:name>
+				<spirit:value spirit:resolve="user" spirit:id="kOverclockFactor">2</spirit:value>
+			</spirit:modelParameter>
+		</spirit:modelParameters>
+		-->
+    </spirit:model>
+    <spirit:fileSets>
+        <spirit:fileSet>
+            <spirit:name>vhdlSource</spirit:name>
+            <spirit:file>
+                <spirit:name>./VHDL Files/IP_Block.vhd</spirit:name>
+                <spirit:fileType>vhdlSource</spirit:fileType>
+            </spirit:file>
+			<spirit:file>
+                <spirit:name>./VHDL Files/EqFanoutFf.vhd</spirit:name>
+                <spirit:fileType>vhdlSource</spirit:fileType>
+            </spirit:file>
+        </spirit:fileSet>
+    </spirit:fileSets>
+	
+    <spirit:vendorExtensions>
+	<chrec:highLevelDataTypes>
+		<chrec:portDataType>
+			<chrec:name>B</chrec:name>
+			<chrec:boolean />
+		</chrec:portDataType>
+    </chrec:highLevelDataTypes>
+    </spirit:vendorExtensions>
+</spirit:component>
+

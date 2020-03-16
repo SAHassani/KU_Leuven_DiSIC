@@ -1,0 +1,1629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile xmlns="http://www.ni.com/PlatformFramework">
+    <SourceModelFeatureSet>
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="LabVIEW Virtual Instrument" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.VI" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="Editor" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/PlatformFramework" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="Common Language Components" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/MocCommon" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="LabVIEW FPGA" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/LabVIEW.FPGA" Version="3.0.0.49152" />
+        <ParsableNamespace AssemblyFileVersion="3.0.0.49313" FeatureSetName="LabVIEW Controls" MinimumParsableVersion="3.0.0.0" MinimumSemanticallyEquivalentVersion="3.0.0.0" Name="http://www.ni.com/Controls.LabVIEW.Design" Version="3.0.0.49152" />
+    </SourceModelFeatureSet>
+    <VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+        <Icon Id="172" ListViewIconCrop="0 0 60 60" xmlns="http://www.ni.com/PlatformFramework">
+            <IconPanel Height="[float]60" Id="173" Width="[float]60">
+                <IconTemplate ClipMargin="[SMThickness]3,3,3,3" Id="174" TemplateName="GrayNoText">
+                    <Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="175" IsHitTestVisible="[bool]False" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" />
+                    <Rectangle Fill="[SMSolidColorBrush]#ffe6e6e6" Id="176" IsHitTestVisible="[bool]False" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #ffe6e6e6 0}, {Stop: #ffd9d9d9 1}}" Height="[float]6" Id="177" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,0,2,2" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Bottom" />
+                    <Rectangle Fill="[SMLinearGradientBrush]{Start: 0.5 0}, {End: 0.5 1}, {Stops: {Stop: #fffafafa 0}, {Stop: #ffe6e6e6 1}}" Height="[float]6" Id="178" IsHitTestVisible="[bool]False" Margin="[SMThickness]2,2,2,0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2" RadiusY="[float]2" VerticalAlignment="[VerticalAlignment]Top" />
+                </IconTemplate>
+                <Canvas Background="[SMSolidColorBrush]#00ffffff" ClipToBounds="[bool]True" Id="179">
+                    <Path Data="[PathGeometry]M 26,6 L 26,7 L 18,7 L 18,1 L 11,1 L 11,7 L 4,7 L 4,6 L 10,6 L 10,0 L 19,0 L 19,6 L 26,6 Z M 19,14 L 19,8 L 10,8 L 10,14 L 4,14 L 4,15 L 11,15 L 11,9 L 18,9 L 18,15 L 26,15 L 26,14 L 19,14 Z M 19,22 L 19,16 L 10,16 L 10,22 L 4,22 L 4,23 L 11,23 L 11,17 L 18,17 L 18,23 L 26,23 L 26,22 L 19,22 Z M 28.006,6.002 L 27,6 L 27,7 L 28.006,7.002 L 27,9 L 30,6.503 L 27,4 L 28.006,6.002 Z M 1.006,6.002 L 0,6 L 0,7 L 1.006,7.002 L 0,9 L 3,6.503 L 0,4 L 1.006,6.002 Z M 28.006,14.002 L 27,14 L 27,15 L 28.006,15.002 L 27,17 L 30,14.503 L 27,12 L 28.006,14.002 Z M 28.006,22.002 L 27,22 L 27,23 L 28.006,23.002 L 27,25 L 30,22.503 L 27,20 L 28.006,22.002 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]25" Id="241" Left="[float]16" MinHeight="[float]1" MinWidth="[float]1" Top="[float]30" Width="[float]30" />
+                    <Path Data="[PathGeometry]M 5.882353,7.3125 L 5.882353,13 L 0,13 L 0,12.1875 L 5.294118,12.1875 L 5.294118,7.3125 L 5.882353,7.3125 Z M 15.29412,12.1875 L 15.29412,0 L 5.294118,0 L 5.294118,1.625 L 5.882353,1.625 L 5.882353,0.8125 L 14.70588,0.8125 L 14.70588,13 L 20,13 L 20,12.1875 L 15.29412,12.1875 Z M 5.294118,4.875 L 5.294118,6.5 L 5.882353,6.5 L 5.882353,4.875 L 7.647059,5.6875 L 5.584706,2.4375 L 3.529412,5.6875 L 5.294118,4.875 Z" EditMode="[ShapeEditMode]FixedPath" Fill="[SMSolidColorBrush]#b2000000" Height="[float]13" Id="242" Left="[float]21" MinHeight="[float]1" MinWidth="[float]1" Top="[float]10" Width="[float]20" />
+                </Canvas>
+            </IconPanel>
+        </Icon>
+        <ConnectorPane Height="60" Id="11" ListViewHeight="255" ListViewWidth="150" Width="60" xmlns="http://www.ni.com/PlatformFramework">
+            <ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="16" />
+            <ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="49" />
+            <ConnectorPaneTerminal Hotspot="0 25" ListViewHotspot="0 65" Parameter="52" />
+            <ConnectorPaneTerminal Hotspot="0 35" ListViewHotspot="0 80" Parameter="55" />
+            <ConnectorPaneTerminal Hotspot="0 45" ListViewHotspot="0 95" Parameter="58" />
+            <ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 140" Parameter="67" />
+            <ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 155" Parameter="75" />
+            <ConnectorPaneTerminal Hotspot="35 0" ListViewHotspot="0 170" Parameter="78" />
+            <ConnectorPaneTerminal Hotspot="60 5" ListViewHotspot="150 110" Parameter="61" />
+            <ConnectorPaneTerminal Hotspot="60 15" ListViewHotspot="150 125" Parameter="64" />
+            <ConnectorPaneTerminal Hotspot="60 25" />
+            <ConnectorPaneTerminal Hotspot="60 35" />
+            <ConnectorPaneTerminal Hotspot="60 45" />
+            <ConnectorPaneTerminal Hotspot="15 60" ListViewHotspot="0 200" Parameter="84" />
+            <ConnectorPaneTerminal Hotspot="25 60" ListViewHotspot="0 215" Parameter="92" />
+            <ConnectorPaneTerminal Hotspot="35 60" ListViewHotspot="0 230" Parameter="95" />
+            <ConnectorPaneTerminal Hotspot="0 55" />
+            <ConnectorPaneTerminal Hotspot="45 0" ListViewHotspot="0 185" Parameter="81" />
+            <ConnectorPaneTerminal Hotspot="60 55" />
+            <ConnectorPaneTerminal Hotspot="45 60" ListViewHotspot="0 245" Parameter="98" />
+        </ConnectorPane>
+        <MethodDocumentation xmlns="http://www.ni.com/PlatformFramework" />
+        <DiagramUnplacedItems Id="12" />
+        <FrontPanelUnplacedItems Id="13" />
+        <BlockDiagram Id="14">
+            <DataAccessor Bounds="1050 35 40 15" DataItem="16" Id="17" Label="126">
+                <Terminal DataType="@1792459187_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <IONameConstant Bounds="1145 -15 123 15" DataType="@-1586725226_0" Facade="NationalInstruments.MocCommon.Modeling.IIONameConstantBehavior" IOClass="Clock" IOType="FPGA" Id="141" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>Data Clock x2</p.Data>
+                <IONameConstantBehavior />
+            </IONameConstant>
+            <DataAccessor Bounds="1045 60 40 15" DataItem="81" Id="82" Label="136">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="695 190 40 15" DataItem="75" Id="76" Label="134">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="695 270 40 15" DataItem="49" Id="50" Label="127">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="960 165 40 15" DataItem="67" Id="68" Label="133">
+                <Terminal DataType="@-1486546194_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="695 290 40 15" DataItem="52" Id="53" Label="128">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="695 230 40 15" DataItem="78" Id="79" Label="135">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="680 515 40 15" DataItem="55" Id="56" Label="129">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="680 535 40 15" DataItem="58" Id="59" Label="130">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="1515 270 40 15" DataItem="61" Id="62" Label="131">
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="1515 525 40 15" DataItem="64" Id="65" Label="132">
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="1045 80 40 15" DataItem="98" Id="99" Label="140">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="680 435 40 15" DataItem="92" Id="93" Label="138">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="965 415 40 15" DataItem="84" Id="85" Label="137">
+                <Terminal DataType="@-1486546194_0" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <DataAccessor Bounds="680 470 40 15" DataItem="95" Id="96" Label="139">
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+            </DataAccessor>
+            <MethodCall Bounds="1265 35 50 50" DomainName="NI.LabVIEW.USRPRIO" Id="142" Target="niUsrpRio\ Synchronization\ v1\ FPGA\.lvlib__Synchronize\ over\ PPS\ Trig\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="sync.resources" />
+                        <Parameter Id="L3" Desc="enable" />
+                        <Parameter Id="L4" Desc="edge" />
+                        <Parameter Id="T0" Desc="common reference" />
+                        <Parameter Id="T1" Desc="clock x2" />
+                        <Parameter Id="B0" Desc="sync.fpga io in" />
+                        <Parameter Id="B1" Desc="sync.fpga io out" />
+                        <Parameter Id="R0" Desc="sync.resources 2" />
+                        <Parameter Id="R3" Desc="synchronization delay" />
+                        <Parameter Id="R4" Desc="synchronized edge" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="@1792459187_0" Direction="Input" Id="L0" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 45" Id="L4" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1865809322_0" Direction="Input" Hotspot="15 0" Id="T0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1586725226_0" Direction="Input" Hotspot="25 0" Id="T1" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1865809322_0" Direction="Input" Hotspot="15 50" Id="B0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@-1865767999_0" Direction="Input" Hotspot="25 50" Id="B1" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="@1792459187_0" Direction="Output" Hotspot="50 5" Id="R0" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="UInt16" Direction="Output" Hotspot="50 35" Id="R3" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 45" Id="R4" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <IoRead Bounds="598 340 40 40" Id="143" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+            <IONameConstant Bounds="478 340 106 15" DataType="@-1865726676_0" Facade="NationalInstruments.MocCommon.Modeling.IIONameConstantBehavior" IOClass="IO" IOType="FPGA" Id="144" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>AUX I/O 0</p.Data>
+                <IONameConstantBehavior />
+            </IONameConstant>
+            <Wire Id="145" Joints="N(144:Out) N(143:Io Reference In)" xmlns="http://www.ni.com/PlatformFramework" />
+            <LogicalOr Bounds="755 270 25 20" Id="146" Terminals="o=210, c0t0v=189, c1t0v=188" />
+            <LogicalOr Bounds="765 525 25 20" Id="147" Terminals="o=199, c0t0v=216, c1t0v=215" />
+            <MethodCall Bounds="750 170 50 50" DomainName="NI.LabVIEW.ExtShared" Id="148" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Detect\ Rising\ Edge\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="signal" />
+                        <Parameter Id="R2" Desc="edge detected" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="735 330 50 50" DomainName="NI.LabVIEW.ExtShared" Id="149" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Detect\ Rising\ Edge\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="signal" />
+                        <Parameter Id="R2" Desc="edge detected" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <ToUnsignedByteInteger Bounds="1005 165 30 10" Id="150" />
+            <MethodCall Bounds="1015 190 50 50" Id="151" Target="\5\-1\ Mux\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="input 0" />
+                        <Parameter Id="L1" Desc="input 1" />
+                        <Parameter Id="L2" Desc="input 2" />
+                        <Parameter Id="L3" Desc="input 3" />
+                        <Parameter Id="L4" Desc="input 4" />
+                        <Parameter Id="T1" Desc="select" />
+                        <Parameter Id="R2" Desc="output" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="UInt8" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="895 210 50 50" DomainName="NI.LabVIEW.ExtShared" Id="152" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Detect\ Rising\ Edge\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="signal" />
+                        <Parameter Id="R2" Desc="edge detected" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <Select Bounds="1335 180 40 40" Id="153" />
+            <LogicalAnd Bounds="1395 250 25 20" Id="154" Terminals="o=196, c0t0v=212, c1t0v=211" />
+            <LogicalAnd Bounds="1450 265 25 20" Id="155" Terminals="o=193, c0t0v=196, c1t0v=210" />
+            <MethodCall Bounds="735 415 50 50" DomainName="NI.LabVIEW.ExtShared" Id="156" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Detect\ Rising\ Edge\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="signal" />
+                        <Parameter Id="R2" Desc="edge detected" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <ToUnsignedByteInteger Bounds="1010 415 30 10" Id="157" />
+            <MethodCall Bounds="1020 435 50 50" Id="158" Target="\5\-1\ Mux\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L0" Desc="input 0" />
+                        <Parameter Id="L1" Desc="input 1" />
+                        <Parameter Id="L2" Desc="input 2" />
+                        <Parameter Id="L3" Desc="input 3" />
+                        <Parameter Id="L4" Desc="input 4" />
+                        <Parameter Id="T1" Desc="select" />
+                        <Parameter Id="R2" Desc="output" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 45" Id="L4" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="UInt8" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <MethodCall Bounds="875 455 50 50" DomainName="NI.LabVIEW.ExtShared" Id="159" Target="niInstr\ Basic\ Elements\ v1\ FPGA\.lvlib__Detect\ Rising\ Edge\.gcdl">
+                <p.MethodDeclaration>
+                    <MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+                        <Parameter Id="L2" Desc="signal" />
+                        <Parameter Id="R2" Desc="edge detected" />
+                    </MethodDeclaration>
+                </p.MethodDeclaration>
+                <Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+                <Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" Usage="Optional" xmlns="http://www.ni.com/PlatformFramework" />
+            </MethodCall>
+            <LogicalOr Bounds="1205 60 25 20" Id="160" Terminals="o=204, c0t0v=184, c1t0v=186" />
+            <Select Bounds="1330 425 40 40" Id="161" />
+            <LogicalAnd Bounds="1390 500 25 20" Id="162" Terminals="o=191, c0t0v=201, c1t0v=200" />
+            <LogicalAnd Bounds="1420 520 25 20" Id="163" Terminals="o=192, c0t0v=191, c1t0v=199" />
+            <FeedbackNode Bounds="1215 370 30 20" EnableTerminalVisible="False" Id="164" />
+            <FeedbackNode Bounds="1215 340 30 20" EnableTerminalVisible="False" Id="165" />
+            <LogicalOr Bounds="1205 100 25 20" Id="166" Terminals="o=190, c0t0v=182, c1t0v=185" />
+            <LogicalAnd Bounds="860 230 25 20" Id="167" Terminals="o=217, c0t0v=211, c1t0v=210" />
+            <LogicalAnd Bounds="835 470 25 20" Id="168" Terminals="o=207, c0t0v=200, c1t0v=199" />
+            <FeedbackNode ArrowDirection="Right" Bounds="670 345 30 20" DelayCount="2" EnableTerminalVisible="False" Id="169" />
+            <LogicalAnd Bounds="1165 115 25 20" Id="170" Terminals="o=185, c0t0v=186, c1t0v=181" />
+            <LogicalAnd Bounds="1165 90 25 20" Id="171" Terminals="o=182, c0t0v=184, c1t0v=183" />
+            <TextNode AttachedTo="17" Bounds="968.7167 35 76.28333 15.96" Id="126" Text="sync.resources" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="82" Bounds="926.7733 60 113.226669 15.96" Id="136" Text="rx.enable trigger sync" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="76" Bounds="593.5267 190 96.4733353 15.96" Id="134" Text="rx.software trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="50" Bounds="586.146667 270 103.853333 15.96" Id="127" Text="rx 0.stream enabled" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="68" Bounds="960 146.040009 81.46 15.96" Id="133" Text="rx.trigger select" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="53" Bounds="586.146667 290 103.853333 15.96" Id="128" Text="rx 1.stream enabled" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="79" Bounds="603.293335 230 86.706665 15.96" Id="135" Text="rx.enable trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="56" Bounds="571.253357 515 103.746666 15.96" Id="129" Text="tx 0.stream enabled" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="59" Bounds="571.253357 535 103.746666 15.96" Id="130" Text="tx 1.stream enabled" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="62" Bounds="1560 270 74.80334 15.96" Id="131" Text="rx.start trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="65" Bounds="1560 525 74.69666 15.96" Id="132" Text="tx.start trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="99" Bounds="926.88 80 113.12 15.96" Id="140" Text="tx.enable trigger sync" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="93" Bounds="578.6333 435 96.36667 15.96" Id="138" Text="tx.software trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="85" Bounds="965 396.04 81.35333 15.96" Id="137" Text="tx.trigger select" xmlns="http://www.ni.com/PlatformFramework" />
+            <TextNode AttachedTo="96" Bounds="588.4 470 86.6 15.96" Id="139" Text="tx.enable trigger" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="181" Joints="N(158:R2) h(70) B(1) N(161:f) B(1) v(-330) N(170:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="182" Joints="N(171:o) h(10) v(5) N(166:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="183" Joints="N(151:R2) h(65) B(1) N(153:f) B(1) v(-110) N(171:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="184" Joints="N(82:Value) h(20) B(1) N(160:c0t0v) B(1) v(30) B(3) N(171:c0t0v) B(3) v(105) N(153:s)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="185" Joints="N(170:o) h(10) v(-10) N(166:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="186" Joints="N(99:Value) h(35) B(1) v(-10) N(160:c1t0v) B(1) v(35) B(4) N(170:c0t0v) B(4) v(325) N(161:s)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="187" Joints="N(169:Output) N(149:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="188" Joints="N(53:Value) h(5) v(-10) N(146:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="189" Joints="N(50:Value) N(146:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="190" Joints="N(166:o) h(30) v(-30) N(142:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="191" Joints="N(162:o) h(5) N(163:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="192" Joints="N(163:o) h(30) B(1) N(65:Value) B(1) v(-180) N(165:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="193" Joints="N(155:o) h(20) B(1) N(62:Value) B(1) v(105) N(164:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="194" Joints="N(164:Output) h(-260) v(80) N(158:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="195" Joints="N(165:Output) h(-250) v(-125) N(151:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="196" Joints="N(154:o) h(9) v(10) N(155:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="197" Joints="N(159:R2) N(158:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="198" Joints="N(152:R2) N(151:L4)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="199" Joints="N(147:o) h(10) B(1) N(163:c1t0v) B(1) v(-50) N(168:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="200" Joints="N(96:Value) h(90) B(1) N(168:c0t0v) B(1) v(40) N(162:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="201" Joints="N(161:s? t:f) h(10) v(60) N(162:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="202" Joints="N(149:R2) h(25) B(1) v(-150) N(151:L1) B(1) v(95) N(158:L1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="203" Joints="N(142:R4) h(10) v(105) B(2) N(153:t) B(2) v(245) N(161:t)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="204" Joints="N(160:o) N(142:L3)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="205" Joints="N(85:Value) N(157:number)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="206" Joints="N(93:Value) N(156:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="207" Joints="N(168:o) N(159:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="208" Joints="N(156:R2) N(158:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="209" Joints="N(157:unsigned 8bit integer) h(5) N(158:T1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="210" Joints="N(146:o) h(65) B(1) N(155:c1t0v) B(1) v(-35) N(167:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="211" Joints="N(79:Value) h(95) B(1) N(167:c0t0v) B(1) v(30) N(154:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="212" Joints="N(153:s? t:f) h(10) v(55) N(154:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="213" Joints="N(150:unsigned 8bit integer) h(5) N(151:T1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="214" Joints="N(148:R2) N(151:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="215" Joints="N(59:Value) N(147:c1t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="216" Joints="N(56:Value) h(40) v(10) N(147:c0t0v)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="217" Joints="N(167:o) h(5) v(-5) N(152:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="218" Joints="N(143:Data) N(169:Input)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="219" Joints="N(76:Value) N(148:L2)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="220" Joints="N(141:Out) h(22) N(142:T1)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="221" Joints="N(17:Value) N(142:L0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="222" Joints="N(68:Value) N(150:number)" xmlns="http://www.ni.com/PlatformFramework" />
+            <IONameConstant Bounds="1135 5 135 15" DataType="@-1865809322_0" Facade="NationalInstruments.MocCommon.Modeling.IIONameConstantBehavior" IOClass="IO" IOType="FPGA" Id="223" Label="227" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>Reference Clock</p.Data>
+                <IONameConstantBehavior />
+                <InstanceDataEntry Id="224" Key="InterfaceFilter" Value="Digital Read" />
+                <InstanceDataEntry Id="225" Key="ElementDataTypeFilter" Value="[Type]Boolean" />
+                <InstanceDataEntry Id="226" Key="ElementShapeFilter" Value="Scalar" />
+            </IONameConstant>
+            <TextNode AttachedTo="223" Bounds="1135 5 0 0" Id="227" Text="common reference" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="228" Joints="N(223:Out) h(10) N(142:T0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <IONameConstant Bounds="1165 145 109 15" DataType="@-1865809322_0" Facade="NationalInstruments.MocCommon.Modeling.IIONameConstantBehavior" IOClass="IO" IOType="FPGA" Id="229" Label="233" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>PPS Trig In</p.Data>
+                <IONameConstantBehavior />
+                <InstanceDataEntry Id="230" Key="InterfaceFilter" Value="Digital Read" />
+                <InstanceDataEntry Id="231" Key="ElementDataTypeFilter" Value="[Type]Boolean" />
+                <InstanceDataEntry Id="232" Key="ElementShapeFilter" Value="Scalar" />
+            </IONameConstant>
+            <TextNode AttachedTo="229" Bounds="1165 145 0 0" Id="233" Text="sync.fpga io in" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="234" Joints="N(229:Out) h(6) N(142:B0)" xmlns="http://www.ni.com/PlatformFramework" />
+            <IONameConstant Bounds="1165 165 118 15" DataType="@-1865767999_0" Facade="NationalInstruments.MocCommon.Modeling.IIONameConstantBehavior" IOClass="IO" IOType="FPGA" Id="235" Label="239" xmlns="http://www.ni.com/MocCommon">
+                <p.Data>PPS Trig Out</p.Data>
+                <IONameConstantBehavior />
+                <InstanceDataEntry Id="236" Key="InterfaceFilter" Value="Digital Read/Write" />
+                <InstanceDataEntry Id="237" Key="ElementDataTypeFilter" Value="[Type]Boolean" />
+                <InstanceDataEntry Id="238" Key="ElementShapeFilter" Value="Scalar" />
+            </IONameConstant>
+            <TextNode AttachedTo="235" Bounds="1165 165 0 0" Id="239" Text="sync.fpga io out" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+            <Wire Id="240" Joints="N(235:Out) h(7) N(142:B1)" xmlns="http://www.ni.com/PlatformFramework" />
+        </BlockDiagram>
+        <CPFrontPanel Height="[float]1600" Id="15" Width="[float]2000">
+            <Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@1792459187_0" Height="[float]432" Id="18" Label="[UIModel]101" Left="[float]305" Top="[float]36" Value="{DataItemBinding Id=16}" Width="[float]139">
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="21" Label="[UIModel]116" Left="[float]5" SelectedResource="{ClusterBinding FieldName=master}" Top="[float]22" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="24" Label="[UIModel]117" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.enable}" Top="[float]64" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="27" Label="[UIModel]118" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.ready}" Top="[float]106" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="30" Label="[UIModel]119" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.arm}" Top="[float]148" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="33" Label="[UIModel]120" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.valid}" Top="[float]190" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_1" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="36" Label="[UIModel]121" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.value}" Top="[float]232" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_1" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="39" Label="[UIModel]122" Left="[float]5" SelectedResource="{ClusterBinding FieldName=meas.oversample\ factor}" Top="[float]274" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_0" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="42" Label="[UIModel]123" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr}" Top="[float]316" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_1" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="45" Label="[UIModel]124" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr.adjust}" Top="[float]358" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <IONameControl BaseName="[string]Register" DataType="[Type]@1593345214_1" Height="[float]22" IOClass="[string]Register" IOType="[string]FPGA" Id="48" Label="[UIModel]125" Left="[float]5" SelectedResource="{ClusterBinding FieldName=cptr.period}" Top="[float]400" Width="[float]62" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+                <Label Id="116" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]21" Left="[float]5" Locked="[bool]True" Text="[string]master" Top="[float]0" />
+                <Label Id="117" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]24" Left="[float]5" Locked="[bool]True" Text="[string]meas.enable" Top="[float]42" />
+                <Label Id="118" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]27" Left="[float]5" Locked="[bool]True" Text="[string]meas.ready" Top="[float]84" />
+                <Label Id="119" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]30" Left="[float]5" Locked="[bool]True" Text="[string]meas.arm" Top="[float]126" />
+                <Label Id="120" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]33" Left="[float]5" Locked="[bool]True" Text="[string]meas.valid" Top="[float]168" />
+                <Label Id="121" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]36" Left="[float]5" Locked="[bool]True" Text="[string]meas.value" Top="[float]210" />
+                <Label Id="122" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]39" Left="[float]5" Locked="[bool]True" Text="[string]meas.oversample factor" Top="[float]252" />
+                <Label Id="123" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]42" Left="[float]5" Locked="[bool]True" Text="[string]cptr" Top="[float]294" />
+                <Label Id="124" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]45" Left="[float]5" Locked="[bool]True" Text="[string]cptr.adjust" Top="[float]336" />
+                <Label Id="125" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]48" Left="[float]5" Locked="[bool]True" Text="[string]cptr.period" Top="[float]378" />
+            </Cluster>
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="51" IsReadOnly="[bool]False" Label="[UIModel]102" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]504" TrueContent="[string]On" Value="{DataItemBinding Id=49}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="54" IsReadOnly="[bool]False" Label="[UIModel]103" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]590" TrueContent="[string]On" Value="{DataItemBinding Id=52}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="57" IsReadOnly="[bool]False" Label="[UIModel]104" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]676" TrueContent="[string]On" Value="{DataItemBinding Id=55}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="60" IsReadOnly="[bool]False" Label="[UIModel]105" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]762" TrueContent="[string]On" Value="{DataItemBinding Id=58}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="63" IsReadOnly="[bool]True" Label="[UIModel]106" Left="[float]415" Shape="[LEDShape]Square" Top="[float]36" TrueContent="[string]On" Value="{DataItemBinding Id=61}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="66" IsReadOnly="[bool]True" Label="[UIModel]107" Left="[float]415" Shape="[LEDShape]Square" Top="[float]102" TrueContent="[string]On" Value="{DataItemBinding Id=64}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="69" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]108" Left="[float]295" Top="[float]848" Value="{DataItemBinding Id=67}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <EnumSelectorInfo DisplayValue="[string]Software" Id="70" Value="[ushort]0" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Digital Edge" Id="71" Value="[ushort]1" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Rx Start Trigger" Id="72" Value="[ushort]2" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Tx Start Trigger" Id="73" Value="[ushort]3" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Immediate" Id="74" Value="[ushort]4" ValueType="[Type]UInt16" />
+            </EnumSelector>
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="77" IsReadOnly="[bool]False" Label="[UIModel]109" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]906" TrueContent="[string]On" Value="{DataItemBinding Id=75}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="80" IsReadOnly="[bool]False" Label="[UIModel]110" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]992" TrueContent="[string]On" Value="{DataItemBinding Id=78}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="83" IsReadOnly="[bool]False" Label="[UIModel]111" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]1078" TrueContent="[string]On" Value="{DataItemBinding Id=81}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <EnumSelector AllowUndefinedValueEntry="[bool]False" BaseName="[string]Enum" Height="[float]22" Id="86" InteractionMode="[SelectorInteractionModes]ArrowKeys, Keyboard, MouseClick, ScrollWheel, ButtonClicks" IsTypeAheadEnabled="[bool]True" Label="[UIModel]112" Left="[float]295" Top="[float]1164" Value="{DataItemBinding Id=84}" ValueType="[Type]UInt16" VisualMode="[SelectorVisualMode]RingStyle" Width="[float]90" xmlns="http://www.ni.com/Controls.LabVIEW.Design">
+                <EnumSelectorInfo DisplayValue="[string]Software" Id="87" Value="[ushort]0" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Digital Edge" Id="88" Value="[ushort]1" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Rx Start Trigger" Id="89" Value="[ushort]2" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Tx Start Trigger" Id="90" Value="[ushort]3" ValueType="[Type]UInt16" />
+                <EnumSelectorInfo DisplayValue="[string]Immediate" Id="91" Value="[ushort]4" ValueType="[Type]UInt16" />
+            </EnumSelector>
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="94" IsReadOnly="[bool]False" Label="[UIModel]113" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]1222" TrueContent="[string]On" Value="{DataItemBinding Id=92}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="97" IsReadOnly="[bool]False" Label="[UIModel]114" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]1308" TrueContent="[string]On" Value="{DataItemBinding Id=95}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="100" IsReadOnly="[bool]False" Label="[UIModel]115" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" Top="[float]1394" TrueContent="[string]On" Value="{DataItemBinding Id=98}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+            <Label Id="101" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]18" Left="[float]305" Locked="[bool]True" Text="[string]sync.resources" Top="[float]13" />
+            <Label Id="102" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]51" Left="[float]335" Locked="[bool]True" Text="[string]rx 0.stream enabled" Top="[float]482" />
+            <Label Id="103" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]54" Left="[float]335" Locked="[bool]True" Text="[string]rx 1.stream enabled" Top="[float]568" />
+            <Label Id="104" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]57" Left="[float]335" Locked="[bool]True" Text="[string]tx 0.stream enabled" Top="[float]654" />
+            <Label Id="105" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]60" Left="[float]335" Locked="[bool]True" Text="[string]tx 1.stream enabled" Top="[float]740" />
+            <Label Id="106" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]63" Left="[float]415" Locked="[bool]True" Text="[string]rx.start trigger" Top="[float]14" />
+            <Label Id="107" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]66" Left="[float]415" Locked="[bool]True" Text="[string]tx.start trigger" Top="[float]80" />
+            <Label Id="108" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]69" Left="[float]295" Locked="[bool]True" Text="[string]rx.trigger select" Top="[float]826" />
+            <Label Id="109" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]77" Left="[float]335" Locked="[bool]True" Text="[string]rx.software trigger" Top="[float]884" />
+            <Label Id="110" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]80" Left="[float]335" Locked="[bool]True" Text="[string]rx.enable trigger" Top="[float]970" />
+            <Label Id="111" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]83" Left="[float]335" Locked="[bool]True" Text="[string]rx.enable trigger sync" Top="[float]1056" />
+            <Label Id="112" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]86" Left="[float]295" Locked="[bool]True" Text="[string]tx.trigger select" Top="[float]1142" />
+            <Label Id="113" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]94" Left="[float]335" Locked="[bool]True" Text="[string]tx.software trigger" Top="[float]1200" />
+            <Label Id="114" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]97" Left="[float]335" Locked="[bool]True" Text="[string]tx.enable trigger" Top="[float]1286" />
+            <Label Id="115" LabelAlignment="[PartAlignment]TopLeft" LabelOwner="[UIModel]100" Left="[float]335" Locked="[bool]True" Text="[string]tx.enable trigger sync" Top="[float]1372" />
+        </CPFrontPanel>
+        <DataItem CallDirection="Input" CallIndex="1" DataType="@1792459187_0" Id="16" Name="sync.resources">
+            <p.DefaultValue>
+                <Cluster>
+                    <Field1>""</Field1>
+                    <Field2>""</Field2>
+                    <Field3>""</Field3>
+                    <Field4>""</Field4>
+                    <Field5>""</Field5>
+                    <Field6>""</Field6>
+                    <Field7>""</Field7>
+                    <Field8>""</Field8>
+                    <Field9>""</Field9>
+                    <Field10>""</Field10>
+                </Cluster>
+            </p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="2" DataType="Boolean" Id="49" Name="rx 0.stream enabled">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="Boolean" Id="52" Name="rx 1.stream enabled">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="4" DataType="Boolean" Id="55" Name="tx 0.stream enabled">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="5" DataType="Boolean" Id="58" Name="tx 1.stream enabled">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="1" DataType="Boolean" Id="61" Name="rx.start trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Output" CallIndex="2" DataType="Boolean" Id="64" Name="tx.start trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Input" CallIndex="6" DataType="@-1486546194_0" Id="67" Name="rx.trigger select">
+            <p.DefaultValue>4</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="7" DataType="Boolean" Id="75" Name="rx.software trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="8" DataType="Boolean" Id="78" Name="rx.enable trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="9" DataType="Boolean" Id="81" Name="rx.enable trigger sync">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem CallDirection="Input" CallIndex="10" DataType="@-1486546194_0" Id="84" Name="tx.trigger select">
+            <p.DefaultValue>4</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="11" DataType="Boolean" Id="92" Name="tx.software trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="12" DataType="Boolean" Id="95" Name="tx.enable trigger">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="13" DataType="Boolean" Id="98" Name="tx.enable trigger sync">
+            <p.DefaultValue>False</p.DefaultValue>
+        </DataItem>
+        <DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+            <p.TypeReference TypeId="1792459187_0">
+                <Class Id="1" Name="" Cluster="">
+                    <ClosedGenericParameters />
+                    <GenericTypeDefinition>
+                        <Void />
+                    </GenericTypeDefinition>
+                    <BaseType>
+                        <Void />
+                    </BaseType>
+                    <Interfaces />
+                    <Members>
+                        <Field FieldAccessPolicy="ReadWrite" Name="master">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="2" Name="RegisterDataType" ReferenceClass="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="3" Name="RegisterDataType" ReferenceClass="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="3" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="4" Name="Read">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                                <Function Id="5" Name="Write">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="6" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="7" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.enable">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="2" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.ready">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="2" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.arm">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="2" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.valid">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="2" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.value">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="8" Name="RegisterDataType" ReferenceClass="">
+                                            <ClosedGenericParameters>
+                                                <UInt16 />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class RefId="3" />
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="9" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <UInt16 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="10" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <UInt16 />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="meas.oversample factor">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="8" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="cptr">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="2" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="cptr.adjust">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="8" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                        <Field FieldAccessPolicy="ReadWrite" Name="cptr.period">
+                            <DataType>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class RefId="8" />
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </DataType>
+                        </Field>
+                    </Members>
+                </Class>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1586725226_0">
+                <Attributed>
+                    <AttributedType>
+                        <Class Id="1" Name="ClockDataType" ReferenceClass="">
+                            <ClosedGenericParameters />
+                            <GenericTypeDefinition>
+                                <Void />
+                            </GenericTypeDefinition>
+                            <BaseType>
+                                <Void />
+                            </BaseType>
+                            <Interfaces />
+                            <Members />
+                        </Class>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]Clock" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1486546194_0">
+                <Enumeration Name="">
+                    <Members>
+                        <EnumerationMember Value="0" Name="Software" />
+                        <EnumerationMember Value="1" Name="Digital Edge" />
+                        <EnumerationMember Value="2" Name="Rx Start Trigger" />
+                        <EnumerationMember Value="3" Name="Tx Start Trigger" />
+                        <EnumerationMember Value="4" Name="Immediate" />
+                    </Members>
+                    <DataType>
+                        <UInt16 />
+                    </DataType>
+                </Enumeration>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1865809322_0">
+                <Attributed>
+                    <AttributedType>
+                        <Generic>
+                            <Constraints>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="1" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="2" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="2" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="3" Name="Read">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="4" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </Constraints>
+                        </Generic>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1865767999_0">
+                <Attributed>
+                    <AttributedType>
+                        <Generic>
+                            <Constraints>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="1" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="2" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="2" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="3" Name="Read">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="4" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="5" Name="DigitalIOWriteInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="6" Name="DigitalIOWriteInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="6" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="7" Name="Write">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="8" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </Constraints>
+                        </Generic>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="-1865726676_0">
+                <Attributed>
+                    <AttributedType>
+                        <Generic>
+                            <Constraints>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="1" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="2" Name="DigitalIOReadInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="2" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="3" Name="Read">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="4" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="5" Name="DigitalIOWriteInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="6" Name="DigitalIOWriteInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="6" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="7" Name="Write">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                                            <DataType>
+                                                                                <Typedef TypedefName="Element">
+                                                                                    <UnderlyingType>
+                                                                                        <Generic>
+                                                                                            <Constraints />
+                                                                                        </Generic>
+                                                                                    </UnderlyingType>
+                                                                                </Typedef>
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="8" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <Boolean />
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="9" Name="DigitalIOEnableInterface" ReferenceClass="" Interface="">
+                                            <ClosedGenericParameters>
+                                                <Boolean />
+                                            </ClosedGenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Attributed>
+                                                    <AttributedType>
+                                                        <Class Id="10" Name="DigitalIOEnableInterface" ReferenceClass="" Interface="">
+                                                            <GenericParameters>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </GenericParameters>
+                                                            <GenericTypeDefinition>
+                                                                <Class RefId="10" />
+                                                            </GenericTypeDefinition>
+                                                            <BaseType>
+                                                                <Void />
+                                                            </BaseType>
+                                                            <Interfaces />
+                                                            <Members>
+                                                                <Function Id="11" Name="Enable">
+                                                                    <ReturnType>
+                                                                        <Void />
+                                                                    </ReturnType>
+                                                                    <Parameters>
+                                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="enable">
+                                                                            <DataType>
+                                                                                <Boolean />
+                                                                            </DataType>
+                                                                        </Parameter>
+                                                                    </Parameters>
+                                                                    <ClosedGenericParameters />
+                                                                    <GenericTypeDefinition>
+                                                                        <Void />
+                                                                    </GenericTypeDefinition>
+                                                                </Function>
+                                                            </Members>
+                                                        </Class>
+                                                    </AttributedType>
+                                                    <AttributeValues>
+                                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                                    </AttributeValues>
+                                                </Attributed>
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function RefId="11" />
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </Constraints>
+                        </Generic>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]IO" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="1593345214_0">
+                <Attributed>
+                    <AttributedType>
+                        <Class Id="1" Name="RegisterDataType" ReferenceClass="">
+                            <ClosedGenericParameters>
+                                <Boolean />
+                            </ClosedGenericParameters>
+                            <GenericTypeDefinition>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="2" Name="RegisterDataType" ReferenceClass="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="Element">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="2" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="3" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="4" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </GenericTypeDefinition>
+                            <BaseType>
+                                <Void />
+                            </BaseType>
+                            <Interfaces />
+                            <Members>
+                                <Function Id="5" Name="Read">
+                                    <ReturnType>
+                                        <Void />
+                                    </ReturnType>
+                                    <Parameters>
+                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                            <DataType>
+                                                <Boolean />
+                                            </DataType>
+                                        </Parameter>
+                                    </Parameters>
+                                    <ClosedGenericParameters />
+                                    <GenericTypeDefinition>
+                                        <Void />
+                                    </GenericTypeDefinition>
+                                </Function>
+                                <Function Id="6" Name="Write">
+                                    <ReturnType>
+                                        <Void />
+                                    </ReturnType>
+                                    <Parameters>
+                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                            <DataType>
+                                                <Boolean />
+                                            </DataType>
+                                        </Parameter>
+                                    </Parameters>
+                                    <ClosedGenericParameters />
+                                    <GenericTypeDefinition>
+                                        <Void />
+                                    </GenericTypeDefinition>
+                                </Function>
+                            </Members>
+                        </Class>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+            <p.TypeReference TypeId="1593345214_1">
+                <Attributed>
+                    <AttributedType>
+                        <Class Id="1" Name="RegisterDataType" ReferenceClass="">
+                            <ClosedGenericParameters>
+                                <UInt16 />
+                            </ClosedGenericParameters>
+                            <GenericTypeDefinition>
+                                <Attributed>
+                                    <AttributedType>
+                                        <Class Id="2" Name="RegisterDataType" ReferenceClass="">
+                                            <GenericParameters>
+                                                <Typedef TypedefName="Element">
+                                                    <UnderlyingType>
+                                                        <Generic>
+                                                            <Constraints />
+                                                        </Generic>
+                                                    </UnderlyingType>
+                                                </Typedef>
+                                            </GenericParameters>
+                                            <GenericTypeDefinition>
+                                                <Class RefId="2" />
+                                            </GenericTypeDefinition>
+                                            <BaseType>
+                                                <Void />
+                                            </BaseType>
+                                            <Interfaces />
+                                            <Members>
+                                                <Function Id="3" Name="Read">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                                <Function Id="4" Name="Write">
+                                                    <ReturnType>
+                                                        <Void />
+                                                    </ReturnType>
+                                                    <Parameters>
+                                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                                            <DataType>
+                                                                <Typedef TypedefName="Element">
+                                                                    <UnderlyingType>
+                                                                        <Generic>
+                                                                            <Constraints />
+                                                                        </Generic>
+                                                                    </UnderlyingType>
+                                                                </Typedef>
+                                                            </DataType>
+                                                        </Parameter>
+                                                    </Parameters>
+                                                    <ClosedGenericParameters />
+                                                    <GenericTypeDefinition>
+                                                        <Void />
+                                                    </GenericTypeDefinition>
+                                                </Function>
+                                            </Members>
+                                        </Class>
+                                    </AttributedType>
+                                    <AttributeValues>
+                                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                                    </AttributeValues>
+                                </Attributed>
+                            </GenericTypeDefinition>
+                            <BaseType>
+                                <Void />
+                            </BaseType>
+                            <Interfaces />
+                            <Members>
+                                <Function Id="5" Name="Read">
+                                    <ReturnType>
+                                        <Void />
+                                    </ReturnType>
+                                    <Parameters>
+                                        <Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Optional" Name="data">
+                                            <DataType>
+                                                <UInt16 />
+                                            </DataType>
+                                        </Parameter>
+                                    </Parameters>
+                                    <ClosedGenericParameters />
+                                    <GenericTypeDefinition>
+                                        <Void />
+                                    </GenericTypeDefinition>
+                                </Function>
+                                <Function Id="6" Name="Write">
+                                    <ReturnType>
+                                        <Void />
+                                    </ReturnType>
+                                    <Parameters>
+                                        <Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="data">
+                                            <DataType>
+                                                <UInt16 />
+                                            </DataType>
+                                        </Parameter>
+                                    </Parameters>
+                                    <ClosedGenericParameters />
+                                    <GenericTypeDefinition>
+                                        <Void />
+                                    </GenericTypeDefinition>
+                                </Function>
+                            </Members>
+                        </Class>
+                    </AttributedType>
+                    <AttributeValues>
+                        <AttributeValue Name="NI_IOClass" Value="[string]Register" />
+                        <AttributeValue Name="NI_IOType" Value="[string]FPGA" />
+                        <AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+                    </AttributeValues>
+                </Attributed>
+            </p.TypeReference>
+        </DataTypeReferenceTable>
+    </VirtualInstrument>
+</SourceFile>

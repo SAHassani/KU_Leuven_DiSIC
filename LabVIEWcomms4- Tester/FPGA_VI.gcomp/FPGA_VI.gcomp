@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="7C428E6AB934B5DE0D1791F8C436EFDCAB44B244A93ED3CB6984FB54C1BFA9A5F7CFF5C143FEED92FFA7DD5DD83C6B38A0A5E8CEC9D525A7A67A0EAA69C6BBB3" Timestamp="1D5F5537D571FB5" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW FPGA" Name="http://www.ni.com/LabVIEW.FPGA" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="d6dac4caaece4f73b1ef990b55702aef" RootNamespaceId="d6862115a0ab41cd85b475978a0ebee0" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="afc29f3673ef4dc5874863546d821a3a" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="99795bfa6aa84dd9b6118cb1745840ad" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="bbbc9b0252d04e588276cd18b129dfed" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="34f9469f510a42deb6177c8f646d76c7" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration ComponentSubtypeIdentifier="Bitfile" Id="db67a63e4ee648d892e810b80be0c28c" Name="Configuration1">
+			<CompilerSymbolTable Id="2a2765fccc8c4869bd062c81472052c3" xmlns="http://www.ni.com/PlatformFramework" />
+			<BitfileOutputTypeProperties Id="9b8c8a0d31294494ae11d471744eb491" NumberOfDigitsForAutoNumber="4" StartingNumberForAutoNumber="1" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+			<ComponentItemProperties AssociatedEnvoyId="44b4bc4a8f3040b6b533d65988aecb69" Exported="True" Id="be8c0ad1cd564d26ac9e3cfa800c668f" TopLevel="True" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="634c486209f7424eaa109fd507cb09a2" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="86280ddf7daf49a187eaacd57ccb162f" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="efdde310f78149359af845f3ac0c00fa" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="d6862115a0ab41cd85b475978a0ebee0" Name="FPGA_VI">
+				<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="44b4bc4a8f3040b6b533d65988aecb69" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="mainFPGA_VI.gvi" StoragePath="mainFPGA_VI.gvi" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="d5e18e849cc64043905e9f2e75534731" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="FPGA_VI.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="db67a63e4ee648d892e810b80be0c28c" Id="a478b9ee482345538e27a53ce51f74fc" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
