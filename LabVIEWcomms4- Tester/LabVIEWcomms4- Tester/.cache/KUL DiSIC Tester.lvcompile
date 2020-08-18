@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<JobList>
+  <Job OutputType="Bitfile">
+    <CurrentBuildId>
+      <ComponentSubtypeIdentifier>Bitfile</ComponentSubtypeIdentifier>
+      <BuildId>c0651837-b7a7-422f-bfaa-63535dbe3b28</BuildId>
+    </CurrentBuildId>
+    <RootBuildId>
+      <ComponentSubtypeIdentifier>Bitfile</ComponentSubtypeIdentifier>
+      <BuildId>c0651837-b7a7-422f-bfaa-63535dbe3b28</BuildId>
+    </RootBuildId>
+    <OutputPath>Builds\FPGA_VI_USRP\FPGA_VI-0002.lvbitx</OutputPath>
+    <BuildName>FPGA_VI</BuildName>
+    <JobInfo>
+      <SessionId>O0I7SIK</SessionId>
+      <JobId>RkbmL3G</JobId>
+    </JobInfo>
+    <State>Success</State>
+    <SourceFolder>C:\NIFPGA\compilation\lqv0jweu.dwo\top</SourceFolder>
+    <BuildFolder>C:\NIFPGA\compilation\lqv0jweu.dwo</BuildFolder>
+    <ConnectionState>Completed</ConnectionState>
+    <ConnectionType>Localhost</ConnectionType>
+    <CompileServer>localhost</CompileServer>
+    <IsStale>False</IsStale>
+    <StartTime>2020-08-18T13:35:54.3514827Z</StartTime>
+    <LastTotalTime>01:12:41</LastTotalTime>
+  </Job>
+</JobList>

@@ -1,0 +1,1060 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="E86C744605E28537ED4FE5A959C95F00829FC5C9428DAEABA4C9397D5E008C3557AB23A5CE9B8BC2F4F841E46556993905CD9AC3A8B26498BE6213DD2C289E33" Timestamp="1D67564728B26E8" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW FPGA" Name="http://www.ni.com/LabVIEW.FPGA" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Virtual Instrument" Name="http://www.ni.com/LabVIEW.VI" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<VirtualInstrument Id="1" Reentrancy="Stateful" xmlns="http://www.ni.com/LabVIEW.VI">
+		<Icon Id="2" ListViewIconCrop="0 0 90 70" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]70" Id="3" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]90">
+				<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]70" Id="4" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]90">
+					<Rectangle Fill="[SMSolidColorBrush]#ff727272" Id="5" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+					<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" Id="6" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+					<FileNameText Attached="[bool]True" Id="7" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Collect Data For DiSIC" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+						<FontSetting FontFamily="Verdana" FontSize="11.25" Id="8" />
+					</FileNameText>
+				</IconTemplate>
+			</IconPanel>
+		</Icon>
+		<ConnectorPane Height="70" Id="10" ListViewHeight="220" ListViewWidth="150" Width="90" xmlns="http://www.ni.com/PlatformFramework">
+			<ConnectorPaneTerminal ListViewHotspot="0 35" Parameter="172" />
+			<ConnectorPaneTerminal Hotspot="0 15" ListViewHotspot="0 50" Parameter="173" />
+			<ConnectorPaneTerminal Hotspot="0 25" />
+			<ConnectorPaneTerminal Hotspot="0 35" />
+			<ConnectorPaneTerminal Hotspot="15 0" ListViewHotspot="0 125" Parameter="213" />
+			<ConnectorPaneTerminal Hotspot="25 0" ListViewHotspot="0 200" Parameter="93652b8ae8741d2b33efc2dd6813372" />
+			<ConnectorPaneTerminal Hotspot="90 5" ListViewHotspot="150 95" Parameter="170" />
+			<ConnectorPaneTerminal Hotspot="90 15" ListViewHotspot="150 110" Parameter="171" />
+			<ConnectorPaneTerminal Hotspot="90 25" />
+			<ConnectorPaneTerminal Hotspot="90 35" />
+			<ConnectorPaneTerminal Hotspot="15 70" />
+			<ConnectorPaneTerminal Hotspot="25 70" ListViewHotspot="0 65" Parameter="167" />
+			<ConnectorPaneTerminal Hotspot="0 45" />
+			<ConnectorPaneTerminal Hotspot="0 55" />
+			<ConnectorPaneTerminal Hotspot="0 65" />
+			<ConnectorPaneTerminal Hotspot="90 45" ListViewHotspot="150 155" Parameter="980" />
+			<ConnectorPaneTerminal Hotspot="90 55" ListViewHotspot="150 170" Parameter="968" />
+			<ConnectorPaneTerminal Hotspot="90 65" ListViewHotspot="150 185" Parameter="993" />
+			<ConnectorPaneTerminal Hotspot="35 0" />
+			<ConnectorPaneTerminal Hotspot="35 70" ListViewHotspot="0 80" Parameter="168" />
+			<ConnectorPaneTerminal Hotspot="45 0" />
+			<ConnectorPaneTerminal Hotspot="45 70" ListViewHotspot="150 140" Parameter="955" />
+			<ConnectorPaneTerminal Hotspot="55 0" />
+			<ConnectorPaneTerminal Hotspot="55 70" />
+			<ConnectorPaneTerminal Hotspot="65 0" />
+			<ConnectorPaneTerminal Hotspot="65 70" />
+			<ConnectorPaneTerminal Hotspot="75 0" />
+			<ConnectorPaneTerminal Hotspot="75 70" />
+		</ConnectorPane>
+		<DiagramUnplacedItems Id="11" xmlns="http://www.ni.com/MocCommon" />
+		<FrontPanelUnplacedItems Height="[float]1600" Id="12" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68fe6078f6394bf5825e5e817130d490" Height="[float]146" Id="177" Label="[UIModel]184" Left="[float]415" TabIndex="[int]0" Top="[float]36" Value="{DataItemBinding Id=167}" Width="[float]72" xmlns="http://www.ni.com/PanelCommon">
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="178" Interval="[Number]0x1FFFFp-17" Label="[UIModel]181" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]0" Top="[float]22" Value="{ClusterBinding FieldName=I}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="179" Interval="[Number]0x1FFFFp-17" Label="[UIModel]182" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Q}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="180" IsReadOnly="[bool]False" Label="[UIModel]183" Left="[float]5" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]106" TrueContent="[string]On" Value="{ClusterBinding FieldName=overflow}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Id="181" LabelOwner="[UIModel]178" Left="[float]5" Text="[string]I" Top="[float]2" />
+				<Label Id="182" LabelOwner="[UIModel]179" Left="[float]5" Text="[string]Q" Top="[float]44" />
+				<Label Id="183" LabelOwner="[UIModel]180" Left="[float]5" Text="[string]overflow" Top="[float]86" />
+			</Cluster>
+			<Label Id="184" LabelOwner="[UIModel]177" Left="[float]415" Text="[string]Data From Tx" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+			<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="185" IsReadOnly="[bool]False" Label="[UIModel]186" Left="[float]415" Shape="[LEDShape]Square" TabIndex="[int]1" Top="[float]218" TrueContent="[string]On" Value="{DataItemBinding Id=168}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="186" LabelOwner="[UIModel]185" Left="[float]415" Text="[string]Data Valid From Tx" Top="[float]198" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68fe6078f6394bf5825e5e817130d490" Height="[float]166" Id="188" Label="[UIModel]195" Left="[float]298" TabIndex="[int]2" Top="[float]36" Value="{DataItemBinding Id=170}" Width="[float]87" xmlns="http://www.ni.com/PanelCommon">
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="189" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]192" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]0" Top="[float]22" Value="{ClusterBinding FieldName=I}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="190" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]193" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Q}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]69" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="191" IsReadOnly="[bool]True" Label="[UIModel]194" Left="[float]5" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]2" Top="[float]106" TrueContent="[string]On" Value="{ClusterBinding FieldName=overflow}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Id="192" LabelOwner="[UIModel]189" Left="[float]5" Text="[string]I" Top="[float]2" />
+				<Label Id="193" LabelOwner="[UIModel]190" Left="[float]5" Text="[string]Q" Top="[float]44" />
+				<Label Id="194" LabelOwner="[UIModel]191" Left="[float]5" Text="[string]overflow" Top="[float]86" />
+			</Cluster>
+			<Label Id="195" LabelOwner="[UIModel]188" Left="[float]298" Text="[string]Data Out To Rx" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+			<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="196" IsReadOnly="[bool]True" Label="[UIModel]197" Left="[float]335" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]3" Top="[float]354" TrueContent="[string]On" Value="{DataItemBinding Id=171}" Width="[float]50" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="197" LabelOwner="[UIModel]196" Left="[float]335" Text="[string]Data Vali Out to Rx" Top="[float]334" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68fe6078f6394bf5825e5e817130d490" Height="[float]146" Id="198" Label="[UIModel]205" Left="[float]415" TabIndex="[int]4" Top="[float]36" Value="{DataItemBinding Id=172}" Width="[float]72" xmlns="http://www.ni.com/PanelCommon">
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="199" Interval="[Number]0x1FFFFp-17" Label="[UIModel]202" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]0" Top="[float]22" Value="{ClusterBinding FieldName=I}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="200" Interval="[Number]0x1FFFFp-17" Label="[UIModel]203" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Q}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="201" IsReadOnly="[bool]False" Label="[UIModel]204" Left="[float]5" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]106" TrueContent="[string]On" Value="{ClusterBinding FieldName=overflow}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Id="202" LabelOwner="[UIModel]199" Left="[float]5" Text="[string]I" Top="[float]2" />
+				<Label Id="203" LabelOwner="[UIModel]200" Left="[float]5" Text="[string]Q" Top="[float]44" />
+				<Label Id="204" LabelOwner="[UIModel]201" Left="[float]5" Text="[string]overflow" Top="[float]86" />
+			</Cluster>
+			<Label Id="205" LabelOwner="[UIModel]198" Left="[float]415" Text="[string]Data In From Rx" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+			<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="206" IsReadOnly="[bool]False" Label="[UIModel]207" Left="[float]415" Shape="[LEDShape]Square" TabIndex="[int]5" Top="[float]218" TrueContent="[string]On" Value="{DataItemBinding Id=173}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Label Id="207" LabelOwner="[UIModel]206" Left="[float]415" Text="[string]Data Valid In From Rx" Top="[float]198" xmlns="http://www.ni.com/PanelCommon" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="833" Interval="[uint]1" IsReadOnly="[bool]True" Left="[float]0" Name="[string]Data Out" TabIndex="[int]6" Top="[float]0" Value="{DataItemBinding Id=831}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt32" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="956" IsReadOnly="[bool]True" Left="[float]0" Name="[string]Tx busy" Shape="[LEDShape]Square" TabIndex="[int]7" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=955}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68fe6078f6394bf5825e5e817130d490" Height="[float]146" Id="969" Label="[UIModel]976" Left="[float]415" TabIndex="[int]8" Top="[float]36" Value="{DataItemBinding Id=968}" Width="[float]72" xmlns="http://www.ni.com/PanelCommon">
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="970" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]973" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]0" Top="[float]22" Value="{ClusterBinding FieldName=I}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="971" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]974" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Q}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="972" IsReadOnly="[bool]True" Label="[UIModel]975" Left="[float]5" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]106" TrueContent="[string]On" Value="{ClusterBinding FieldName=overflow}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Id="973" LabelOwner="[UIModel]970" Left="[float]5" Text="[string]I" Top="[float]2" />
+				<Label Id="974" LabelOwner="[UIModel]971" Left="[float]5" Text="[string]Q" Top="[float]44" />
+				<Label Id="975" LabelOwner="[UIModel]972" Left="[float]5" Text="[string]overflow" Top="[float]86" />
+			</Cluster>
+			<Label Id="976" LabelOwner="[UIModel]969" Left="[float]415" Text="[string]DiSIC RX" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@68fe6078f6394bf5825e5e817130d490" Height="[float]146" Id="981" Label="[UIModel]988" Left="[float]415" TabIndex="[int]9" Top="[float]36" Value="{DataItemBinding Id=980}" Width="[float]72" xmlns="http://www.ni.com/PanelCommon">
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="982" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]985" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]0" Top="[float]22" Value="{ClusterBinding FieldName=I}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="983" Interval="[Number]0x1FFFFp-17" IsReadOnly="[bool]True" Label="[UIModel]986" Left="[float]5" Maximum="[Number]0x1FFFFp-17" Minimum="[Number]0xF" TabIndex="[int]1" Top="[float]64" Value="{ClusterBinding FieldName=Q}" ValueFormatter="[string]LVFXP:FXP_1_17&gt;&gt;Decimal, Uppercase, Signed:" ValueType="[Type]FXP(1.17)" Width="[float]54" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<LED BaseName="[string]Square LED" ContentVisibility="[Visibility]Collapsed" FalseContent="[string]Off" Height="[float]30" Id="984" IsReadOnly="[bool]True" Label="[UIModel]987" Left="[float]5" Shape="[LEDShape]Square" TabIndex="[int]2" Top="[float]106" TrueContent="[string]On" Value="{ClusterBinding FieldName=overflow}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Id="985" LabelOwner="[UIModel]982" Left="[float]5" Text="[string]I" Top="[float]2" />
+				<Label Id="986" LabelOwner="[UIModel]983" Left="[float]5" Text="[string]Q" Top="[float]44" />
+				<Label Id="987" LabelOwner="[UIModel]984" Left="[float]5" Text="[string]overflow" Top="[float]86" />
+			</Cluster>
+			<Label Id="988" LabelOwner="[UIModel]981" Left="[float]415" Text="[string]DiSIC Tx" Top="[float]16" xmlns="http://www.ni.com/PanelCommon" />
+			<LED BaseName="[string]Square LED" FalseContent="[string]Off" Height="[float]30" Id="996" IsReadOnly="[bool]True" Left="[float]0" Name="[string]DiSIC TRX Valid" Shape="[LEDShape]Square" TabIndex="[int]10" Top="[float]0" TrueContent="[string]On" Value="{DataItemBinding Id=993}" Width="[float]30" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+			<NumericText BaseName="[string]Numeric" Height="[float]24" Id="2cf5f49c99c3432da47077352a2197b3" Interval="[Number]0x1p-47" IsReadOnly="[bool]False" Left="[float]0" Name="[string]Data Collector SR" TabIndex="[int]11" Top="[float]0" Value="{DataItemBinding Id=93652b8ae8741d2b33efc2dd6813372}" ValueFormatter="[string]LVFXP:UFXP_1_47&gt;&gt;Decimal, Uppercase, Unsigned:G6" ValueType="[Type]UFXP(1.47)" Width="[float]72" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+		</FrontPanelUnplacedItems>
+		<BlockDiagram Id="13">
+			<Wire Id="16" Joints="N(740:736)|(-2141,-990) h(6) v(5) N(147:Value)|(-2087,-985)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="17" Joints="N(741:736)|(-2141,-965) N(148:Value)|(-2092,-965)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-2970 -500 40 15" DataItem="167" Id="144" Label="156" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="-2970 -485 40 15" DataItem="168" Id="145" Label="157" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="-2090 -990 40 15" DataItem="170" Id="147" Label="159" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="-2095 -970 40 15" DataItem="171" Id="148" Label="160" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="-2965 -785 40 15" DataItem="172" Id="149" Label="161" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<DataAccessor Bounds="-2965 -750 40 15" DataItem="173" Id="150" Label="162" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="144" Bounds="-3051 -500 76 14" Id="156" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data From Tx</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="145" Bounds="-3081 -485 106 14" Id="157" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Valid From Tx</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="147" Bounds="-2090 -1007 85 14" Id="159" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Out To Rx</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="148" Bounds="-2050 -970 107 14" Id="160" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Vali Out to Rx</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="149" Bounds="-3062 -785 92 14" Id="161" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data In From Rx</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="150" Bounds="-2965 -767 123 14" Id="162" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Valid In From Rx</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="-3015 -630 40 15" DataItem="213" Id="214" Label="217" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@ed933bb8cdef469f90ddb3a8ae2473ba" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="214" Bounds="-3174 -630 154 14" Id="217" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>DiSIC data collector Setting</p.Text>
+			</NodeLabel>
+			<PropertyNode Bounds="-2955 -630 143 65" HasErrorTerminals="False" Id="218" InstanceDataType="@ed933bb8cdef469f90ddb3a8ae2473ba" Mode="InstanceProperties" Template="List" xmlns="http://www.ni.com/MocCommon">
+				<PropertyItemTerminal DataType="Boolean" Hotspot="143 15" Id="c0t0v" Path="Canceller on 120M?" PathElementMemberKinds="Field" Usage="Optional" />
+				<PropertyItemTerminal DataType="UInt16" Hotspot="143 30" Id="c1t0v" Path="x" PathElementMemberKinds="Field" Usage="Optional" />
+				<PropertyItemTerminal DataType="Boolean" Hotspot="143 45" Id="c2t0v" Path="Tx busy send Zero" PathElementMemberKinds="Field" Usage="Optional" />
+			</PropertyNode>
+			<Wire Id="219" Joints="N(214:Value)|(-2975,-625) N(218:instance in)|(-2955,-625)" xmlns="http://www.ni.com/PlatformFramework" />
+			<CaseStructure Bounds="-2275 -1045 130 140" Default="737" Id="736" Selected="738" UserSelectorBounds="21 0 88 17">
+				<CaseStructure.Case Bounds="5 5 120 130" Id="737" Pattern="False">
+					<Wire Id="916" Joints="N(895:737)|(90,126) v(-76) N(740:737)|(116,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="917" Joints="N(896:737)|(70,126) v(-51) N(741:737)|(116,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Case Bounds="5 5 120 130" Id="738" Pattern="True">
+					<Wire Id="920" Joints="N(892:738)|(4,50) N(740:738)|(116,50)" xmlns="http://www.ni.com/PlatformFramework" />
+					<Wire Id="921" Joints="N(894:738)|(4,80) h(5) v(-5) N(741:738)|(116,75)" xmlns="http://www.ni.com/PlatformFramework" />
+				</CaseStructure.Case>
+				<CaseStructure.Selector Bounds="-4 120 13 10" Docking="Left" Id="739" Terminals="736=902, 737, 738" />
+				<CaseStructure.Tunnel Bounds="121 50 13 10" Docking="Right" Id="740" Terminals="736=16, 737=916, 738=920" />
+				<CaseStructure.Tunnel Bounds="121 75 13 10" Docking="Right" Id="741" Terminals="736=17, 737=917, 738=921" />
+				<CaseStructure.Tunnel Bounds="-4 50 13 10" Docking="Left" Id="892" Terminals="736=891, 737, 738=920" />
+				<CaseStructure.Tunnel Bounds="-4 80 13 10" Docking="Left" Id="894" Terminals="736=893, 737, 738=921" />
+				<CaseStructure.Tunnel Bounds="90 131 10 13" Docking="Bottom" Id="895" Terminals="736=37f7e9dd123e42288d465bc6537fc6b0, 737=916, 738" />
+				<CaseStructure.Tunnel Bounds="70 131 10 13" Docking="Bottom" Id="896" Terminals="736=bb3a093cb8e348b4b19a5b9df263ba74, 737=917, 738" />
+			</CaseStructure>
+			<FIFORead Bounds="-2695 -1015 46 65" Id="750" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+			<MethodCall Bounds="-2550 -1025 50 50" Id="751" ResolveFailedHint="U32 to IQ Data.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@29497230bab645babb19016bee79057d" Target="NI::SDR::DSPV1FPGA::U32 to IQ Data.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="U32 data" />
+						<Parameter Id="L3" Desc="overflow" />
+						<Parameter Id="R2" Desc="IQ data" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="758" Joints="N(751:R2)|(-2500,-1000) h(55) v(10) B(2) N(5a183d90e0944368bad6bc95b948c75:L0)|(-2370,-990) B(2) v(105) N(978:Value)|(-1972,-885)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="774" Joints="N(750:Control Protocol Output)|(-2649,-965) h(194) v(5) B(2) N(5a183d90e0944368bad6bc95b948c75:L3)|(-2370,-960) B(2) v(100) N(995:Value)|(-1972,-860)" xmlns="http://www.ni.com/PlatformFramework" />
+			<IONameConstant Bounds="-2707 -1014 12 30" DataType="@64665c3f6de44fd5a451140ef4204453" Id="776" Label="785" UdrClass="Fifo" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>USRP Resources::USRP Resources.grsc::E_FIFO</p.Data>
+				<IONameConstantBehavior />
+				<DockedConstantFacade UndockedSize="199.636673 27" />
+			</IONameConstant>
+			<Wire Facade="WireInvisibleFacade" Id="777" Joints="N(776:Out)|(-2695,-1009) h(-5) v(-1) N(750:reference in)|(-2695,-1010)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="776" Bounds="-2707 -1014 0 0" Id="785" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>reference in</p.Text>
+			</NodeLabel>
+			<FIFOWrite Bounds="-1505 -780 46 65" Id="806" xmlns="http://www.ni.com/LabVIEW.FPGA" />
+			<Decrement Bounds="-2660 -615 30 30" Id="808" />
+			<MethodCall Bounds="-2580 -540 40 40" Id="810" ResolveFailedHint="&quot;C:\\Users\\shassani\\Desktop\\LabVIEWcomms4- Tester\\FPGA-subVIs.gcomp\\KUL_DiSIC\\DelayLine(511).gcdl&quot;" Signature="@c03fd85280ab4a7da8565286a863f60f" Target="FPGA-subVIs::KUL_DiSIC::DelayLine(511).gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="Data In" />
+						<Parameter Id="L1" Desc="Valid In" />
+						<Parameter Id="T0" Desc="N Delay" />
+						<Parameter Id="R0" Desc="Data Out" />
+						<Parameter Id="R1" Desc="Valid Out" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="UInt32" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt16" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="40 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="40 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<MethodCall Bounds="-2660 -520 50 50" Id="811" ResolveFailedHint="IQ Data to U32.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@1621bbed4dad480495086f8db5f5023a" Target="NI::SDR::DSPV1FPGA::IQ Data to U32.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="IQ data" />
+						<Parameter Id="R2" Desc="U32 data" />
+						<Parameter Id="R3" Desc="overflow" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<DataAccessor Bounds="-1580 -675 40 15" DataItem="831" Id="812" Label="828" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<MethodCall Bounds="-2000 -795 50 50" Id="816" ResolveFailedHint="IQ Data to U32.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@1621bbed4dad480495086f8db5f5023a" Target="NI::SDR::DSPV1FPGA::IQ Data to U32.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="IQ data" />
+						<Parameter Id="R2" Desc="U32 data" />
+						<Parameter Id="R3" Desc="overflow" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UInt32" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<JoinNumbers Bounds="-1570 -780 30 30" Id="817" />
+			<Wire Id="819" Joints="N(816:R2)|(-1950,-770) h(370) v(-5) N(817:high(x\))|(-1570,-775)" xmlns="http://www.ni.com/PlatformFramework" />
+			<LogicalAnd Bounds="-1585 -740 25 20" Id="822" Terminals="o=47ec628b509f44a59a904e9089bd44e4, c0t0v=bf577a837d984e98bcc9aa6d5ee7af5b, c1t0v=902" />
+			<IONameConstant Bounds="-1517 -790 12 30" DataType="@64665c3f6de44fd5a451140ef4204453" Id="825" Label="829" UdrClass="Fifo" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>USRP Resources::USRP Resources.grsc::DX_FIFO</p.Data>
+				<IONameConstantBehavior />
+				<DockedConstantFacade UndockedSize="208.473328 27" />
+			</IONameConstant>
+			<Wire Facade="WireInvisibleFacade" Id="826" Joints="N(825:Out)|(-1505,-785) h(-5) v(10) N(806:reference in)|(-1505,-775)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="812" Bounds="-1535 -675 50 14" Id="828" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Out</p.Text>
+			</NodeLabel>
+			<NodeLabel AttachedTo="825" Bounds="-1517 -790 0 0" Id="829" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>reference in</p.Text>
+			</NodeLabel>
+			<Wire Id="891" Joints="N(5a183d90e0944368bad6bc95b948c75:R0)|(-2320,-990) N(892:736)|(-2279,-990)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="893" Joints="N(5a183d90e0944368bad6bc95b948c75:R3)|(-2320,-960) N(894:736)|(-2279,-960)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="902" Joints="N(218:c0t0v)|(-2812,-615) h(29) v(-60) B(2) h(233) B(3) h(660) v(-50) N(822:c1t0v)|(-1585,-725) B(3) v(40) N(436680bfc224434cb87e91cbfda1dd15:L2)|(-2520,-635) B(2) v(-245) N(739:736)|(-2279,-920)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="903" Joints="N(218:c1t0v)|(-2812,-600) N(808:x)|(-2660,-600)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="904" Joints="N(144:Value)|(-2930,-495) N(811:L2)|(-2660,-495)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="951" Joints="N(145:Value)|(-2930,-480) h(345) v(-45) N(810:L1)|(-2580,-525)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="952" Joints="N(811:R2)|(-2610,-495) h(20) v(-40) N(810:L0)|(-2580,-535)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="953" Joints="N(808:x-1)|(-2630,-600) h(65) N(810:T0)|(-2565,-540)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-1675 -435 40 15" DataItem="955" Id="958" Label="959" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="958" Bounds="-1630 -435 44 14" Id="959" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Tx busy</p.Text>
+			</NodeLabel>
+			<SplitNumber Bounds="-2625 -1005 30 30" Id="961" />
+			<Wire Id="964" Joints="N(961:high(x\))|(-2595,-1000) N(751:L2)|(-2550,-1000)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="965" Joints="N(750:data)|(-2649,-1000) h(19) v(10) N(961:x)|(-2625,-990)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-2555 -870 50 50" Id="966" ResolveFailedHint="U32 to IQ Data.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@29497230bab645babb19016bee79057d" Target="NI::SDR::DSPV1FPGA::U32 to IQ Data.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="U32 data" />
+						<Parameter Id="L3" Desc="overflow" />
+						<Parameter Id="R2" Desc="IQ data" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="UInt32" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="967" Joints="N(961:low(x\))|(-2595,-985) h(5) v(140) N(966:L2)|(-2555,-845)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-1975 -890 40 15" DataItem="968" Id="978" Label="979" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="978" Bounds="-1930 -890 51 14" Id="979" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>DiSIC RX</p.Text>
+			</NodeLabel>
+			<DataAccessor Bounds="-1975 -845 40 15" DataItem="980" Id="990" Label="991" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="990" Bounds="-1930 -845 49 14" Id="991" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>DiSIC Tx</p.Text>
+			</NodeLabel>
+			<Wire Id="992" Joints="N(966:R2)|(-2505,-845) h(5) v(5) N(990:Value)|(-1972,-840)" xmlns="http://www.ni.com/PlatformFramework" />
+			<DataAccessor Bounds="-1975 -865 40 15" DataItem="993" Id="995" Label="997" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="3 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="995" Bounds="-1930 -865 88 14" Id="997" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>DiSIC TRX Valid</p.Text>
+			</NodeLabel>
+			<Select Bounds="-1720 -545 40 40" Id="bf2ff81b5dd042388970d700e4dcd32c" />
+			<Select Bounds="-1775 -490 40 40" Id="e2e06136480440fc8e9e83701882e04f" />
+			<Literal Bounds="-1787 -460 12 9" DataType="UInt32" Id="d5237f37a3794444a0a322865e8a0c4f" Label="1d8b46048d154aa08715a25334f451c9" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>0</p.Data>
+				<NumericBehavior Interpretation="Exact" ValueFormatter="LV:0" />
+				<DockedConstantFacade UndockedSize="40 15" />
+			</Literal>
+			<Wire Facade="WireInvisibleFacade" Id="b00f801ec03e461cb2c505dd39e93546" Joints="N(d5237f37a3794444a0a322865e8a0c4f:Out)|(-1775,-455) N(e2e06136480440fc8e9e83701882e04f:f)|(-1775,-455)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="d5237f37a3794444a0a322865e8a0c4f" Bounds="-1787 -478 30 15" Id="1d8b46048d154aa08715a25334f451c9" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>false value</p.Text>
+			</NodeLabel>
+			<Not Bounds="-2030 -430 25 20" Id="8876efd003bf431f95cc30879faf9d9f" />
+			<Wire Id="5b7530e610c74e7ea729ba3c3d5bcfc4" Joints="N(8876efd003bf431f95cc30879faf9d9f:.not. x?)|(-2005,-420) h(175) v(-50) N(e2e06136480440fc8e9e83701882e04f:s)|(-1775,-470)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="22d1b04249e544419950f872aa425c75" Joints="N(218:c2t0v)|(-2812,-585) h(62) v(165) N(8876efd003bf431f95cc30879faf9d9f:x)|(-2030,-420)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="3b34995ab0ff421f9ee7caf6373f1e5c" Joints="N(e2e06136480440fc8e9e83701882e04f:s? t:f)|(-1735,-470) h(9) v(-40) N(bf2ff81b5dd042388970d700e4dcd32c:f)|(-1720,-510)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="9400b9ffd9ca4c05a5cef39de52292f9" Joints="N(817:x)|(-1540,-765) N(806:data)|(-1505,-765)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="47ec628b509f44a59a904e9089bd44e4" Joints="N(822:o)|(-1560,-730) N(806:Control Protocol Input)|(-1505,-730)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="cb5b1c57d53a43fa87fa05234f0e799d" Joints="N(bf2ff81b5dd042388970d700e4dcd32c:s? t:f)|(-1680,-525) h(35) v(-145) B(2) N(812:Value)|(-1577,-670) B(2) v(-90) N(817:low(x\))|(-1570,-760)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="4dd3d25797854b909cbdb9d0a471e2d5" Joints="N(810:R1)|(-2540,-525) h(730) B(1) N(bf2ff81b5dd042388970d700e4dcd32c:s)|(-1720,-525) B(1) v(95) N(958:Value)|(-1672,-430)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="efd46f5227a46b6b5b822161c8f1258" Joints="N(810:R0)|(-2540,-535) h(750) B(1) v(-5) N(bf2ff81b5dd042388970d700e4dcd32c:t)|(-1720,-540) B(1) v(50) N(e2e06136480440fc8e9e83701882e04f:t)|(-1775,-485)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Literal Bounds="-2750 -960 25 15" DataType="Boolean" Id="4cad35671e8d4f8089f7c8e4bf78d557" Label="d014565145684943a0d5b6f57b2a61d8" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>True</p.Data>
+				<BooleanBehavior />
+			</Literal>
+			<NodeLabel AttachedTo="4cad35671e8d4f8089f7c8e4bf78d557" Bounds="-2750 -978 30 15" Id="d014565145684943a0d5b6f57b2a61d8" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>ready for output</p.Text>
+			</NodeLabel>
+			<Wire Id="aa2a1872433c4a4fad93640c16ecbb57" Joints="N(4cad35671e8d4f8089f7c8e4bf78d557:Out)|(-2725,-955) N(750:Control Protocol Input)|(-2695,-955)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-2370 -995 50 50" Id="5a183d90e0944368bad6bc95b948c75" ResolveFailedHint="Fractional Interpolator - 1 spc - 2x oc.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@5d664927015846d1b3762d062758024b" Target="NI::SDR::DSPV1FPGA::Fractional Interpolator - 1 spc - 2x oc.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="data in" />
+						<Parameter Id="L1" Desc="input sample rate" />
+						<Parameter Id="L2" Desc="delay" />
+						<Parameter Id="L3" Desc="input valid" />
+						<Parameter Id="T0" Desc="reset" />
+						<Parameter Id="T1" Desc="clock x 2" />
+						<Parameter Id="R0" Desc="data out" />
+						<Parameter Id="R1" Desc="input consumed" />
+						<Parameter Id="R3" Desc="output valid" />
+						<Parameter Id="B2" Desc="ready for input" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UFXP(1.47)" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="FXP(0.18)" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@dac63fe6a557485b81c0d91d8a899710" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="35 50" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 15" Id="R1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<Wire Id="b999451c112545cfb42f2c9c663baac2" Joints="N(f07a9230bba64245b44d80bc4c11942e:Value)|(-2655,-875) h(255) B(1) v(-105) N(5a183d90e0944368bad6bc95b948c75:L1)|(-2370,-980) B(1) v(105) N(c162d5328c254aac971604927a398aa1:L1)|(-2100,-770)" xmlns="http://www.ni.com/PlatformFramework" />
+			<IONameConstant Bounds="-2340 -1007 12 9" DataType="@dac63fe6a557485b81c0d91d8a899710" Id="5c98fac6ddc44229ebc012473f15fbe" Label="501b174202fc47b6b575122c5b0b2d3b" ShowType="False" UdrClass="Clock" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>Data Clock x2</p.Data>
+				<IONameConstantBehavior />
+				<DockedConstantFacade UndockedSize="120 15" />
+			</IONameConstant>
+			<Wire Facade="WireInvisibleFacade" Id="f0cc4021cef442a09fed54f0975c6bc6" Joints="N(5c98fac6ddc44229ebc012473f15fbe:Out)|(-2220,-1002) v(9) h(-95) v(-19) h(-30) N(5a183d90e0944368bad6bc95b948c75:T1)|(-2345,-995)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<NodeLabel AttachedTo="5c98fac6ddc44229ebc012473f15fbe" Bounds="-2340 -1025 30 15" Id="501b174202fc47b6b575122c5b0b2d3b" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>clock x 2</p.Text>
+			</NodeLabel>
+			<MethodCall Bounds="-2100 -785 50 50" Id="c162d5328c254aac971604927a398aa1" Label="fbc73971226645628678b92f5c23c687" ResolveFailedHint="Fractional Decimator - 1 spc - 2x oc.gcdl, Package: (NI SDR Instrument Design Libraries - DSP V1 FPGA, Version: 19.5.0)" Signature="@67eb454fe9f045b7ac181b1e071ccaf0" Target="NI::SDR::DSPV1FPGA::Fractional Decimator - 1 spc - 2x oc.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L0" Desc="data in" />
+						<Parameter Id="L1" Desc="output sample rate" />
+						<Parameter Id="L2" Desc="delay" />
+						<Parameter Id="L3" Desc="input valid" />
+						<Parameter Id="T0" Desc="reset" />
+						<Parameter Id="T1" Desc="clock x 2" />
+						<Parameter Id="R0" Desc="data out" />
+						<Parameter Id="R3" Desc="output valid" />
+						<Parameter Id="B2" Desc="ready for input" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Input" Id="L0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="UFXP(1.47)" Direction="Input" Hotspot="0 15" Id="L1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="FXP(0.16)" Direction="Input" Hotspot="0 25" Id="L2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 35" Id="L3" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="15 0" Id="T0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@dac63fe6a557485b81c0d91d8a899710" Direction="Input" Hotspot="25 0" Id="T1" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="35 50" Id="B2" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="@68fe6078f6394bf5825e5e817130d490" Direction="Output" Hotspot="50 5" Id="R0" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 35" Id="R3" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<NodeLabel AttachedTo="c162d5328c254aac971604927a398aa1" Bounds="-2100 -802 199 14" Id="fbc73971226645628678b92f5c23c687" IsReadOnly="True" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Fractional Decimator - 1 spc - 2x oc</p.Text>
+			</NodeLabel>
+			<IONameConstant Bounds="-2070 -797 12 9" DataType="@dac63fe6a557485b81c0d91d8a899710" Id="4b1e7aa3d05544b8b2ef21815a657620" Label="6eaf480edf734e478db0513ae190cd8c" UdrClass="Clock" UdrNamespace="FPGA" xmlns="http://www.ni.com/MocCommon">
+				<p.Data>Data Clock x2</p.Data>
+				<IONameConstantBehavior />
+				<DockedConstantFacade UndockedSize="128.906662 30" />
+			</IONameConstant>
+			<NodeLabel AttachedTo="4b1e7aa3d05544b8b2ef21815a657620" Bounds="-2070 -797 0 0" Id="6eaf480edf734e478db0513ae190cd8c" Visible="False" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>clock x 2</p.Text>
+			</NodeLabel>
+			<Wire Facade="WireInvisibleFacade" Id="b979ceefafd4747a0d088999d09b807" Joints="N(4b1e7aa3d05544b8b2ef21815a657620:Out)|(-1941.09338,-792) v(126) h(-163.906616) v(-124) h(30) N(c162d5328c254aac971604927a398aa1:T1)|(-2075,-785)" Visible="False" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="37f7e9dd123e42288d465bc6537fc6b0" Joints="N(149:Value)|(-2925,-780) h(745) B(1) N(c162d5328c254aac971604927a398aa1:L0)|(-2100,-780) B(1) N(895:736)|(-2180,-901)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="bb3a093cb8e348b4b19a5b9df263ba74" Joints="N(150:Value)|(-2925,-745) h(725) v(-5) B(2) N(c162d5328c254aac971604927a398aa1:L3)|(-2100,-750) B(2) N(896:736)|(-2200,-901)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="bf577a837d984e98bcc9aa6d5ee7af5b" Joints="N(c162d5328c254aac971604927a398aa1:R3)|(-2050,-750) h(40) v(15) N(822:c0t0v)|(-1585,-735)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="4713bd2832df42fba90c61329d0bae0c" Joints="N(c162d5328c254aac971604927a398aa1:R0)|(-2050,-780) h(10) v(10) N(816:L2)|(-2000,-770)" xmlns="http://www.ni.com/PlatformFramework" />
+			<Wire Id="c476c7bcff7e428490f5d354423dcfbf" Joints="N(436680bfc224434cb87e91cbfda1dd15:R2)|(-2470,-635) h(35) v(-175) B(2) h(350) N(c162d5328c254aac971604927a398aa1:T0)|(-2085,-785) B(2) v(-200) h(80) N(5a183d90e0944368bad6bc95b948c75:T0)|(-2355,-995)" xmlns="http://www.ni.com/PlatformFramework" />
+			<MethodCall Bounds="-2520 -660 50 50" Id="436680bfc224434cb87e91cbfda1dd15" ResolveFailedHint="Detect Rising Edge.gcdl, Package: (NI Instrument Design Libraries - Basic Elements FPGA, Version: 19.5.0)" Signature="@61f6f36bfa344f34bc99552c4cb51e11" Target="NI::IDL::BasicElementsV1FPGA::Detect Rising Edge.gcdl" xmlns="http://www.ni.com/MocCommon">
+				<p.MethodDeclaration>
+					<MethodDeclaration xmlns="http://www.ni.com/PlatformFramework">
+						<Parameter Id="L2" Desc="signal" />
+						<Parameter Id="R2" Desc="edge detected" />
+					</MethodDeclaration>
+				</p.MethodDeclaration>
+				<Terminal DataType="Boolean" Direction="Input" Hotspot="0 25" Id="L2" Usage="Required" xmlns="http://www.ni.com/PlatformFramework" />
+				<Terminal DataType="Boolean" Direction="Output" Hotspot="50 25" Id="R2" xmlns="http://www.ni.com/PlatformFramework" />
+			</MethodCall>
+			<DataAccessor Bounds="-2695 -880 40 15" DataItem="93652b8ae8741d2b33efc2dd6813372" Id="f07a9230bba64245b44d80bc4c11942e" Label="48e4974135c042609e61e7b30a4d0615" xmlns="http://www.ni.com/MocCommon">
+				<Terminal DataType="UFXP(1.47)" Direction="Output" Hotspot="40 5" Id="Value" xmlns="http://www.ni.com/PlatformFramework" />
+			</DataAccessor>
+			<NodeLabel AttachedTo="f07a9230bba64245b44d80bc4c11942e" Bounds="-2798 -880 98 14" Id="48e4974135c042609e61e7b30a4d0615" xmlns="http://www.ni.com/PlatformFramework">
+				<p.Text>Data Collector SR</p.Text>
+			</NodeLabel>
+		</BlockDiagram>
+		<NativeFrontPanel AllowMaximize="[bool]False" EnforceMaximumSize="[bool]True" Height="[float]1600" Id="14" Left="[float]0" MaxHeight="[float]1600" MaxWidth="[float]2000" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Fixed" Top="[float]0" Width="[float]2000" WindowTitleOption="[WindowTitleOption]None">
+			<Cluster BaseName="[string]Cluster" BorderThickness="[SMThickness]1,1,1,1" ClusterType="[Type]@ed933bb8cdef469f90ddb3a8ae2473ba" Height="[float]156" Id="215" Label="[UIModel]216" Left="[float]320" TabIndex="[int]0" Top="[float]395" Value="{DataItemBinding Id=213}" Width="[float]209" xmlns="http://www.ni.com/PanelCommon">
+				<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="187" IsReadOnly="[bool]False" Label="[UIModel]211" Left="[float]9" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]0" Top="[float]29" TrueContent="[string]On" Value="{ClusterBinding FieldName=Canceller\ on\ 120M?}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<NumericText BaseName="[string]Numeric" Height="[float]24" Id="175" Interval="[ushort]1" Label="[UIModel]212" Left="[float]131" TabIndex="[int]1" Top="[float]24" Value="{ClusterBinding FieldName=x}" ValueFormatter="[string]LV:G6" ValueType="[Type]UInt16" Width="[float]70" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="211" LabelOwner="[UIModel]187" Left="[float]9" Text="[string]Canceller on 120M?" Top="[float]9" Width="[float]105" />
+				<Label Height="[float]16" Id="212" LabelOwner="[UIModel]175" Left="[float]131" Text="[string]x" Top="[float]4" Width="[float]6" />
+				<Switch BaseName="[string]Switch" FalseContent="[string]Off" Height="[float]50" Id="371b8e4aff8543a19aac6ca33901adad" IsReadOnly="[bool]False" Label="[UIModel]3dd02fa7d06b4db5838942de3193f365" Left="[float]9" Orientation="[SMOrientation]Vertical" Shape="[SwitchShape]Slider" TabIndex="[int]2" Top="[float]98" TrueContent="[string]On" Value="{ClusterBinding FieldName=Tx\ busy\ send\ Zero}" Width="[float]34" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+				<Label Height="[float]16" Id="3dd02fa7d06b4db5838942de3193f365" LabelOwner="[UIModel]371b8e4aff8543a19aac6ca33901adad" Left="[float]9" Text="[string]Tx busy send Zero" Top="[float]78" Width="[float]95" />
+			</Cluster>
+			<Label Height="[float]16" Id="216" LabelOwner="[UIModel]215" Left="[float]320" Text="[string]DiSIC data collector Setting" Top="[float]375" Width="[float]145" xmlns="http://www.ni.com/PanelCommon" />
+			<PanelExecutionWindow Id="998" />
+		</NativeFrontPanel>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="6" DataType="@68fe6078f6394bf5825e5e817130d490" Id="167" Name="Data From Tx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="7" DataType="Boolean" Id="168" Name="Data Valid From Tx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="0" DataType="@68fe6078f6394bf5825e5e817130d490" Id="170" Name="Data Out To Rx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="1" DataType="Boolean" Id="171" Name="Data Vali Out to Rx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="0" DataType="@68fe6078f6394bf5825e5e817130d490" Id="172" Name="Data In From Rx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="1" DataType="Boolean" Id="173" Name="Data Valid In From Rx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem CallDirection="Input" CallIndex="2" DataType="@ed933bb8cdef469f90ddb3a8ae2473ba" Id="213" Name="DiSIC data collector Setting" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False_0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallIndex="2" DataType="UInt32" Id="831" Name="Data Out" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="2" DataType="Boolean" Id="955" Name="Tx busy" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="4" DataType="@68fe6078f6394bf5825e5e817130d490" Id="968" Name="DiSIC RX" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="3" DataType="@68fe6078f6394bf5825e5e817130d490" Id="980" Name="DiSIC Tx" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x0_0x0_False_</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Output" CallIndex="5" DataType="Boolean" Id="993" Name="DiSIC TRX Valid" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>False</p.DefaultValue>
+		</DataItem>
+		<DataItem AdaptToDiagramType="True" CallDirection="Input" CallIndex="3" DataType="UFXP(1.47)" Id="93652b8ae8741d2b33efc2dd6813372" Name="Data Collector SR" xmlns="http://www.ni.com/MocCommon">
+			<p.DefaultValue>0x547AE147AE14</p.DefaultValue>
+		</DataItem>
+	</VirtualInstrument>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="68fe6078f6394bf5825e5e817130d490">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="I" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Q" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="overflow" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ed933bb8cdef469f90ddb3a8ae2473ba">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Canceller on 120M?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="x" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Tx busy send Zero" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="29497230bab645babb19016bee79057d">
+			<Attributed AttributedType="@08f7d034b679443ca8a28cab32f8ec8f">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="64665c3f6de44fd5a451140ef4204453">
+			<Attributed AttributedType="@3ed2e773db0b4a409bc9ed7dafe6e6a6">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c03fd85280ab4a7da8565286a863f60f">
+			<Attributed AttributedType="@b5dacf1ad7464f11b68f7b1a8697d03e">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]40" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]40" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1621bbed4dad480495086f8db5f5023a">
+			<Attributed AttributedType="@122ce93b6eaa41cea8cdb0f3ea613ea5">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="5d664927015846d1b3762d062758024b">
+			<Attributed AttributedType="@b8da025fff904bcb98c0a7b74f3c539a">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dac63fe6a557485b81c0d91d8a899710">
+			<Attributed AttributedType="@073df20892a94ba0a92f34fb848ed110">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Clock" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="67eb454fe9f045b7ac181b1e071ccaf0">
+			<Attributed AttributedType="@2d6dd66753cb403eaf3f4982ea998ecd">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="61f6f36bfa344f34bc99552c4cb51e11">
+			<Attributed AttributedType="@793d8c6415524c2a8fb00992c83cde3a">
+				<AttributeValues>
+					<AttributeValue Name="NI.ConnectorPaneHeight" Value="[int]50" />
+					<AttributeValue Name="NI.ConnectorPaneWidth" Value="[int]50" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="08f7d034b679443ca8a28cab32f8ec8f">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="U32 to IQ Data.gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@1b71fd9c25384bb38fe4077d6f2ea592">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]U32 data" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b83f8e7503864d54b9951dbed85dc36c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]overflow" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@9006fedae08345ae833ad79d701bfcc5">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]IQ data" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3ed2e773db0b4a409bc9ed7dafe6e6a6">
+			<Generic>
+				<Constraints>
+					<TypeRef>@007755700fe64dad99bdf0f9187df8f2</TypeRef>
+					<TypeRef>@8f23ac952bc14ec6bb2c258c4c330dfa</TypeRef>
+					<TypeRef>@dc859cf9cdce4ed6aff5d1c408966f1c</TypeRef>
+				</Constraints>
+			</Generic>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b5dacf1ad7464f11b68f7b1a8697d03e">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="DelayLine(511).gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@1c5b10debcdc454f9a25f8287450cb89">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Data In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@262eabc9a4d0418baaccbf4550054485">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Valid In" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@d29a5ced61a94df6aa73a68c2e82f6cc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]N Delay" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@8fc033cf35c44c4f827fbbcbe6a6014a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Data Out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@3011eb6fcbfc42beb3a4a65b7959ef17">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]Valid Out" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="122ce93b6eaa41cea8cdb0f3ea613ea5">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="IQ Data to U32.gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@f061ef59ecfe48c4935c0ad4f9aab25c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]IQ data" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@e8b4cf6e4e454c00af3e86e40c856a1a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]U32 data" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@02d509a253d149a785079f3c587e6f57">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]overflow" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b8da025fff904bcb98c0a7b74f3c539a">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Fractional Interpolator - 1 spc - 2x oc.gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@9f3966bf9a6a4a70aa5c32f83dd73442">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]data in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f5d23eedb7204a2b9e6211c41592579c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]input sample rate" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f8c3e957d51c4d9cb43f6e374ee19f5d">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]delay" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b83f8e7503864d54b9951dbed85dc36c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]input valid" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@9bb55c31143b46ffb767beecb376fb35">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]reset" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@886d65c1a60b4523ba35ae9f5d619a5a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]clock x 2" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@bf4faa9d03f44061bf3b2a24f36bad78">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]ready for input" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2c38e83292474c0fa6c9007ca44ce229">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]data out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@3011eb6fcbfc42beb3a4a65b7959ef17">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]input consumed" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@02d509a253d149a785079f3c587e6f57">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]output valid" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="073df20892a94ba0a92f34fb848ed110">
+			<Composite Id="1" Name="ClockDataType" ReferenceClass="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2d6dd66753cb403eaf3f4982ea998ecd">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Fractional Decimator - 1 spc - 2x oc.gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@9f3966bf9a6a4a70aa5c32f83dd73442">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]data in" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@f5d23eedb7204a2b9e6211c41592579c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]output sample rate" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@d7bb0168e56a41a79c259b94caaf22bc">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]delay" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@b83f8e7503864d54b9951dbed85dc36c">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]input valid" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@9bb55c31143b46ffb767beecb376fb35">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]reset" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@886d65c1a60b4523ba35ae9f5d619a5a">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]clock x 2" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@bf4faa9d03f44061bf3b2a24f36bad78">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]ready for input" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2c38e83292474c0fa6c9007ca44ce229">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]data out" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@02d509a253d149a785079f3c587e6f57">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]output valid" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="793d8c6415524c2a8fb00992c83cde3a">
+			<Function Id="1" IsStatic="True" IsConstructor="False" Name="Detect Rising Edge.gcdl" ReturnType="Void" GenericTypeDefinition="Void">
+				<Parameters>
+					<Attributed AttributedType="@e0ccd7c3568742c288e666cd088f7dc7">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]signal" />
+						</AttributeValues>
+					</Attributed>
+					<Attributed AttributedType="@2cc4bb0d69684626ba86276b4347bbc3">
+						<AttributeValues>
+							<AttributeValue Name="NI.UserDefinedName" Value="[string]edge detected" />
+						</AttributeValues>
+					</Attributed>
+				</Parameters>
+			</Function>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1b71fd9c25384bb38fe4077d6f2ea592">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="UInt32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="b83f8e7503864d54b9951dbed85dc36c">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L3" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9006fedae08345ae833ad79d701bfcc5">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="@68fe6078f6394bf5825e5e817130d490" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="007755700fe64dad99bdf0f9187df8f2">
+			<Attributed AttributedType="@0dddbf93e533445ca7cd3d8d09994016">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8f23ac952bc14ec6bb2c258c4c330dfa">
+			<Attributed AttributedType="@1c0d9e40edd94fa6849ed6c7302e4642">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dc859cf9cdce4ed6aff5d1c408966f1c">
+			<Attributed AttributedType="@3966cdfbf62c4f6a8b52da4183401678">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1c5b10debcdc454f9a25f8287450cb89">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="UInt32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="262eabc9a4d0418baaccbf4550054485">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d29a5ced61a94df6aa73a68c2e82f6cc">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="UInt16" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="8fc033cf35c44c4f827fbbcbe6a6014a">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="UInt32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="3011eb6fcbfc42beb3a4a65b7959ef17">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R1" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f061ef59ecfe48c4935c0ad4f9aab25c">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="@68fe6078f6394bf5825e5e817130d490" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="e8b4cf6e4e454c00af3e86e40c856a1a">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="UInt32" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="02d509a253d149a785079f3c587e6f57">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R3" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9f3966bf9a6a4a70aa5c32f83dd73442">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L0" DataType="@68fe6078f6394bf5825e5e817130d490" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f5d23eedb7204a2b9e6211c41592579c">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L1" DataType="UFXP(1.47)" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="f8c3e957d51c4d9cb43f6e374ee19f5d">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="FXP(0.18)" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="9bb55c31143b46ffb767beecb376fb35">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T0" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="886d65c1a60b4523ba35ae9f5d619a5a">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="T1" DataType="@dac63fe6a557485b81c0d91d8a899710" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="bf4faa9d03f44061bf3b2a24f36bad78">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="B2" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2c38e83292474c0fa6c9007ca44ce229">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R0" DataType="@68fe6078f6394bf5825e5e817130d490" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="d7bb0168e56a41a79c259b94caaf22bc">
+			<Parameter InputParameterPassingRule="Recommended" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="FXP(0.16)" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="e0ccd7c3568742c288e666cd088f7dc7">
+			<Parameter InputParameterPassingRule="Required" OutputParameterPassingRule="NotAllowed" Name="L2" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="2cc4bb0d69684626ba86276b4347bbc3">
+			<Parameter InputParameterPassingRule="NotAllowed" OutputParameterPassingRule="Recommended" Name="R2" DataType="Boolean" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="0dddbf93e533445ca7cd3d8d09994016">
+			<Composite Id="1" Name="FifoReadInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@e792086f690c4c2b95c0baace2ef8b1c">
+				<ClosedGenericParameters>
+					<TypeRef>UInt64</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="1c0d9e40edd94fa6849ed6c7302e4642">
+			<Composite Id="1" Name="FifoWriteInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@a0ac91fb17f544b99b384bd6e1cd6a09">
+				<ClosedGenericParameters>
+					<TypeRef>UInt64</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3966cdfbf62c4f6a8b52da4183401678">
+			<Composite Id="1" Name="FifoClearInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@7d30e0c4dc8f469c85396fcedcfd32bb">
+				<ClosedGenericParameters>
+					<TypeRef>UInt64</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="e792086f690c4c2b95c0baace2ef8b1c">
+			<Attributed AttributedType="@82e9a5d9c7ed4754b812ea840e816a7f">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a0ac91fb17f544b99b384bd6e1cd6a09">
+			<Attributed AttributedType="@a0a4a0c0c4ec46f79fe885b3b09801de">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7d30e0c4dc8f469c85396fcedcfd32bb">
+			<Attributed AttributedType="@9f4133707db34f158958436905389816">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]TagRefnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Fifo" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="82e9a5d9c7ed4754b812ea840e816a7f">
+			<Composite Id="1" Name="FifoReadInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@e792086f690c4c2b95c0baace2ef8b1c">
+				<GenericParameters>
+					<Generic GenericName="Element" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="Read" Name="used elements" DataType="UInt32" />
+					<Field FieldAccessPolicy="Read" Name="full threshold met?" DataType="Boolean" />
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Read" ReturnType="Void" DeclaringType="@e792086f690c4c2b95c0baace2ef8b1c" GenericTypeDefinition="Void" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a0a4a0c0c4ec46f79fe885b3b09801de">
+			<Composite Id="1" Name="FifoWriteInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@a0ac91fb17f544b99b384bd6e1cd6a09">
+				<GenericParameters>
+					<Generic GenericName="Element" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="Read" Name="free elements" DataType="UInt32" />
+					<Field FieldAccessPolicy="Read" Name="empty threshold met?" DataType="Boolean" />
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Write" ReturnType="Void" DeclaringType="@a0ac91fb17f544b99b384bd6e1cd6a09" GenericTypeDefinition="Void" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9f4133707db34f158958436905389816">
+			<Composite Id="1" Name="FifoClearInterface" ReferenceClass="" Interface="" GenericTypeDefinition="@7d30e0c4dc8f469c85396fcedcfd32bb">
+				<GenericParameters>
+					<Generic GenericName="Element" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="Clear" ReturnType="Void" DeclaringType="@7d30e0c4dc8f469c85396fcedcfd32bb" GenericTypeDefinition="Void" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+	<IconTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.IconModel Target="NI::SDR::DSPV1FPGA::U32 to IQ Data.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.34599996 49,4 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4,49 C 2.34599996,49 1,47.6539993 1,46 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 46,1 M 46,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,46 C 0,48.2000008 1.79999995,50 4,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,4 C 50,1.79999995 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 9.16399956,5.63100004 C 8.93400002,5.21500015 8.61800003,4.88500023 8.21700001,4.64099979 C 7.98199987,4.49399996 7.69299984,4.38199997 7.3499999,4.30299997 C 7.00600004,4.22300005 6.59800005,4.18400002 6.12300014,4.18400002 L 4.01399994,4.18400002 L 4.01399994,10 L 6.06500006,10 C 6.52899981,10 6.92999983,9.9659996 7.26800013,9.89799976 C 7.60699987,9.82999992 7.91800022,9.71000004 8.20199966,9.53899956 C 8.57900047,9.31000042 8.8920002,8.97999954 9.13899994,8.55300045 C 9.38700008,8.1239996 9.51000023,7.63899994 9.51000023,7.09800005 C 9.51000023,6.53499985 9.39500046,6.046 9.16399956,5.63100004 Z M 7.76800013,8.05700016 C 7.64099979,8.31799984 7.43900013,8.52700043 7.16599989,8.68400002 C 7.0079999,8.77000046 6.84499979,8.82800007 6.67799997,8.86100006 C 6.51200008,8.89400005 6.25,8.90999985 5.89300013,8.90999985 L 5.51399994,8.90999985 L 5.51399994,5.26999998 L 5.89300013,5.26999998 C 6.21600008,5.26999998 6.45699978,5.28399992 6.61800003,5.31099987 C 6.77899981,5.33799982 6.93499994,5.38899994 7.08900023,5.46500015 C 7.39099979,5.61800003 7.61100006,5.83099985 7.75,6.10400009 C 7.88999987,6.375 7.95900011,6.704 7.95900011,7.08599997 C 7.95900011,7.47100019 7.89599991,7.79500008 7.76800013,8.05700016 Z M 14.6809998,7.19299984 C 14.4689999,6.94099998 14.1400003,6.74300003 13.6949997,6.59700012 C 13.4680004,6.52400017 13.257,6.46600008 13.0600004,6.42500019 C 12.8640003,6.3829999 12.6590004,6.34000015 12.4449997,6.296 C 12.1199999,6.22800016 11.8979998,6.15299988 11.7810001,6.0710001 C 11.6639996,5.98899984 11.6049995,5.87099981 11.6049995,5.71700001 C 11.6049995,5.61499977 11.6409998,5.5250001 11.7139997,5.4460001 C 11.7869997,5.36600018 11.8739996,5.30700016 11.9759998,5.26800013 C 12.0900002,5.22100019 12.2089996,5.18900013 12.3330002,5.17199993 C 12.4569998,5.15399981 12.5810003,5.14699984 12.7060003,5.14699984 C 13.0600004,5.14699984 13.4069996,5.21000004 13.7469997,5.33599997 C 14.0869999,5.46199989 14.3739996,5.61899996 14.6079998,5.80700016 L 14.7679996,5.80700016 L 14.7679996,4.46700001 C 14.4949999,4.35500002 14.1709995,4.26200008 13.7969999,4.1880002 C 13.4230003,4.11399984 13.0450001,4.07700014 12.6619997,4.07700014 C 11.8990002,4.07700014 11.2740002,4.24800014 10.7889996,4.59100008 C 10.3039999,4.93300009 10.0600004,5.375 10.0600004,5.91699982 C 10.0600004,6.32000017 10.1669998,6.65799999 10.382,6.93100023 C 10.5970001,7.20200014 10.9490004,7.41800022 11.4390001,7.57700014 C 11.6529999,7.64699984 11.8809996,7.70499992 12.125,7.75099993 C 12.368,7.796 12.6000004,7.84499979 12.8179998,7.89699984 C 13.026,7.9460001 13.184,8.0170002 13.2930002,8.10999966 C 13.401,8.20199966 13.4549999,8.31200027 13.4549999,8.43999958 C 13.4549999,8.57800007 13.4180002,8.68200016 13.3439999,8.75300026 C 13.2700005,8.82400036 13.1750002,8.88199997 13.0609999,8.9289999 C 12.967,8.96500015 12.8459997,8.99199963 12.698,9.00699997 C 12.5500002,9.02200031 12.4289999,9.02999973 12.3389997,9.02999973 C 11.9849997,9.02999973 11.6149998,8.96399975 11.2320004,8.83100033 C 10.849,8.69799995 10.5,8.50899982 10.1899996,8.26200008 L 10.026,8.26200008 L 10.026,9.65699959 C 10.3389997,9.7869997 10.6730003,9.89400005 11.0319996,9.97900009 C 11.3900003,10.0629997 11.8100004,10.1059999 12.2919998,10.1059999 C 13.125,10.1059999 13.7849998,9.92599964 14.2709999,9.56900024 C 14.7559996,9.21100044 15,8.74499989 15,8.17300034 C 14.9989996,7.77099991 14.8929996,7.44399977 14.6809998,7.19299984 Z M 20.6580009,5.15600014 C 20.5340004,4.91599989 20.3549995,4.71899986 20.1210003,4.56599998 C 19.9260006,4.4380002 19.7010002,4.34200001 19.4470005,4.27899981 C 19.1930008,4.21500015 18.8810005,4.18300009 18.5109997,4.18300009 L 16.0419998,4.18300009 L 16.0419998,10 L 17.5419998,10 L 17.5419998,8.10499954 L 18.4759998,8.10499954 C 18.8999996,8.10499954 19.2549992,8.04599953 19.5400009,7.9289999 C 19.8250008,7.8119998 20.0830002,7.63800001 20.3150005,7.40899992 C 20.4839993,7.23899984 20.6140003,7.03000021 20.7059994,6.78200006 C 20.7970009,6.53299999 20.8430004,6.27799988 20.8430004,6.01800013 C 20.8439999,5.68400002 20.7810001,5.39599991 20.6580009,5.15600014 Z M 19.2290001,6.47599983 C 19.1860008,6.59100008 19.1159992,6.69099998 19.0200005,6.77400017 C 18.9080009,6.86800003 18.7689991,6.92999983 18.6040001,6.96199989 C 18.4379997,6.99300003 18.2280006,7.00899982 17.9729996,7.00899982 L 17.5429993,7.00899982 L 17.5429993,5.26999998 L 17.8010006,5.26999998 C 18.0480003,5.26999998 18.2460003,5.27299976 18.3950005,5.28000021 C 18.5429993,5.28599977 18.6959991,5.3210001 18.8519993,5.38399982 C 18.9689999,5.42999983 19.0720005,5.51300001 19.1609993,5.63100004 C 19.2490005,5.74900007 19.2940006,5.88999987 19.2940006,6.0539999 C 19.2929993,6.21899986 19.2709999,6.36000013 19.2290001,6.47599983 Z M 31.684,37.5900002 L 30.3729992,37.5900002 L 30.3729992,32.4280014 L 31.684,32.4280014 L 31.684,31.0100002 L 27,31.0100002 L 27,32.4280014 L 28.3110008,32.4280014 L 28.3110008,37.5900002 L 27,37.5900002 L 27,39.0079994 L 31.684,39.0079994 L 31.684,37.5900002 Z M 40.5970001,37.4690018 C 41.0270004,36.7799988 41.2420006,35.9609985 41.2420006,35.012001 C 41.2420006,33.7270012 40.875,32.7099991 40.1409988,31.9640007 C 39.4070015,31.2169991 38.3989983,30.8439999 37.1170006,30.8439999 C 35.8310013,30.8439999 34.8230019,31.2169991 34.0929985,31.9640007 C 33.362999,32.7099991 32.9970016,33.7270012 32.9970016,35.012001 C 32.9970016,36.2410011 33.3310013,37.2200012 33.9990005,37.9519997 C 34.6669998,38.6839981 35.598999,39.0849991 36.7949982,39.1520004 C 36.8139992,39.4669991 36.8740005,39.7540016 36.9780006,40.0110016 C 37.0820007,40.2680016 37.237999,40.493 37.4449997,40.6829987 C 37.6570015,40.8759995 37.9210014,41.026001 38.237999,41.1310005 C 38.5540009,41.2360001 38.9259987,41.2900009 39.3520012,41.2900009 C 39.8349991,41.2900009 40.1949997,41.2709999 40.4290009,41.2360001 C 40.6629982,41.2000008 40.8800011,41.1590004 41.0810013,41.112999 L 41.0810013,39.7000008 L 40.8769989,39.7000008 C 40.7980003,39.7389984 40.6590004,39.7840004 40.4580002,39.8339996 C 40.257,39.8839989 40.0839996,39.9090004 39.9370003,39.9090004 C 39.5040016,39.9090004 39.1990013,39.8320007 39.019001,39.6769981 C 38.8390007,39.5229988 38.7439995,39.2669983 38.7290001,38.9099998 C 39.5439987,38.6389999 40.1669998,38.1590004 40.5970001,37.4690018 Z M 37.8790016,37.512001 C 37.6389999,37.6150017 37.387001,37.6650009 37.1209984,37.6650009 C 36.855999,37.6650009 36.6030006,37.6150017 36.3639984,37.5149994 C 36.125,37.4150009 35.9150009,37.2589989 35.7360001,37.0470009 C 35.5559998,36.8359985 35.4119987,36.5639992 35.3030014,36.2290001 C 35.1940002,35.894001 35.1389999,35.4889984 35.1389999,35.012001 C 35.1389999,34.5460014 35.1959991,34.137001 35.3079987,33.7840004 C 35.4210014,33.4309998 35.5670013,33.1549988 35.7459984,32.9550018 C 35.9389992,32.7400017 36.1520004,32.5859985 36.3829994,32.4920006 C 36.6139984,32.3989983 36.8610001,32.3530006 37.1209984,32.3530006 C 37.3790016,32.3530006 37.6269989,32.401001 37.8650017,32.4980011 C 38.1030006,32.5950012 38.3139992,32.75 38.4959984,32.9650002 C 38.6759987,33.1730003 38.8199997,33.4449997 38.9319992,33.7809982 C 39.0429993,34.118 39.0979996,34.526001 39.0979996,35.0060005 C 39.0979996,35.4539986 39.0499992,35.8440018 38.9529991,36.1749992 C 38.855999,36.5060005 38.7080002,36.7929993 38.5079994,37.0369987 C 38.3279991,37.2529984 38.1189995,37.4109993 37.8790016,37.512001 Z" Fill="[SMSolidColorBrush]#ff55b377" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 35,29 L 8,29 L 8,17 L 35,17 L 35,29 Z M 17.0240002,19.0020008 L 14.9510002,19.0020008 L 14.9510002,23.9920006 C 14.9510002,24.5680008 14.8319998,24.9869995 14.5939999,25.2490005 C 14.3559999,25.5109997 13.9790001,25.6410007 13.4630003,25.6410007 C 12.941,25.6410007 12.5629997,25.5049992 12.3299999,25.2329998 C 12.0979996,24.9619999 11.9799995,24.5470009 11.9799995,23.993 L 11.9799995,19.0030003 L 9.90799999,19.0030003 L 9.90799999,24.1110001 C 9.90799999,25.0949993 10.2069998,25.8509998 10.8070002,26.3780003 C 11.4069996,26.9039993 12.2919998,27.1669998 13.4619999,27.1669998 C 14.6339998,27.1669998 15.5200005,26.9039993 16.1210003,26.3780003 C 16.7220001,25.8519993 17.0230007,25.0949993 17.0230007,24.1070004 L 17.0230007,19.0020008 Z M 23.8610001,22.9239998 C 23.6580009,22.8479996 23.4650002,22.7980003 23.2810001,22.7740002 L 23.2810001,22.698 C 23.7320004,22.6019993 24.0949993,22.3789997 24.3719997,22.0300007 C 24.6480007,21.6800003 24.7849998,21.2840004 24.7849998,20.8409996 C 24.7849998,20.5039997 24.7140007,20.2099991 24.5699997,19.9599991 C 24.427,19.7089996 24.2089996,19.4960003 23.9160004,19.3199997 C 23.6679993,19.1739998 23.3549995,19.0559998 22.9759998,18.9680004 C 22.5970001,18.8799992 22.1550007,18.8360004 21.6490002,18.8360004 C 21.1299992,18.8360004 20.618,18.8910007 20.1140003,19 C 19.6079998,19.1089993 19.2099991,19.2229996 18.9160004,19.3409996 L 18.9160004,21.0760002 L 19.1140003,21.0760002 C 19.4829998,20.8570004 19.8640003,20.6889992 20.2590008,20.573 C 20.6539993,20.4570007 21.0189991,20.3980007 21.3549995,20.3980007 C 21.4920006,20.3980007 21.6539993,20.4099998 21.8430004,20.4309998 C 22.0330009,20.4519997 22.198,20.4950008 22.3369999,20.5599995 C 22.4629993,20.6170006 22.566,20.6949997 22.6499996,20.7929993 C 22.7320004,20.8920002 22.7730007,21.0209999 22.7730007,21.1830006 C 22.7730007,21.4009991 22.7339993,21.5669994 22.6550007,21.6790009 C 22.5760002,21.7919998 22.4589996,21.882 22.3010006,21.9500008 C 22.1509991,22.0139999 21.9680004,22.0550003 21.7530003,22.073 C 21.5380001,22.0919991 21.2910004,22.1000004 21.0119991,22.1000004 L 20.5550003,22.1000004 L 20.5550003,23.5289993 L 20.9960003,23.5289993 C 21.2070007,23.5289993 21.4349995,23.5319996 21.684,23.5370007 C 21.9300003,23.5429993 22.1420002,23.5739994 22.3169994,23.632 C 22.493,23.6849995 22.6340008,23.7759991 22.7420006,23.9029999 C 22.8500004,24.0300007 22.9029999,24.2110004 22.9029999,24.4430008 C 22.9029999,24.6830006 22.8640003,24.8670006 22.7849998,24.9939995 C 22.7059994,25.1210003 22.6000004,25.2290001 22.4680004,25.3180008 C 22.2999992,25.4330006 22.0949993,25.507 21.8509998,25.5419998 C 21.6070004,25.5769997 21.382,25.5930004 21.1739998,25.5930004 C 20.8199997,25.5930004 20.4290009,25.5249996 20.0009995,25.3889999 C 19.5720005,25.2530003 19.2040005,25.0919991 18.8969994,24.9060001 L 18.6870003,24.9060001 L 18.6870003,26.6630001 C 18.9850006,26.7919998 19.3710003,26.9080009 19.8449993,27.0119991 C 20.3190002,27.1159992 20.8880005,27.1669998 21.5499992,27.1669998 C 22.1299992,27.1669998 22.6229992,27.1070004 23.0300007,26.9869995 C 23.4360008,26.8670006 23.7900009,26.6940002 24.0909996,26.4689999 C 24.3990002,26.2360001 24.6259995,25.9559994 24.7749996,25.6310005 C 24.9239998,25.3050003 24.9990005,24.9529991 24.9990005,24.5779991 C 24.9990005,24.2439995 24.9470005,23.9769993 24.8439999,23.7770004 C 24.7399998,23.5769997 24.6000004,23.4009991 24.4239998,23.2509995 C 24.2520008,23.1070004 24.066,22.9979992 23.8610001,22.9239998 Z M 32.9799995,25.4689999 L 29.3869991,25.4689999 C 29.5270004,25.3689995 29.7609997,25.1930008 30.0909996,24.941 C 30.4200001,24.6879997 30.7469997,24.4120007 31.073,24.1110001 C 31.5930004,23.6280003 31.9769993,23.1590004 32.230999,22.7040005 C 32.4830017,22.2490005 32.6090012,21.7689991 32.6090012,21.2649994 C 32.6090012,20.4950008 32.3460007,19.8999996 31.8190002,19.4790001 C 31.2940006,19.0580006 30.5279999,18.8479996 29.5259991,18.8479996 C 29.0279999,18.8479996 28.5319996,18.9039993 28.0359993,19.0149994 C 27.5400009,19.125 27.1650009,19.2369995 26.9109993,19.3470001 L 26.9109993,21.125 L 27.0830002,21.125 C 27.3939991,20.9139996 27.7310009,20.7399998 28.0949993,20.6040001 C 28.4580002,20.4669991 28.8050003,20.3990002 29.1340008,20.3990002 C 29.5750008,20.3990002 29.9120007,20.4990005 30.1480007,20.698 C 30.382,20.8959999 30.5,21.1779995 30.5,21.5440006 C 30.5,21.8490009 30.4080009,22.1560001 30.2259998,22.4680004 C 30.0440006,22.7800007 29.7350006,23.1450005 29.302,23.5639992 C 29.0119991,23.8470001 28.6259995,24.1830006 28.1450005,24.5739994 C 27.6630001,24.9650002 27.1819992,25.3330002 26.7029991,25.6800003 L 26.7029991,27 L 32.980999,27 L 32.980999,25.4689999 Z M 21,38 L 25,35.4970016 L 21,33 L 22.0060005,34.9980011 L 21,35 C 18.243,35 16,32.757 16,30 L 15,30 C 15,33.3139992 17.6860008,36 21,36 L 22.0060005,35.9980011 L 21,38 Z" Fill="[SMSolidColorBrush]#ff4d5359" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="FPGA-subVIs::KUL_DiSIC::DelayLine(511).gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 40 40">
+						<IconPanel Height="[float]40" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]40" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]40">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]DelayLine(511)" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalScrollBarVisibility="[ScrollBarVisibility]Hidden">
+									<FontSetting FontFamily="Verdana" FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<IconTemplate Height="[float]40" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]FPGA-subVIs.gcomp" Top="[float]0" Width="[float]40" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI::SDR::DSPV1FPGA::IQ Data to U32.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.34599996 49,4 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4,49 C 2.34599996,49 1,47.6539993 1,46 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 46,1 M 46,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,46 C 0,48.2000008 1.79999995,50 4,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,4 C 50,1.79999995 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 9.16399956,5.63100004 C 8.93400002,5.21500015 8.61800003,4.88500023 8.21700001,4.64099979 C 7.98199987,4.49399996 7.69299984,4.38199997 7.3499999,4.30299997 C 7.00600004,4.22300005 6.59800005,4.18400002 6.12300014,4.18400002 L 4.01399994,4.18400002 L 4.01399994,10 L 6.06500006,10 C 6.52899981,10 6.92999983,9.9659996 7.26800013,9.89799976 C 7.60699987,9.82999992 7.91800022,9.71000004 8.20199966,9.53899956 C 8.57900047,9.31000042 8.8920002,8.97999954 9.13899994,8.55300045 C 9.38700008,8.1239996 9.51000023,7.63899994 9.51000023,7.09800005 C 9.51000023,6.53499985 9.39500046,6.046 9.16399956,5.63100004 Z M 7.76800013,8.05700016 C 7.64099979,8.31799984 7.43900013,8.52700043 7.16599989,8.68400002 C 7.0079999,8.77000046 6.84499979,8.82800007 6.67799997,8.86100006 C 6.51200008,8.89400005 6.25,8.90999985 5.89300013,8.90999985 L 5.51399994,8.90999985 L 5.51399994,5.26999998 L 5.89300013,5.26999998 C 6.21600008,5.26999998 6.45699978,5.28399992 6.61800003,5.31099987 C 6.77899981,5.33799982 6.93499994,5.38899994 7.08900023,5.46500015 C 7.39099979,5.61800003 7.61100006,5.83099985 7.75,6.10400009 C 7.88999987,6.375 7.95900011,6.704 7.95900011,7.08599997 C 7.95900011,7.47100019 7.89599991,7.79500008 7.76800013,8.05700016 Z M 14.6809998,7.19299984 C 14.4689999,6.94099998 14.1400003,6.74300003 13.6949997,6.59700012 C 13.4680004,6.52400017 13.257,6.46600008 13.0600004,6.42500019 C 12.8640003,6.3829999 12.6590004,6.34000015 12.4449997,6.296 C 12.1199999,6.22800016 11.8979998,6.15299988 11.7810001,6.0710001 C 11.6639996,5.98899984 11.6049995,5.87099981 11.6049995,5.71700001 C 11.6049995,5.61499977 11.6409998,5.5250001 11.7139997,5.4460001 C 11.7869997,5.36600018 11.8739996,5.30700016 11.9759998,5.26800013 C 12.0900002,5.22100019 12.2089996,5.18900013 12.3330002,5.17199993 C 12.4569998,5.15399981 12.5810003,5.14699984 12.7060003,5.14699984 C 13.0600004,5.14699984 13.4069996,5.21000004 13.7469997,5.33599997 C 14.0869999,5.46199989 14.3739996,5.61899996 14.6079998,5.80700016 L 14.7679996,5.80700016 L 14.7679996,4.46700001 C 14.4949999,4.35500002 14.1709995,4.26200008 13.7969999,4.1880002 C 13.4230003,4.11399984 13.0450001,4.07700014 12.6619997,4.07700014 C 11.8990002,4.07700014 11.2740002,4.24800014 10.7889996,4.59100008 C 10.3039999,4.93300009 10.0600004,5.375 10.0600004,5.91699982 C 10.0600004,6.32000017 10.1669998,6.65799999 10.382,6.93100023 C 10.5970001,7.20200014 10.9490004,7.41800022 11.4390001,7.57700014 C 11.6529999,7.64699984 11.8809996,7.70499992 12.125,7.75099993 C 12.368,7.796 12.6000004,7.84499979 12.8179998,7.89699984 C 13.026,7.9460001 13.184,8.0170002 13.2930002,8.10999966 C 13.401,8.20199966 13.4549999,8.31200027 13.4549999,8.43999958 C 13.4549999,8.57800007 13.4180002,8.68200016 13.3439999,8.75300026 C 13.2700005,8.82400036 13.1750002,8.88199997 13.0609999,8.9289999 C 12.967,8.96500015 12.8459997,8.99199963 12.698,9.00699997 C 12.5500002,9.02200031 12.4289999,9.02999973 12.3389997,9.02999973 C 11.9849997,9.02999973 11.6149998,8.96399975 11.2320004,8.83100033 C 10.849,8.69799995 10.5,8.50899982 10.1899996,8.26200008 L 10.026,8.26200008 L 10.026,9.65699959 C 10.3389997,9.7869997 10.6730003,9.89400005 11.0319996,9.97900009 C 11.3900003,10.0629997 11.8100004,10.1059999 12.2919998,10.1059999 C 13.125,10.1059999 13.7849998,9.92599964 14.2709999,9.56900024 C 14.7559996,9.21100044 15,8.74499989 15,8.17300034 C 14.9989996,7.77099991 14.8929996,7.44399977 14.6809998,7.19299984 Z M 20.6580009,5.15600014 C 20.5340004,4.91599989 20.3549995,4.71899986 20.1210003,4.56599998 C 19.9260006,4.4380002 19.7010002,4.34200001 19.4470005,4.27899981 C 19.1930008,4.21500015 18.8810005,4.18300009 18.5109997,4.18300009 L 16.0419998,4.18300009 L 16.0419998,10 L 17.5419998,10 L 17.5419998,8.10499954 L 18.4759998,8.10499954 C 18.8999996,8.10499954 19.2549992,8.04599953 19.5400009,7.9289999 C 19.8250008,7.8119998 20.0830002,7.63800001 20.3150005,7.40899992 C 20.4839993,7.23899984 20.6140003,7.03000021 20.7059994,6.78200006 C 20.7970009,6.53299999 20.8430004,6.27799988 20.8430004,6.01800013 C 20.8439999,5.68400002 20.7810001,5.39599991 20.6580009,5.15600014 Z M 19.2290001,6.47599983 C 19.1860008,6.59100008 19.1159992,6.69099998 19.0200005,6.77400017 C 18.9080009,6.86800003 18.7689991,6.92999983 18.6040001,6.96199989 C 18.4379997,6.99300003 18.2280006,7.00899982 17.9729996,7.00899982 L 17.5429993,7.00899982 L 17.5429993,5.26999998 L 17.8010006,5.26999998 C 18.0480003,5.26999998 18.2460003,5.27299976 18.3950005,5.28000021 C 18.5429993,5.28599977 18.6959991,5.3210001 18.8519993,5.38399982 C 18.9689999,5.42999983 19.0720005,5.51300001 19.1609993,5.63100004 C 19.2490005,5.74900007 19.2940006,5.88999987 19.2940006,6.0539999 C 19.2929993,6.21899986 19.2709999,6.36000013 19.2290001,6.47599983 Z M 12.684,23.7460003 L 11.3730001,23.7460003 L 11.3730001,18.5839996 L 12.684,18.5839996 L 12.684,17.1660004 L 8,17.1660004 L 8,18.5839996 L 9.31099987,18.5839996 L 9.31099987,23.7460003 L 8,23.7460003 L 8,25.1639996 L 12.684,25.1639996 L 12.684,23.7460003 Z M 21.5970001,23.625 C 22.0270004,22.9360008 22.2420006,22.1170006 22.2420006,21.1679993 C 22.2420006,19.8829994 21.875,18.8659992 21.1410007,18.1200008 C 20.4060001,17.3729992 19.3980007,17 18.1159992,17 C 16.8299999,17 15.8219995,17.3729992 15.092,18.1200008 C 14.3620005,18.8659992 13.9960003,19.8829994 13.9960003,21.1679993 C 13.9960003,22.3969994 14.3299999,23.3759995 14.9980001,24.1079998 C 15.6660004,24.8400002 16.5979996,25.2409992 17.7940006,25.3080006 C 17.8129997,25.6229992 17.8729992,25.9099998 17.9769993,26.1669998 C 18.0809994,26.4239998 18.2369995,26.6490002 18.4440002,26.8390007 C 18.6560001,27.0319996 18.9200001,27.1819992 19.2369995,27.2870007 C 19.5529995,27.3920002 19.9249992,27.4459991 20.3509998,27.4459991 C 20.8339996,27.4459991 21.1940002,27.427 21.4279995,27.3920002 C 21.6620007,27.3560009 21.8789997,27.3150005 22.0799999,27.2689991 L 22.0799999,25.8560009 L 21.8759995,25.8560009 C 21.7970009,25.8950005 21.6580009,25.9400005 21.4570007,25.9899998 C 21.2560005,26.0400009 21.0830002,26.0650005 20.9360008,26.0650005 C 20.5030003,26.0650005 20.198,25.9880009 20.0179996,25.8330002 C 19.8379993,25.6790009 19.743,25.4230003 19.7280006,25.066 C 20.5440006,24.7950001 21.1669998,24.3139992 21.5970001,23.625 Z M 18.8789997,23.6679993 C 18.6389999,23.7709999 18.3869991,23.8209991 18.1210003,23.8209991 C 17.8560009,23.8209991 17.6030006,23.7709999 17.3640003,23.6709995 C 17.125,23.5709991 16.9150009,23.4150009 16.7360001,23.2029991 C 16.5559998,22.9920006 16.4120007,22.7199993 16.3029995,22.3850002 C 16.1940002,22.0499992 16.1389999,21.6450005 16.1389999,21.1679993 C 16.1389999,20.7019997 16.1959991,20.2929993 16.3080006,19.9400005 C 16.4209995,19.5869999 16.5669994,19.3110008 16.7460003,19.1110001 C 16.9389992,18.8959999 17.1520004,18.7420006 17.3829994,18.6480007 C 17.6140003,18.5550003 17.8610001,18.5090008 18.1210003,18.5090008 C 18.3789997,18.5090008 18.6270008,18.5569992 18.8649998,18.6539993 C 19.1030006,18.7509995 19.3139992,18.9060001 19.4960003,19.1210003 C 19.6760006,19.3290005 19.8199997,19.6009998 19.9319992,19.9370003 C 20.0429993,20.2740002 20.0979996,20.6819992 20.0979996,21.1620007 C 20.0979996,21.6100006 20.0499992,22 19.9529991,22.3309994 C 19.8560009,22.6620007 19.7080002,22.9489994 19.5079994,23.1930008 C 19.3279991,23.4080009 19.1189995,23.566 18.8789997,23.6679993 Z" Fill="[SMSolidColorBrush]#ff55b377" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 42,42.1459999 L 15,42.1459999 L 15,30.1459999 L 42,30.1459999 L 42,42.1459999 Z M 24.0240002,32.1479988 L 21.9510002,32.1479988 L 21.9510002,37.1380005 C 21.9510002,37.7140007 21.8320007,38.1329994 21.5939999,38.3950005 C 21.3560009,38.6570015 20.9790001,38.7869987 20.4629993,38.7869987 C 19.941,38.7869987 19.5629997,38.651001 19.3299999,38.3790016 C 19.0979996,38.1080017 18.9799995,37.6930008 18.9799995,37.1389999 L 18.9799995,32.1489983 L 16.9080009,32.1489983 L 16.9080009,37.257 C 16.9080009,38.2410011 17.2070007,38.9970016 17.8069992,39.5239983 C 18.4069996,40.0499992 19.2919998,40.3129997 20.4619999,40.3129997 C 21.6340008,40.3129997 22.5200005,40.0499992 23.1210003,39.5239983 C 23.7220001,38.9980011 24.0230007,38.2410011 24.0230007,37.2529984 L 24.0230007,32.1479988 Z M 30.8610001,36.0699997 C 30.6580009,35.9939995 30.4650002,35.9440002 30.2810001,35.9199982 L 30.2810001,35.8440018 C 30.7320004,35.7480011 31.0949993,35.5250015 31.3719997,35.1759987 C 31.6480007,34.8260002 31.7849998,34.4300003 31.7849998,33.9869995 C 31.7849998,33.6500015 31.7140007,33.355999 31.5699997,33.105999 C 31.427,32.8549995 31.2089996,32.6419983 30.9160004,32.4659996 C 30.6679993,32.3199997 30.3549995,32.2019997 29.9759998,32.1139984 C 29.5970001,32.026001 29.1550007,31.9820004 28.6490002,31.9820004 C 28.1299992,31.9820004 27.618,32.0369987 27.1140003,32.1459999 C 26.6079998,32.2550011 26.2099991,32.3689995 25.9160004,32.4869995 L 25.9160004,34.2220001 L 26.1140003,34.2220001 C 26.4829998,34.0029984 26.8640003,33.8349991 27.2590008,33.7190018 C 27.6539993,33.6030006 28.0189991,33.5439987 28.3549995,33.5439987 C 28.4920006,33.5439987 28.6539993,33.5559998 28.8430004,33.5769997 C 29.0330009,33.5979996 29.198,33.6409988 29.3369999,33.7060013 C 29.4629993,33.7630005 29.566,33.8409996 29.6499996,33.9389992 C 29.7320004,34.0379982 29.7730007,34.1669998 29.7730007,34.3289986 C 29.7730007,34.5470009 29.7339993,34.7130013 29.6550007,34.8250008 C 29.5760002,34.9379997 29.4589996,35.0279999 29.3010006,35.0960007 C 29.1509991,35.1599998 28.9680004,35.2010002 28.7530003,35.2190018 C 28.5380001,35.237999 28.2910004,35.2459984 28.0119991,35.2459984 L 27.5550003,35.2459984 L 27.5550003,36.6749992 L 27.9960003,36.6749992 C 28.2070007,36.6749992 28.4349995,36.6780014 28.684,36.6829987 C 28.9300003,36.6889992 29.1420002,36.7200012 29.3169994,36.7779999 C 29.493,36.8310013 29.6340008,36.9220009 29.7420006,37.0489998 C 29.8500004,37.1759987 29.9029999,37.3569984 29.9029999,37.5890007 C 29.9029999,37.8289986 29.8640003,38.0130005 29.7849998,38.1399994 C 29.7059994,38.2669983 29.6000004,38.375 29.4680004,38.4640007 C 29.2999992,38.5789986 29.0949993,38.6529999 28.8509998,38.6879997 C 28.6070004,38.7229996 28.382,38.7389984 28.1739998,38.7389984 C 27.8199997,38.7389984 27.4290009,38.6710014 27.0009995,38.5349998 C 26.5720005,38.3989983 26.2040005,38.237999 25.8969994,38.0519981 L 25.6870003,38.0519981 L 25.6870003,39.8089981 C 25.9850006,39.9379997 26.3710003,40.0540009 26.8449993,40.1580009 C 27.3190002,40.262001 27.8880005,40.3129997 28.5499992,40.3129997 C 29.1299992,40.3129997 29.6229992,40.2529984 30.0300007,40.1329994 C 30.4360008,40.0130005 30.7900009,39.8400002 31.0909996,39.6150017 C 31.3990002,39.382 31.6259995,39.1020012 31.7749996,38.7770004 C 31.9239998,38.4510002 31.9990005,38.098999 31.9990005,37.723999 C 31.9990005,37.3899994 31.9470005,37.1230011 31.8439999,36.9230003 C 31.7399998,36.7229996 31.6000004,36.5470009 31.4239998,36.3969994 C 31.2520008,36.2529984 31.066,36.144001 30.8610001,36.0699997 Z M 39.9799995,38.6150017 L 36.387001,38.6150017 C 36.5270004,38.5149994 36.7610016,38.3390007 37.0909996,38.0870018 C 37.4199982,37.8339996 37.7470016,37.5579987 38.0730019,37.257 C 38.5929985,36.7739983 38.9770012,36.3050003 39.230999,35.8499985 C 39.4830017,35.3950005 39.6090012,34.9150009 39.6090012,34.4109993 C 39.6090012,33.6409988 39.3460007,33.0460014 38.8190002,32.625 C 38.2939987,32.2039986 37.5279999,31.9939995 36.526001,31.9939995 C 36.0279999,31.9939995 35.5320015,32.0499992 35.0359993,32.1609993 C 34.5400009,32.2709999 34.1650009,32.3829994 33.9109993,32.493 L 33.9109993,34.2709999 L 34.0830002,34.2709999 C 34.394001,34.0600014 34.730999,33.8860016 35.0950012,33.75 C 35.4580002,33.612999 35.8050003,33.5449982 36.1339989,33.5449982 C 36.5750008,33.5449982 36.9119987,33.6450005 37.1479988,33.8440018 C 37.382,34.0419998 37.5,34.3240013 37.5,34.6899986 C 37.5,34.9949989 37.4080009,35.3019981 37.2260017,35.6139984 C 37.0439987,35.9259987 36.7350006,36.2910004 36.3019981,36.7099991 C 36.012001,36.993 35.6259995,37.3289986 35.1450005,37.7200012 C 34.6629982,38.1110001 34.1819992,38.4790001 33.7029991,38.8260002 L 33.7029991,40.1469994 L 39.980999,40.1469994 L 39.980999,38.6150017 Z M 28.9979992,26.1520004 L 29,25.1459999 C 29,21.8320007 26.3139992,19.1459999 23,19.1459999 L 23,20.1459999 C 25.757,20.1459999 28,22.3889999 28,25.1459999 L 27.9979992,26.1520004 L 26,25.1459999 L 28.4969997,29.1459999 L 31,25.1459999 L 28.9979992,26.1520004 Z" Fill="[SMSolidColorBrush]#ff4d5359" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI::SDR::DSPV1FPGA::Fractional Interpolator - 1 spc - 2x oc.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.34599996 49,4 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4,49 C 2.34599996,49 1,47.6539993 1,46 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 46,1 M 46,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,46 C 0,48.2000008 1.79999995,50 4,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,4 C 50,1.79999995 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 24.8840008,39 L 22.4960003,39 L 20.7759991,36.375 L 19.0200005,39 L 16.7409992,39 L 19.5769997,34.9710007 L 16.7999992,31.0020008 L 19.1809998,31.0020008 L 20.8449993,33.4920006 L 22.5559998,31.0020008 L 24.8409996,31.0020008 L 22.0499992,34.887001 L 24.8840008,39 Z M 28.0039997,39 L 25.9950008,39 L 25.9950008,36.8889999 L 28.0039997,36.8889999 L 28.0039997,39 Z M 37.2589989,39 L 34.8709984,39 L 33.151001,36.375 L 31.3950005,39 L 29.1159992,39 L 31.9519997,34.9710007 L 29.1749992,31.0020008 L 31.5559998,31.0020008 L 33.2200012,33.4920006 L 34.9309998,31.0020008 L 37.2159996,31.0020008 L 34.4249992,34.887001 L 37.2589989,39 Z M 29.8570004,26 L 24.5179996,26 L 24.5179996,24.6040001 L 26.2049999,24.6040001 L 26.2049999,20.3770008 L 24.5179996,20.3770008 L 24.5179996,19.0709991 C 24.7759991,19.0709991 25.0230007,19.0550003 25.2590008,19.0249996 C 25.4950008,18.9950008 25.6919994,18.9419994 25.8500004,18.8670006 C 26.0359993,18.7770004 26.1760006,18.6609993 26.2689991,18.5170002 C 26.3619995,18.3740005 26.4160004,18.1949997 26.4300003,17.9799995 L 28.2080002,17.9799995 L 28.2080002,24.6030006 L 29.8570004,24.6030006 L 29.8570004,26 Z M 38,30 L 38,40 L 16,40 L 16,30 L 38,30 M 39,29 L 15,29 L 15,41 L 39,41 L 39,29 L 39,29 Z M 39,27 L 15,27 L 15,28 L 39,28 L 39,27 Z" Fill="[SMSolidColorBrush]#ff4d5359" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 9.16499996,5.63100004 C 8.93500042,5.21500015 8.61900043,4.88500023 8.21800041,4.64099979 C 7.9829998,4.49399996 7.69399977,4.38199997 7.3499999,4.30299997 C 7.00600004,4.22300005 6.59800005,4.18400002 6.12300014,4.18400002 L 4.01399994,4.18400002 L 4.01399994,10 L 6.06500006,10 C 6.52799988,10 6.92999983,9.9659996 7.26800013,9.89799976 C 7.60599995,9.82999992 7.91800022,9.71000004 8.20199966,9.53899956 C 8.57900047,9.31000042 8.8920002,8.97999954 9.13899994,8.55300045 C 9.38700008,8.1239996 9.51000023,7.63899994 9.51000023,7.09800005 C 9.51000023,6.53499985 9.39500046,6.046 9.16499996,5.63100004 Z M 7.76800013,8.05700016 C 7.64099979,8.31799984 7.44000006,8.52700043 7.16699982,8.68400002 C 7.0079999,8.77000046 6.84499979,8.82800007 6.67799997,8.86100006 C 6.51200008,8.89400005 6.25,8.90999985 5.89300013,8.90999985 L 5.51399994,8.90999985 L 5.51399994,5.26999998 L 5.89300013,5.26999998 C 6.21600008,5.26999998 6.45699978,5.28399992 6.61800003,5.31099987 C 6.77899981,5.33799982 6.93499994,5.38899994 7.08900023,5.46500015 C 7.39099979,5.61800003 7.61100006,5.83099985 7.75,6.10400009 C 7.88899994,6.375 7.95900011,6.704 7.95900011,7.08599997 C 7.95900011,7.47100019 7.89599991,7.79500008 7.76800013,8.05700016 Z M 14.6809998,7.19299984 C 14.4689999,6.94099998 14.1400003,6.74300003 13.6949997,6.59700012 C 13.4680004,6.52400017 13.257,6.46600008 13.0600004,6.42500019 C 12.8629999,6.3829999 12.658,6.34000015 12.4449997,6.296 C 12.1190004,6.22800016 11.8979998,6.15299988 11.7810001,6.0710001 C 11.6639996,5.98899984 11.6049995,5.87099981 11.6049995,5.71700001 C 11.6049995,5.61499977 11.6420002,5.5250001 11.7139997,5.4460001 C 11.7869997,5.36600018 11.8739996,5.30700016 11.9759998,5.26800013 C 12.0909996,5.22100019 12.21,5.18900013 12.3330002,5.17199993 C 12.4569998,5.15399981 12.5810003,5.14699984 12.7060003,5.14699984 C 13.0600004,5.14699984 13.4069996,5.21000004 13.7469997,5.33599997 C 14.0869999,5.46199989 14.3739996,5.61899996 14.6079998,5.80700016 L 14.7679996,5.80700016 L 14.7679996,4.46700001 C 14.4949999,4.35500002 14.1709995,4.26200008 13.7969999,4.1880002 C 13.4230003,4.11399984 13.0450001,4.07700014 12.6619997,4.07700014 C 11.8990002,4.07700014 11.2749996,4.24800014 10.7889996,4.59100008 C 10.3030005,4.93300009 10.0600004,5.375 10.0600004,5.91699982 C 10.0600004,6.32000017 10.1669998,6.65799999 10.382,6.93100023 C 10.5970001,7.20200014 10.9490004,7.41800022 11.4390001,7.57700014 C 11.6520004,7.64699984 11.8809996,7.70499992 12.125,7.75099993 C 12.3690004,7.796 12.6000004,7.84499979 12.8179998,7.89699984 C 13.026,7.9460001 13.1850004,8.0170002 13.2930002,8.10999966 C 13.401,8.20199966 13.4549999,8.31200027 13.4549999,8.43999958 C 13.4549999,8.57800007 13.4180002,8.68200016 13.3439999,8.75300026 C 13.2700005,8.82400036 13.1759996,8.88199997 13.0609999,8.9289999 C 12.967,8.96500015 12.8459997,8.99199963 12.698,9.00699997 C 12.5500002,9.02200031 12.4300003,9.02999973 12.3389997,9.02999973 C 11.9849997,9.02999973 11.6160002,8.96399975 11.2320004,8.83100033 C 10.8479996,8.69799995 10.5,8.50899982 10.1899996,8.26200008 L 10.026,8.26200008 L 10.026,9.65699959 C 10.3389997,9.7869997 10.6739998,9.89400005 11.0319996,9.97900009 C 11.3900003,10.0629997 11.8100004,10.1059999 12.2919998,10.1059999 C 13.125,10.1059999 13.7849998,9.92599964 14.2709999,9.56900024 C 14.757,9.21100044 15,8.74499989 15,8.17300034 C 14.9989996,7.77099991 14.8929996,7.44399977 14.6809998,7.19299984 Z M 20.6580009,5.15600014 C 20.5340004,4.91599989 20.3549995,4.71899986 20.1210003,4.56599998 C 19.9260006,4.4380002 19.7010002,4.34200001 19.4470005,4.27899981 C 19.1930008,4.21500015 18.8810005,4.18300009 18.5109997,4.18300009 L 16.0419998,4.18300009 L 16.0419998,10 L 17.5419998,10 L 17.5419998,8.10499954 L 18.4759998,8.10499954 C 18.8999996,8.10499954 19.2549992,8.04599953 19.5400009,7.9289999 C 19.8250008,7.8119998 20.0830002,7.63800001 20.3150005,7.40899992 C 20.4839993,7.23899984 20.6140003,7.03000021 20.7059994,6.78200006 C 20.7970009,6.53299999 20.8430004,6.27799988 20.8430004,6.01800013 C 20.8430004,5.68400002 20.7810001,5.39599991 20.6580009,5.15600014 Z M 19.2280006,6.47599983 C 19.1849995,6.59100008 19.1149998,6.69099998 19.0189991,6.77400017 C 18.9069996,6.86800003 18.7689991,6.92999983 18.6030006,6.96199989 C 18.4370003,6.99399996 18.2280006,7.00899982 17.9720001,7.00899982 L 17.5419998,7.00899982 L 17.5419998,5.26999998 L 17.7999992,5.26999998 C 18.0480003,5.26999998 18.2450008,5.27299976 18.3939991,5.28000021 C 18.5419998,5.28599977 18.6949997,5.3210001 18.8509998,5.38399982 C 18.9680004,5.42999983 19.0709991,5.51300001 19.1599998,5.63100004 C 19.2490005,5.74900007 19.2929993,5.88999987 19.2929993,6.0539999 C 19.2919998,6.21899986 19.2709999,6.36000013 19.2280006,6.47599983 Z M 9,22.9799995 L 11,21.9799995 L 11,40.9799995 L 12,40.9799995 L 12,21.9799995 L 14,22.9799995 L 11.4969997,17.9799995 L 9,22.9799995 Z" Fill="[SMSolidColorBrush]#ff55b377" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI::SDR::DSPV1FPGA::Fractional Decimator - 1 spc - 2x oc.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Background="[SMSolidColorBrush]#00ffffff" Height="[float]50" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<IconTemplate ClipMargin="[SMThickness]3,3,3,3" Height="[float]50" Left="[float]0" TemplateName="[string]Gray" Top="[float]0" Width="[float]50">
+								<Rectangle Fill="[SMSolidColorBrush]#ff727272" IsHitTestVisible="[bool]False" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]4" RadiusY="[float]4" Top="[float]0" />
+								<Rectangle Fill="[SMSolidColorBrush]#ffe5e5e5" IsHitTestVisible="[bool]False" Left="[float]0" Margin="[SMThickness]1,1,1,1" MinHeight="[float]1" MinWidth="[float]1" RadiusX="[float]2.5" RadiusY="[float]2.5" Stroke="[SMSolidColorBrush]#fff2f2f2" Top="[float]0" />
+								<FileNameText Attached="[bool]True" Height="[float]46" HorizontalAlignment="[HorizontalAlignment]Left" Left="[float]0" Margin="[SMThickness]2,2,2,2" SizeMode="[TextModelSizeMode]AutoFont" Text="[string]Fractional Decimator - 1 spc - 2x oc" TextAlignment="[TextAlignment]Center" TextWrapping="[TextWrapping]Wrap" Top="[float]0" VerticalAlignment="[VerticalAlignment]Top" Width="[float]46">
+									<FontSetting FontSize="6" />
+								</FileNameText>
+							</IconTemplate>
+							<Path Data="[PathGeometry]M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,4 C 1,2.3499999 2.3499999,1 4,1 L 46,1 C 47.6500015,1 49,2.3499999 49,4 L 49,46 Z" Fill="[SMSolidColorBrush]#ffffffff" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 46,1 C 47.6539993,1 49,2.34599996 49,4 L 49,46 C 49,47.6539993 47.6539993,49 46,49 L 4,49 C 2.34599996,49 1,47.6539993 1,46 L 1,4 C 1,2.34599996 2.34599996,1 4,1 L 46,1 M 46,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,46 C 0,48.2000008 1.79999995,50 4,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,4 C 50,1.79999995 48.2000008,0 46,0 L 46,0 Z" Fill="[SMSolidColorBrush]#ff727272" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 48,46 C 48,47.0999985 47.0999985,48 46,48 L 4,48 C 2.9000001,48 2,47.0999985 2,46 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,46 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 24.8840008,39.0200005 L 22.4960003,39.0200005 L 20.7759991,36.3950005 L 19.0200005,39.0200005 L 16.7409992,39.0200005 L 19.5769997,34.9910011 L 16.7999992,31.0209999 L 19.1809998,31.0209999 L 20.8449993,33.5110016 L 22.5559998,31.0209999 L 24.8409996,31.0209999 L 22.0499992,34.9059982 L 24.8840008,39.0200005 Z M 28.0039997,39.0200005 L 25.9950008,39.0200005 L 25.9950008,36.9090004 L 28.0039997,36.9090004 L 28.0039997,39.0200005 Z M 37.2589989,39.0200005 L 34.8709984,39.0200005 L 33.151001,36.3950005 L 31.3950005,39.0200005 L 29.1159992,39.0200005 L 31.9519997,34.9910011 L 29.1749992,31.0219994 L 31.5559998,31.0219994 L 33.2200012,33.512001 L 34.9309998,31.0219994 L 37.2159996,31.0219994 L 34.4249992,34.9070015 L 37.2589989,39.0200005 Z M 29.8570004,26.0200005 L 24.5179996,26.0200005 L 24.5179996,24.6240005 L 26.2049999,24.6240005 L 26.2049999,20.3969994 L 24.5179996,20.3969994 L 24.5179996,19.0909996 C 24.7759991,19.0909996 25.0230007,19.0750008 25.2590008,19.0450001 C 25.4950008,19.0149994 25.6919994,18.9619999 25.8500004,18.8869991 C 26.0359993,18.7970009 26.1760006,18.6809998 26.2689991,18.5370007 C 26.3619995,18.3939991 26.4160004,18.2150002 26.4300003,18 L 28.2080002,18 L 28.2080002,24.6229992 L 29.8570004,24.6229992 L 29.8570004,26.0200005 Z M 38,30.0200005 L 38,40.0200005 L 16,40.0200005 L 16,30.0200005 L 38,30.0200005 M 39,29.0200005 L 15,29.0200005 L 15,41.0200005 L 39,41.0200005 L 39,29.0200005 L 39,29.0200005 Z M 39,27.0200005 L 15,27.0200005 L 15,28.0200005 L 39,28.0200005 L 39,27.0200005 Z" Fill="[SMSolidColorBrush]#ff4d5359" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<Path Data="[PathGeometry]M 2,12 L 2,4 C 2,2.9000001 2.9000001,2 4,2 L 46,2 C 47.0999985,2 48,2.9000001 48,4 L 48,12 L 2,12 Z M 9.16499996,5.63100004 C 8.93500042,5.21500015 8.61900043,4.88500023 8.21800041,4.64099979 C 7.9829998,4.49399996 7.69399977,4.38199997 7.3499999,4.30299997 C 7.00600004,4.22300005 6.59800005,4.18400002 6.12300014,4.18400002 L 4.01399994,4.18400002 L 4.01399994,10 L 6.06500006,10 C 6.52799988,10 6.92999983,9.9659996 7.26800013,9.89799976 C 7.60599995,9.82999992 7.91800022,9.71000004 8.20199966,9.53899956 C 8.57900047,9.31000042 8.8920002,8.97999954 9.13899994,8.55300045 C 9.38700008,8.1239996 9.51000023,7.63899994 9.51000023,7.09800005 C 9.51000023,6.53499985 9.39500046,6.046 9.16499996,5.63100004 Z M 7.76800013,8.05700016 C 7.64099979,8.31799984 7.44000006,8.52700043 7.16699982,8.68400002 C 7.0079999,8.77000046 6.84499979,8.82800007 6.67799997,8.86100006 C 6.51200008,8.89400005 6.25,8.90999985 5.89300013,8.90999985 L 5.51399994,8.90999985 L 5.51399994,5.26999998 L 5.89300013,5.26999998 C 6.21600008,5.26999998 6.45699978,5.28399992 6.61800003,5.31099987 C 6.77899981,5.33799982 6.93499994,5.38899994 7.08900023,5.46500015 C 7.39099979,5.61800003 7.61100006,5.83099985 7.75,6.10400009 C 7.88899994,6.375 7.95900011,6.704 7.95900011,7.08599997 C 7.95900011,7.47100019 7.89599991,7.79500008 7.76800013,8.05700016 Z M 14.6809998,7.19299984 C 14.4689999,6.94099998 14.1400003,6.74300003 13.6949997,6.59700012 C 13.4680004,6.52400017 13.257,6.46600008 13.0600004,6.42500019 C 12.8629999,6.3829999 12.658,6.34000015 12.4449997,6.296 C 12.1190004,6.22800016 11.8979998,6.15299988 11.7810001,6.0710001 C 11.6639996,5.98899984 11.6049995,5.87099981 11.6049995,5.71700001 C 11.6049995,5.61499977 11.6420002,5.5250001 11.7139997,5.4460001 C 11.7869997,5.36600018 11.8739996,5.30700016 11.9759998,5.26800013 C 12.0909996,5.22100019 12.21,5.18900013 12.3330002,5.17199993 C 12.4569998,5.15399981 12.5810003,5.14699984 12.7060003,5.14699984 C 13.0600004,5.14699984 13.4069996,5.21000004 13.7469997,5.33599997 C 14.0869999,5.46199989 14.3739996,5.61899996 14.6079998,5.80700016 L 14.7679996,5.80700016 L 14.7679996,4.46700001 C 14.4949999,4.35500002 14.1709995,4.26200008 13.7969999,4.1880002 C 13.4230003,4.11399984 13.0450001,4.07700014 12.6619997,4.07700014 C 11.8990002,4.07700014 11.2749996,4.24800014 10.7889996,4.59100008 C 10.3030005,4.93300009 10.0600004,5.375 10.0600004,5.91699982 C 10.0600004,6.32000017 10.1669998,6.65799999 10.382,6.93100023 C 10.5970001,7.20200014 10.9490004,7.41800022 11.4390001,7.57700014 C 11.6520004,7.64699984 11.8809996,7.70499992 12.125,7.75099993 C 12.3690004,7.796 12.6000004,7.84499979 12.8179998,7.89699984 C 13.026,7.9460001 13.1850004,8.0170002 13.2930002,8.10999966 C 13.401,8.20199966 13.4549999,8.31200027 13.4549999,8.43999958 C 13.4549999,8.57800007 13.4180002,8.68200016 13.3439999,8.75300026 C 13.2700005,8.82400036 13.1759996,8.88199997 13.0609999,8.9289999 C 12.967,8.96500015 12.8459997,8.99199963 12.698,9.00699997 C 12.5500002,9.02200031 12.4300003,9.02999973 12.3389997,9.02999973 C 11.9849997,9.02999973 11.6160002,8.96399975 11.2320004,8.83100033 C 10.8479996,8.69799995 10.5,8.50899982 10.1899996,8.26200008 L 10.026,8.26200008 L 10.026,9.65699959 C 10.3389997,9.7869997 10.6739998,9.89400005 11.0319996,9.97900009 C 11.3900003,10.0629997 11.8100004,10.1059999 12.2919998,10.1059999 C 13.125,10.1059999 13.7849998,9.92599964 14.2709999,9.56900024 C 14.757,9.21100044 15,8.74499989 15,8.17300034 C 14.9989996,7.77099991 14.8929996,7.44399977 14.6809998,7.19299984 Z M 20.6580009,5.15600014 C 20.5340004,4.91599989 20.3549995,4.71899986 20.1210003,4.56599998 C 19.9260006,4.4380002 19.7010002,4.34200001 19.4470005,4.27899981 C 19.1930008,4.21500015 18.8810005,4.18300009 18.5109997,4.18300009 L 16.0419998,4.18300009 L 16.0419998,10 L 17.5419998,10 L 17.5419998,8.10499954 L 18.4759998,8.10499954 C 18.8999996,8.10499954 19.2549992,8.04599953 19.5400009,7.9289999 C 19.8250008,7.8119998 20.0830002,7.63800001 20.3150005,7.40899992 C 20.4839993,7.23899984 20.6140003,7.03000021 20.7059994,6.78200006 C 20.7970009,6.53299999 20.8430004,6.27799988 20.8430004,6.01800013 C 20.8430004,5.68400002 20.7810001,5.39599991 20.6580009,5.15600014 Z M 19.2280006,6.47599983 C 19.1849995,6.59100008 19.1149998,6.69099998 19.0189991,6.77400017 C 18.9069996,6.86800003 18.7689991,6.92999983 18.6030006,6.96199989 C 18.4370003,6.99399996 18.2280006,7.00899982 17.9720001,7.00899982 L 17.5419998,7.00899982 L 17.5419998,5.26999998 L 17.7999992,5.26999998 C 18.0480003,5.26999998 18.2450008,5.27299976 18.3939991,5.28000021 C 18.5419998,5.28599977 18.6949997,5.3210001 18.8509998,5.38399982 C 18.9680004,5.42999983 19.0709991,5.51300001 19.1599998,5.63100004 C 19.2490005,5.74900007 19.2929993,5.88999987 19.2929993,6.0539999 C 19.2919998,6.21899986 19.2709999,6.36000013 19.2280006,6.47599983 Z M 11.4969997,41 L 14,36 L 12,37 L 12,18 L 11,18 L 11,37 L 9,36 L 11.4969997,41 Z" Fill="[SMSolidColorBrush]#ff55b377" Height="[float]50" Left="[float]0" MinHeight="[float]1" MinWidth="[float]1" Top="[float]0" Width="[float]50" />
+							<IconTemplate Height="[float]50" IsHitTestVisible="[bool]False" Left="[float]0" TemplateName="[string][Comp]DSPV1FPGA.gcomp" Top="[float]0" Width="[float]50" />
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+		<p.IconModel Target="NI::IDL::BasicElementsV1FPGA::Detect Rising Edge.gcdl">
+			<MergeScript>
+				<MergeItem Path="." IsPrimary="True">
+					<Icon ListViewIconCrop="0 0 50 50">
+						<IconPanel Height="[float]50" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]50">
+							<Canvas Left="[float]0" Top="[float]0">
+								<Path Data="[PathGeometry]M 49,46.0250015 C 49,47.6749992 47.6500015,49.0250015 46,49.0250015 L 4,49.0250015 C 2.3499999,49.0250015 1,47.6749992 1,46.0250015 L 1,4.0250001 C 1,2.375 2.3499999,1.02499998 4,1.02499998 L 46,1.02499998 C 47.6500015,1.02499998 49,2.375 49,4.0250001 L 49,46.0250015 Z" Fill="[SMSolidColorBrush]#ffebebeb" Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 46,0 L 4,0 C 1.79999995,0 0,1.79999995 0,4 L 0,46 C 0,48.2000008 1.79999995,50 4,50 L 46,50 C 48.2000008,50 50,48.2000008 50,46 L 50,4 C 50,1.78999996 48.2099991,0 46,0 Z M 49,46 C 49,47.6500015 47.6500015,49 46,49 L 4,49 C 2.3499999,49 1,47.6500015 1,46 L 1,5 L 49,5 L 49,46 Z" Fill="[SMSolidColorBrush]#ff5399f7" Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 42,22.0249996 L 34,22.0249996 L 34,31.0249996 L 34,32.0250015 L 33,32.0250015 L 24,32.0250015 L 23,32.0250015 L 23,31.0249996 L 23,22.0249996 L 14,22.0249996 L 14,31.0249996 L 14,32.0250015 L 13,32.0250015 L 8,32.0250015 L 8,31.0249996 L 13,31.0249996 L 13,22.0249996 L 13,21.0249996 L 14,21.0249996 L 23,21.0249996 L 24,21.0249996 L 24,22.0249996 L 24,31.0249996 L 33,31.0249996 L 33,22.0249996 L 33,21.0249996 L 34,21.0249996 L 42,21.0249996 L 42,22.0249996 Z" Fill="[SMSolidColorBrush]#b2000000" Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50" />
+								<Path Data="[PathGeometry]M 11,15.0249996 L 13,16.0249996 L 13,14.0249996 L 14,14.0249996 L 14,16.0249996 L 16,15.0249996 L 13.4969997,20.0249996 L 11,15.0249996 Z M 13.5030003,33.0250015 L 11,38.0250015 L 13,37.0250015 L 13,39.0250015 L 14,39.0250015 L 14,37.0250015 L 16,38.0250015 L 13.5030003,33.0250015 Z" Fill="[SMSolidColorBrush]#ff5399f7" Height="[float]50" Left="[float]0" Top="[float]0" Width="[float]50" />
+							</Canvas>
+						</IconPanel>
+					</Icon>
+				</MergeItem>
+			</MergeScript>
+		</p.IconModel>
+	</IconTable>
+</SourceFile>

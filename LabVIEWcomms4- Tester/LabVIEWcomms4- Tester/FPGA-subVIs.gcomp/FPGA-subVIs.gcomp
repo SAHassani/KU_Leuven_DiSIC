@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="EF2CCB3015E9C4BB3C1853DBF71BC0833ADBDA46E090DDC3F19A53C27B305AA41B1D31E808DF7FFB9090F83D40E033228BE055FEEF92A2D82B37436C7BDEE974" Timestamp="1D674738704CB5C" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="1" RootNamespaceId="13" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="2" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="3" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="4" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="5" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="10" Name="Configuration1">
+			<CompilerSymbolTable Id="11" xmlns="http://www.ni.com/PlatformFramework" />
+			<ComponentItemProperties AssociatedEnvoyId="47a0bdd0218f43aea7db271462a56ee1" Exported="True" Id="4b2e6e80332b4e68b9ffb7af07fa595e" />
+			<ComponentItemProperties AssociatedEnvoyId="39ab6ac3e7c94ac7a2591278a43ed942" Exported="True" Id="f60141b09c5e43f3a25add6f11ed4b50" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="b96dd62001dd4d7a83b559e1a990f968" Id="8a56f90854434641a646226c0724028b" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="3df7c6c5ae024116a692d2144ae48ae3" Id="20facbd1847e4e5799da6e4ea6789acc" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="4ead15e9f2114695afff0f4ed5c4bcc8" Id="6d909775a1aa4f278c99d8f07d83f0eb" />
+			<ComponentItemProperties AssociatedEnvoyId="cc1b45106f9a4cce95dcbaed123df1da" Exported="True" Id="bb7eed9d79d04496b0dfce3c7a49c7ac" />
+			<ComponentItemProperties AssociatedEnvoyId="e37a5bd2bdd1422484265bdf837bf4b7" Exported="True" Id="25dfe09812b84482944d73cb609524e0" />
+			<ComponentItemProperties AssociatedEnvoyId="61148804866045b698a6236c553d15bc" Exported="True" Id="a5b6fbd8d68d4f79b46c77e182b159f8" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="6" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="7" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="8" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="13" Name="FPGA-subVIs">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="122" Name="USRP">
+					<SourceFileReference Bindings="ContentKind_{http://www.ni.com/SystemDesigner/Vi}Process.Vi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="47a0bdd0218f43aea7db271462a56ee1" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Create Resources.gvi" StoragePath="USRP\Create Resources.gvi" />
+					<SourceFileReference Bindings="SCL,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.SclVi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="39ab6ac3e7c94ac7a2591278a43ed942" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Registers.gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="USRP\Registers.gcdl" />
+				</NameScopingEnvoy>
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="8eb3899e888d4589827ee9c9c55243ad" Name="KUL_DiSIC">
+					<FileReference Bindings=".vhd" Id="b96dd62001dd4d7a83b559e1a990f968" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="fixed_pkg_c.vhd" StoragePath="KUL_DiSIC\fixed_pkg_c.vhd" />
+					<FileReference Bindings=".vhd" Id="3df7c6c5ae024116a692d2144ae48ae3" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="KUL_pkg.vhd" StoragePath="KUL_DiSIC\KUL_pkg.vhd" />
+					<FileReference Bindings=".vhd" Id="4ead15e9f2114695afff0f4ed5c4bcc8" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="TOP.vhd" StoragePath="KUL_DiSIC\TOP.vhd" />
+					<SourceFileReference Bindings="SCL,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.SclVi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="cc1b45106f9a4cce95dcbaed123df1da" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="DelayLine(511).gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="KUL_DiSIC\DelayLine(511).gcdl" />
+					<SourceFileReference Bindings="SCL,ContentKind_{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Process.SclVi,{http://www.ni.com/SystemDesigner/EnvoyManagement}ProcessBackedEnvoyServiceMetaFactory" Id="e37a5bd2bdd1422484265bdf837bf4b7" ModelDefinitionType="NationalInstruments.LabVIEW.VI.Modeling.VirtualInstrument" Name="Collect Data For DiSIC.gcdl" OverridingModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.ClockDrivenLogic" StoragePath="KUL_DiSIC\Collect Data For DiSIC.gcdl" />
+					<FileReference Id="61148804866045b698a6236c553d15bc" ModelDefinitionType="NationalInstruments.Restricted.LabVIEW.FPGA.Editor.Project.SourceModel.IPIntegrationModelDefinition" Name="KUL-DiSIC.eip" StoragePath="KUL_DiSIC\KUL-DiSIC.eip" />
+				</NameScopingEnvoy>
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="9" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionContentReferenceRoot" Name="FPGA-subVIs.gcomp" NameTracksFileName="True">
+			<ComponentDefinitionContentReferenceRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<ContentReference ContentIdentifier="10" Id="12" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>

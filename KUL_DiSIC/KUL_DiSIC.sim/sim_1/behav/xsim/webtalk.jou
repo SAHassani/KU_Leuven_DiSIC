@@ -2,11 +2,11 @@
 # Webtalk v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Feb 28 14:34:28 2020
-# Process ID: 15364
-# Current directory: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim/xsim.dir/TB_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Mon Aug 17 10:31:47 2020
+# Process ID: 20128
+# Current directory: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim/xsim.dir/TB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.sim/sim_1/behav/xsim/xsim.dir/TB_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/Users/shassani/Desktop/KUL -notrace

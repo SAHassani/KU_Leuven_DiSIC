@@ -31,7 +31,7 @@ constant TestFile : string:= "../../../../TestData/SimulatedData.txt";
 --constant TestFile : string:= "../../../../TestData/IEEE802_11_p.txt";
 -- *********************
 constant CLK_cyc :time := 17 ns;
-signal Update_Sample: STD_LOGIC_VECTOR (15 downto 0):= x"0010";
+signal Update_Sample: STD_LOGIC_VECTOR (15 downto 0):= x"0008";
 signal mu : sfixed(0 downto N_Frac+1):=to_sfixed(0.01,0,N_Frac+1);
 signal CLK : std_logic;
 signal Rst : std_logic:='1';

@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompilationResults.xml Version="3">
+  <BuildInformation>
+    <Family>kintex7</Family>
+    <CompileServer>localhost</CompileServer>
+    <ResourceThreshold>80</ResourceThreshold>
+  </BuildInformation>
+  <CompileStatus State="Success">
+    <CurrentStep>Generate Programming File</CurrentStep>
+    <LostTime>0:00:00:00.0000000</LostTime>
+  </CompileStatus>
+  <CompileSteps>
+    <Step Name="Analyzing Diagrams">
+      <Status>Done</Status>
+      <Duration>0:00:00:06.4582266</Duration>
+    </Step>
+    <Step Name="Building">
+      <Status>Done</Status>
+      <Duration>0:00:00:44.6514158</Duration>
+    </Step>
+    <Step Name="Transferring">
+      <Status>Done</Status>
+      <Duration>0:00:00:05.7621746</Duration>
+    </Step>
+    <Step Name="Waiting">
+      <Status>Done</Status>
+      <Duration>0:00:00:13.9263752</Duration>
+    </Step>
+    <Step Name="CoreGenerator">
+      <Status>Done</Status>
+      <Duration>0:00:00:01.7336109</Duration>
+    </Step>
+    <Step Name="Synthesize - Vivado">
+      <Status>Done</Status>
+      <Duration>0:00:28:40.2103799</Duration>
+    </Step>
+    <Step Name="Optimize Logic">
+      <Status>Done</Status>
+      <Duration>0:00:06:05.5043728</Duration>
+    </Step>
+    <Step Name="Place">
+      <Status>Done</Status>
+      <Duration>0:00:15:36.2126176</Duration>
+    </Step>
+    <Step Name="Optimize Timing">
+      <Status>Done</Status>
+      <Duration>0:00:04:36.7674660</Duration>
+    </Step>
+    <Step Name="Route">
+      <Status>Done</Status>
+      <Duration>0:00:13:01.5676019</Duration>
+    </Step>
+    <Step Name="Generate Programming File">
+      <Status>Done</Status>
+      <Duration>0:00:05:24.5815065</Duration>
+    </Step>
+  </CompileSteps>
+  <ReportList>
+    <Report Name="Estimated Device Utilization (Synthesize)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>97851</Used>
+        <Total>508400</Total>
+        <Percent>19.25</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>1028</Used>
+        <Total>1540</Total>
+        <Percent>66.75</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>208</Used>
+        <Total>795</Total>
+        <Percent>26.16</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>81518</Used>
+        <Total>254200</Total>
+        <Percent>32.07</Percent>
+      </ReportItem>
+    </Report>
+    <Report Name="Final Device Utilization (Place)" Type="Utilization">
+      <ReportItem>
+        <Resource>Slice Registers</Resource>
+        <Used>95161</Used>
+        <Total>508400</Total>
+        <Percent>18.72</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>DSP</Resource>
+        <Used>1026</Used>
+        <Total>1540</Total>
+        <Percent>66.62</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Block RAMs</Resource>
+        <Used>193</Used>
+        <Total>795</Total>
+        <Percent>24.28</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Slice LUTs</Resource>
+        <Used>73655</Used>
+        <Total>254200</Total>
+        <Percent>28.98</Percent>
+      </ReportItem>
+      <ReportItem>
+        <Resource>Total Slices</Resource>
+        <Used>28817</Used>
+        <Total>63550</Total>
+        <Percent>45.35</Percent>
+      </ReportItem>
+    </Report>
+  </ReportList>
+  <ErrorList />
+</CompilationResults.xml>

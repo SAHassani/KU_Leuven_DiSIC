@@ -2,39 +2,26 @@
 # Vivado v2018.3 (64-bit)
 # SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
 # IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
-# Start of session at: Fri Feb 28 14:28:56 2020
-# Process ID: 21812
-# Current directory: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC
-# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23448 D:\MyDiSIC\VHDL\Ver33\KUL_DiSIC\KUL_DiSIC.xpr
-# Log file: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/vivado.log
-# Journal file: D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC\vivado.jou
+# Start of session at: Tue Aug 18 09:42:36 2020
+# Process ID: 20340
+# Current directory: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7276 C:\Users\shassani\Desktop\KUL DiSIC Repo\KU_Leuven_DiSIC\KUL_DiSIC\KUL_DiSIC.xpr
+# Log file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/vivado.log
+# Journal file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC\vivado.jou
 #-----------------------------------------------------------
 start_gui
-open_project D:/MyDiSIC/VHDL/Ver33/KUL_DiSIC/KUL_DiSIC.xpr
+open_project {C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.xpr}
 update_compile_order -fileset sources_1
+launch_runs synth_1 -jobs 4
+wait_on_run synth_1
+reset_run synth_1
 launch_simulation
 source TB.tcl
-run 10 ms
-relaunch_sim
-run 10 ms
-relaunch_sim
-run 10 ms
-relaunch_sim
 run 10 ms
 relaunch_sim
 run 10 ms
 close_sim
 launch_simulation
 source TB.tcl
-run 10 ms
-relaunch_sim
-run 10 ms
-relaunch_sim
-run 10 ms
-close_sim
-launch_simulation
-source TB.tcl
-run 10 ms
-relaunch_sim
 run 10 ms
 close_sim

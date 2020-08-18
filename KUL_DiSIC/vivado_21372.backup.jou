@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Aug 17 10:25:25 2020
+# Process ID: 21372
+# Current directory: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent3392 C:\Users\shassani\Desktop\KUL DiSIC Repo\KU_Leuven_DiSIC\KUL_DiSIC\KUL_DiSIC.xpr
+# Log file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/vivado.log
+# Journal file: C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/shassani/Desktop/KUL DiSIC Repo/KU_Leuven_DiSIC/KUL_DiSIC/KUL_DiSIC.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+source TB.tcl
+run 10 ms
+relaunch_sim
+run all
+relaunch_sim
+run all
+run 10 ms
+close_sim

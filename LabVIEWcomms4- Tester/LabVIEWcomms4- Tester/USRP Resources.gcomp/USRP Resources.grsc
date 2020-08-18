@@ -1,0 +1,857 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="B9A09812A9F16EA826F3C64CDCE297E69D8A4DAB089E5DF077E274A52901492A1E09DA75CF3984E9D10EA4D0AF49C3AC7AA923D04CA69E68C8C319403F077633" Timestamp="1D67474FDA46F09" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW FPGA" Name="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" OldestCompatibleVersion="6.2.0.49152" Version="6.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SharedResourceCollection" Name="http://www.ni.com/SharedResourceCollection" OldestCompatibleVersion="5.2.0.0" Version="5.2.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SharedResourceCollection" Name="http://www.ni.com/SharedResourceCollection/SystemModel" OldestCompatibleVersion="4.7.0.0" Version="4.7.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/Common/SystemModel" OldestCompatibleVersion="4.5.0.0" Version="4.5.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/EnvoyManagement" OldestCompatibleVersion="5.0.0.0" Version="5.0.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModel" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="SystemDesigner" Name="http://www.ni.com/SystemDesigner/SystemModelCore" OldestCompatibleVersion="5.1.0.5" Version="5.2.0.49152" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<SharedResourceCollection xmlns="http://www.ni.com/SharedResourceCollection">
+		<EnvoySuperimpositionContainer Id="1" xmlns="http://www.ni.com/SystemDesigner/EnvoyManagement">
+			<MappingManager Id="2" xmlns="http://www.ni.com/SystemDesigner/SystemModelCore">
+				<Instance Id="8" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="4" p7:Clock.FreqInHz="150000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="15" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="150M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="50" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="Rx Stream 0" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="57" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.packetstart1" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+				</Instance>
+				<Instance Id="64" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.packetstart2" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+				</Instance>
+				<Instance Id="71" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="8191" p8:Process.AliasName="RX_data" p8:Process.DataType="UInt32" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="78" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="256" p8:Process.AliasName="TX.packetdata" p8:Process.DataType="UInt8" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="85" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="TX.samples" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="92" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="StreamCodeMicroblaze" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="99" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.packetlength" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+				</Instance>
+				<Instance Id="106" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="TX.packdata" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="113" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="8191" p8:Process.AliasName="TEST2" p8:Process.DataType="UInt32" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="120" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="TEST1" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="127" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="TEST" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="141" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="Q_TEST" p7:Process.DataType="UFXP(64.0)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="224" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="1" p7:Clock.FreqInHz="200000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="5" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="200M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="312" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="CDFsamples" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="319" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="KP.Samples1" p8:Process.DataType="UFXP(16.16)[500]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UFXP(16.16)[500]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="329" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="KP.Samples2" p8:Process.DataType="UFXP(16.16)[500]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UFXP(16.16)[500]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="336" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="KP.Samples12" p8:Process.DataType="UFXP(16.16)[1000]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UFXP(16.16)[500]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="340" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="1" p7:Clock.FreqInHz="80000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="2" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="80M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="347" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="1" p7:Clock.FreqInHz="640000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="16" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="640M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="465" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p8:Process.AliasName="KP.CDF1" p8:Process.DataType="Int16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="Int16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="472" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p8:Process.AliasName="KP.CDF2" p8:Process.DataType="Int16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="Int16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="600" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="SamplesForKP" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="733" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="11190" p7:Memory.ReadLatency="1" p7:Memory.ReadWriteSetting="ReadOnly" p7:Memory.Size="1000" p8:Process.UseInitialValueDefault="False" p9:Process.AliasName="KP.pValue" p9:Process.DataType="UFXP(1.31)" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/SharedResourceCollection/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Memory.InitialValues>
+							<Array Lengths="1000">
+								<Elements>0x0,0x7FFFFEC8,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x80000000,0x7FFFFFF4,0x7FFFFF1B,0x7FFFF615,0x7FFFB8B2,0x7FFE929D,0x7FFA681E,0x7FEE52B4,0x7FD112F3,0x7F9400AC,0x7F231A08,0x7E6670B6,0x7D44B509,0x7BA64561,0x7978126E,0x76ADCDF6,0x73431BAF,0x6F3BBD8B,0x6AA2E488,0x6589E7BD,0x6006A7F8,0x5A31DD6A,0x54257DA1,0x4DFB5791,0x47CBF4B9,0x41ADC353,0x3BB485D8,0x35F0FF9A,0x3070D448,0x2B3E8FC3,0x2661CC36,0x21DF6DA6,0x1DB9EB76,0x19F1A1B8,0x16852560,0x13719787,0x10B2F4F1,0xE445FC1,0xC206201,0xA41282D,0x8A0B379,0x73903C4,0x60439A0,0x4FCB0DE,0x41D1460,0x3606BE8,0x2C224BA,0x23E15DD,0x1D080C9,0x1760F42,0x12BCF00,0xEF2BCB,0xBDE88E,0x9617C2,0x7613A5,0x5C7668,0x4812A8,0x37EC45,0x2B31C2,0x21362B,0x196BA7,0x135E94,0xEB142,0xB1843,0x85733,0x63E00,0x4A6A3,0x3732F,0x28C39,0x1DF88,0x15F02,0xFFCE,0xB99A,0x8613,0x606E,0x450D,0x313B,0x22F2,0x18B3,0x1161,0xC2E,0x87F,0x5E7,0x415,0x2CF,0x1ED,0x151,0xE5,0x9B,0x68,0x46,0x2F,0x1F,0x15,0xE,0x9,0x6,0x4,0x2,0x2,0x1,0x1,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0,0x0</Elements>
+							</Array>
+						</p7:p.Memory.InitialValues>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(1.31)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="740" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="BestAlpha" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0x0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="754" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="KPresult" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="902" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="500" p8:Process.AliasName="KPmem.Samples1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1058" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="1000" p8:Process.AliasName="KPmem.Samples2" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1065" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1072" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1079" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_2" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1086" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_3" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1093" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_4" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1100" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_5" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1110" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_6" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1114" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_7" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1121" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_8" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1128" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_9" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1135" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_10" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1142" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_11" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1149" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_12" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1156" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_13" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1163" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_14" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1170" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_15" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1177" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_16" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1184" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_17" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1191" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_18" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1198" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_19" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1205" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_20" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1212" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_21" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1219" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_22" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1226" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_23" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1233" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="80" p8:Process.AliasName="KPmem.Samples12_24" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="1832" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="KP.memSelect1" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="2423" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="KPresult_test" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="2715" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="2" p7:Clock.FreqInHz="100000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="5" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="100M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="2722" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="RX.data" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3028" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="FMdemod" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="FXP(1.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3032" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.ImplementationKind="Lut" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="17117" p7:Memory.ReadLatency="0" p7:Memory.ReadWriteSetting="ReadOnly" p7:Memory.Size="16" p8:Process.UseInitialValueDefault="False" p9:Process.AliasName="Corr_values" p9:Process.DataType="UInt32" xmlns:p9="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p8="http://www.ni.com/SharedResourceCollection/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Memory.InitialValues>
+							<Array Lengths="16" IsBinary="True" Compression="GZip">
+								<BinaryElements>H4sIAAAAAAAEABXKsQ2AMBADwFBhicJkArbIOJQwAGSJCPqUZBvYAhaANlTgWHq9T7KpjDGfUn5JW0qrA+vbO3A6+xF0AjgI4CyA/Tid4ONdDV4C+NpwgGuXIrhnG8C4dAkMR7bgJoCaZFCTpfkBKPUvnHsAAAA=</BinaryElements>
+							</Array>
+						</p7:p.Memory.InitialValues>
+					</Symbols>
+				</Instance>
+				<Instance Id="3345" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="BestCorrSum" p7:Process.DataType="FXP(11.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0x0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(11.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3355" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="BestCorr1" p7:Process.DataType="FXP(10.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0x0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(10.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3362" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="BestCorr2" p7:Process.DataType="FXP(10.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0x0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(10.15)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="3687" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="RX.packetlength" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+				</Instance>
+				<Instance Id="4014" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p7:Memory.ReadLatency="1" p7:Memory.Size="256" p8:Process.AliasName="RX.packetdata" p8:Process.DataType="UInt8" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Memory]Memory/DataPort" p7:Memory.ReadLatency="1" p8:Process.DataType="UInt8" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4355" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="RX.packdata" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4380" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="test_samples" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4731" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="SamplesForCCA" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4766" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="StreamCodeMicroblaze_2" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4742" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="CCATEST" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="4756" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="CCATEST_2" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo/DataPort" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5128" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="MBTEST" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5513" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="mac.resetCCA" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5520" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.PHYbusy" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5527" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="TX.transferPacket" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5541" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.fixedAlpha" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5548" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.alpha" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0x0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UFXP(1.31)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5954" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.TXbusy" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5958" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.state" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5965" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.reset" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="5975" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="6399" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected.valid" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="6832" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CCA" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="6839" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CCA.valid" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7282" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.enable" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7289" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected.Ave.length" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7296" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected.Th" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7303" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected.Ave.Bool" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7310" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="CD.detected.Ave" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="7778" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="StreamCodeMicroblaze_3" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="8251" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="ResetBuffOnCD" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="9212" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TX.Source" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="9685" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="TransmiteData" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="11164" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="ACK.Packet.Test" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="11171" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="DeviceAdd" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="11696" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Test.And.PHT" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="11689" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="513" p8:Process.AliasName="ACK.Packet" p8:Process.DataType="UInt16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="12194" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Destination Add" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="12697" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="Received ACK_Test" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="13205" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Last_Received_ACK_seq" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="13718" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="4097" p8:Process.AliasName="CCAFIFO" p8:Process.DataType="UFXP(16.16)" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UFXP(16.16)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="14243" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="1025" p8:Process.AliasName="UART_TX" p8:Process.DataType="UInt8" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="14250" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="2049" p8:Process.AliasName="UART_RX" p8:Process.DataType="UInt16" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="14778" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Process.AliasName="UART_TX_Test" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="15311" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="UART_RX_Test" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt16" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="15318" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="UART_RX_FIFO_IS_Ready" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="15861" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Process.AliasName="RX.packetdata.ForThisNode" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt8" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="16409" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Write_To_UART_TX_FIFO" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="16962" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Ready Packet_Test" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="16969" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Ready ACK Test" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="18119" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="RX_goertzel_valid" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="18112" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="RX_goertzel" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="18687" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="EBD_Tune_done" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="19260" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="65535" p8:Process.AliasName="RawDataTRX" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="19845" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Power_3" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="20433" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Power_3_en" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="21026" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="ForGoertzel" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="21631" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="8191" p8:Process.AliasName="Goertzel_To_Host" p8:Process.DataType="UInt32" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="22248" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="32767" p8:Process.AliasName="Decimated Mixed to Host" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="23459" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Mixed Sig ready Time" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="23466" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="32767" p8:Process.AliasName="T mul R conj to Host" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24084" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo" p7:Fifo.Depth="16389" p8:Process.AliasName="Modulated data from host" p8:Process.DataType="UInt32" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}HostToTargetFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24707" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="2" p7:Clock.FreqInHz="60000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="3" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="60M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24714" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="32767" p8:Process.AliasName="dx to host" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24721" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="E_FIFO" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24728" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="DX_FIFO" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24735" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="splines_1" p8:Process.DataType="FXP(1.17)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(1.17)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24777" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="s_n" p7:Process.DataType="CFXP(5.13)[60]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="CFXP(5.13)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24752" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="splines_2" p8:Process.DataType="FXP(1.17)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(1.17)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24759" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="splines_3" p8:Process.DataType="FXP(1.17)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(1.17)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24766" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="splines_4" p8:Process.DataType="FXP(1.17)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(1.17)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24773" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="splines_5" p8:Process.DataType="FXP(1.17)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="FXP(1.17)" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24787" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="w_n" p8:Process.DataType="CFXP(2.23)[60]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="CFXP(2.23)[60]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24794" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="x_n" p8:Process.DataType="CFXP(4.12)[60]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="CFXP(4.12)[60]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="24801" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="q_i" p8:Process.DataType="CFXP(2.23)[11]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="CFXP(2.23)[60]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="25483" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="2049" p8:Process.AliasName="Radar Sigs From DiSIC" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="26171" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Fifo.Depth="16385" p8:Process.AliasName="Modulated Data Internal FIFO" p8:Process.DataType="UInt32" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="26864" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Tx.Busy.forRadar" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="27562" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Gortzel from DiSIC" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="27569" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Goertzel Valid From DiSIC" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="28277" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo" p7:Process.AliasName="Mixed Data Internal FIFO" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}LocalFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="28284" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="341" p7:Clock.FreqInHz="4692082.11143695" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="40" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="4.7M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="29002" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Doppler DC" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>0</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="UInt32" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="29725" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="Switch to Single Tone for EBD Reg" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="30453" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="20" p7:Clock.FreqInHz="62000000" p7:Clock.IsGatedClock="True" p7:Clock.Multiplier="31" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="62M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="31186" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo" p7:Fifo.Depth="8191" p8:Process.AliasName="DiSIC Sum Of Coff To Host" p8:Process.DataType="UInt64" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}TargetToHostFifo]Fifo/DataPort" p7:Process.DataType="UInt64" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="31193" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Process.AliasName="DiSIC Sum of coff Enable" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p7:p.Process.InitialValue>False</p7:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="Boolean" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="28d7e786eaa4e40b1f9b48be7282611" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}DerivedClock]DerivedClock" p7:Clock.Divisor="195" p7:Clock.FreqInHz="100102564.1025641" p7:Clock.Multiplier="488" p7:Clock.ParentClockName="RioClk40" p8:Process.AliasName="100.1M" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/SystemDesigner/Common/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Instance Id="792cc8a960134316b6ff969e991c65e1" Source="{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register">
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register" p7:Memory.InitialValuesSource="" p7:Memory.InitialValuesSourceId="" p8:Process.AliasName="DiSIC W_Vector" p8:Process.DataType="CFXP(28.0)[27]" xmlns:p8="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p7="http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy">
+						<p8:p.Process.InitialValue>null</p8:p.Process.InitialValue>
+					</Symbols>
+					<Symbols p6:Path="[{http://www.ni.com/LabVIEW.FPGA/SystemDesigner/SystemModel}Register]Register/DataPort" p7:Process.DataType="CFXP(28.0)[27]" xmlns:p7="http://www.ni.com/SystemDesigner/SystemModel" xmlns:p6="http://www.ni.com/Core/Proxy" />
+				</Instance>
+				<Superimposition Id="3" Name="Root Superimposition">
+					<Superimpose Source="8" />
+					<Superimpose Source="50" />
+					<Superimpose Source="57" />
+					<Superimpose Source="64" />
+					<Superimpose Source="71" />
+					<Superimpose Source="78" />
+					<Superimpose Source="85" />
+					<Superimpose Source="92" />
+					<Superimpose Source="99" />
+					<Superimpose Source="106" />
+					<Superimpose Source="113" />
+					<Superimpose Source="120" />
+					<Superimpose Source="127" />
+					<Superimpose Source="141" />
+					<Superimpose Source="224" />
+					<Superimpose Source="312" />
+					<Superimpose Source="319" />
+					<Superimpose Source="329" />
+					<Superimpose Source="336" />
+					<Superimpose Source="340" />
+					<Superimpose Source="347" />
+					<Superimpose Source="465" />
+					<Superimpose Source="472" />
+					<Superimpose Source="600" />
+					<Superimpose Source="733" />
+					<Superimpose Source="740" />
+					<Superimpose Source="754" />
+					<Superimpose Source="902" />
+					<Superimpose Source="1058" />
+					<Superimpose Source="1065" />
+					<Superimpose Source="1072" />
+					<Superimpose Source="1079" />
+					<Superimpose Source="1086" />
+					<Superimpose Source="1093" />
+					<Superimpose Source="1100" />
+					<Superimpose Source="1110" />
+					<Superimpose Source="1114" />
+					<Superimpose Source="1121" />
+					<Superimpose Source="1128" />
+					<Superimpose Source="1135" />
+					<Superimpose Source="1142" />
+					<Superimpose Source="1149" />
+					<Superimpose Source="1156" />
+					<Superimpose Source="1163" />
+					<Superimpose Source="1170" />
+					<Superimpose Source="1177" />
+					<Superimpose Source="1184" />
+					<Superimpose Source="1191" />
+					<Superimpose Source="1198" />
+					<Superimpose Source="1205" />
+					<Superimpose Source="1212" />
+					<Superimpose Source="1219" />
+					<Superimpose Source="1226" />
+					<Superimpose Source="1233" />
+					<Superimpose Source="1832" />
+					<Superimpose Source="2423" />
+					<Superimpose Source="2715" />
+					<Superimpose Source="2722" />
+					<Superimpose Source="3028" />
+					<Superimpose Source="3032" />
+					<Superimpose Source="3345" />
+					<Superimpose Source="3355" />
+					<Superimpose Source="3362" />
+					<Superimpose Source="3687" />
+					<Superimpose Source="4014" />
+					<Superimpose Source="4355" />
+					<Superimpose Source="4380" />
+					<Superimpose Source="4731" />
+					<Superimpose Source="4742" />
+					<Superimpose Source="4756" />
+					<Superimpose Source="4766" />
+					<Superimpose Source="5128" />
+					<Superimpose Source="5513" />
+					<Superimpose Source="5520" />
+					<Superimpose Source="5527" />
+					<Superimpose Source="5541" />
+					<Superimpose Source="5548" />
+					<Superimpose Source="5954" />
+					<Superimpose Source="5958" />
+					<Superimpose Source="5965" />
+					<Superimpose Source="5975" />
+					<Superimpose Source="6399" />
+					<Superimpose Source="6832" />
+					<Superimpose Source="6839" />
+					<Superimpose Source="7282" />
+					<Superimpose Source="7289" />
+					<Superimpose Source="7296" />
+					<Superimpose Source="7303" />
+					<Superimpose Source="7310" />
+					<Superimpose Source="7778" />
+					<Superimpose Source="8251" />
+					<Superimpose Source="9212" />
+					<Superimpose Source="9685" />
+					<Superimpose Source="11164" />
+					<Superimpose Source="11171" />
+					<Superimpose Source="11689" />
+					<Superimpose Source="11696" />
+					<Superimpose Source="12194" />
+					<Superimpose Source="12697" />
+					<Superimpose Source="13205" />
+					<Superimpose Source="13718" />
+					<Superimpose Source="14243" />
+					<Superimpose Source="14250" />
+					<Superimpose Source="14778" />
+					<Superimpose Source="15311" />
+					<Superimpose Source="15318" />
+					<Superimpose Source="15861" />
+					<Superimpose Source="16409" />
+					<Superimpose Source="16962" />
+					<Superimpose Source="16969" />
+					<Superimpose Source="18112" />
+					<Superimpose Source="18119" />
+					<Superimpose Source="18687" />
+					<Superimpose Source="19260" />
+					<Superimpose Source="19845" />
+					<Superimpose Source="20433" />
+					<Superimpose Source="21026" />
+					<Superimpose Source="21631" />
+					<Superimpose Source="22248" />
+					<Superimpose Source="23459" />
+					<Superimpose Source="23466" />
+					<Superimpose Source="24084" />
+					<Superimpose Source="24707" />
+					<Superimpose Source="24714" />
+					<Superimpose Source="24721" />
+					<Superimpose Source="24728" />
+					<Superimpose Source="24735" />
+					<Superimpose Source="24752" />
+					<Superimpose Source="24759" />
+					<Superimpose Source="24766" />
+					<Superimpose Source="24773" />
+					<Superimpose Source="24777" />
+					<Superimpose Source="24787" />
+					<Superimpose Source="24794" />
+					<Superimpose Source="24801" />
+					<Superimpose Source="25483" />
+					<Superimpose Source="26171" />
+					<Superimpose Source="26864" />
+					<Superimpose Source="27562" />
+					<Superimpose Source="27569" />
+					<Superimpose Source="28277" />
+					<Superimpose Source="28284" />
+					<Superimpose Source="29002" />
+					<Superimpose Source="29725" />
+					<Superimpose Source="30453" />
+					<Superimpose Source="31186" />
+					<Superimpose Source="31193" />
+					<Superimpose Source="28d7e786eaa4e40b1f9b48be7282611" />
+					<Superimpose Source="792cc8a960134316b6ff969e991c65e1" />
+				</Superimposition>
+			</MappingManager>
+		</EnvoySuperimpositionContainer>
+	</SharedResourceCollection>
+	<EnvoyManagerFile Id="5" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="6" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="7" Name="USRP Resources.grsc" NameTracksFileName="True" />
+	</EnvoyManagerFile>
+</SourceFile>

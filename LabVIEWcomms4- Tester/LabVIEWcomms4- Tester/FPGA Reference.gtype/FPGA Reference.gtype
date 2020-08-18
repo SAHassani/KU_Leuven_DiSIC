@@ -1,0 +1,707 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="57347521033012BF28B73A5BCF1671432BBC30E6E3AE1A17EB17F96C1B0DED001DE0D514DEEC1A4CF5956E5EDBD917615786E1C5AA5CD7A786A39600D81C659F" Timestamp="1D6756F9C58AC61" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="LabVIEW Controls" Name="http://www.ni.com/Controls.LabVIEW.Design" OldestCompatibleVersion="7.1.0.49152" Version="7.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Common language components" Name="http://www.ni.com/MocCommon" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PanelCommon" OldestCompatibleVersion="6.1.0.0" Version="6.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="7.1.0.50148" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="7.1.0.49153" Version="7.1.0.49153" />
+		<ApplicationVersionInfo Build="7.1.0.50148" Name="LabVIEW NXG" Version="4.0.0" />
+	</SourceModelFeatureSet>
+	<TypeDefinition DataType="@3d0d6c1bc3754605b652822ae4f0f297" Id="5d4d37b9c6bc457cb2966cea851c4820" xmlns="http://www.ni.com/MocCommon">
+		<Icon Id="f2eb5fbab3144149ab3642c6d68e208" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="6d131d9e589b4504ab5495bb4ef691e1" Left="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="9032235c32194f74853d875d377541ba" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<DataItem DataType="@3d0d6c1bc3754605b652822ae4f0f297" Id="6d7e1e49e3194b439d33c505b77b1bf0" Name="FPGA Reference">
+			<p.DefaultValue>0</p.DefaultValue>
+		</DataItem>
+	</TypeDefinition>
+	<EnvoyManagerFile Id="f697e8b31a864abb8d59f87da8cafe8d" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="23ff5503d27d4816895918843a95e35d" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<NameScopingEnvoy AutomaticallyResolveUp="True" Id="e3d514873fa14a4393aacf3cce8e4ff5" Name="FPGA Reference.gtype" NameTracksFileName="True">
+			<EmbeddedDefinitionReference Bindings="{http://www.ni.com/PlatformFramework}NeverLazy" Id="f79f8b3c4fa148e6a3205e9057422937" ModelDefinitionType="NationalInstruments.PanelCommon.SourceModel.ControlDefinition" Name="ControlDefinition">
+				<ControlDefinition DefaultDirection="Control" Id="708f58822a214ce78166c9aab02cb622" xmlns="http://www.ni.com/MocCommon">
+					<OpaqueRefnum BaseName="[string]FPGA Reference" Height="[float]40" Id="286bd3871f1f4801aa54fdb813a83a93" IsTabStop="[bool]True" Label="[UIModel]1a7e02ecee5b4c7dab3129e7fb3552c7" Left="[float]100" RefnumType="[Type]@3d0d6c1bc3754605b652822ae4f0f297" TabIndex="[int]0" Top="[float]100" Value="{DataItemBinding Id=6d7e1e49e3194b439d33c505b77b1bf0}" Width="[float]80" xmlns="http://www.ni.com/Controls.LabVIEW.Design" />
+					<Label Height="[float]16" Id="1a7e02ecee5b4c7dab3129e7fb3552c7" LabelOwner="[UIModel]286bd3871f1f4801aa54fdb813a83a93" Left="[float]100" Text="[string]FPGA Reference" Top="[float]80" Width="[float]84" xmlns="http://www.ni.com/PanelCommon" />
+				</ControlDefinition>
+			</EmbeddedDefinitionReference>
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+	<DataTypeReferenceTable xmlns="http://www.ni.com/PlatformFramework">
+		<p.TypeReference TypeId="3d0d6c1bc3754605b652822ae4f0f297">
+			<Attributed AttributedType="@0253ca5526504d269a948dc5b0d43762">
+				<AttributeValues>
+					<AttributeValue Name="NI_PlatformFramework_RefnumAttributes" Value="[NI_PlatformFramework_RefnumAttributes]Refnum" />
+					<AttributeValue Name="NI_UdrClass" Value="[string]Interface" />
+					<AttributeValue Name="NI_UdrNamespace" Value="[string]FPGA" />
+				</AttributeValues>
+			</Attributed>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0253ca5526504d269a948dc5b0d43762">
+			<Generic>
+				<Constraints>
+					<TypeRef>@37dfba799550404c8f761efc78a1f223</TypeRef>
+					<TypeRef>@ecb69b8a6a75451299fe2df17fbafbf5</TypeRef>
+					<TypeRef>@62fa2540c56a40d293cdc61c5e9aa87e</TypeRef>
+					<TypeRef>@c2e32c45ae4646d782ea813788f6667f</TypeRef>
+					<TypeRef>@c3753cb1d78d45018f301713389f07ad</TypeRef>
+					<TypeRef>@691f0cebf2e64014800e0a4c1cdac7d6</TypeRef>
+					<TypeRef>@dab114862dee43d2b710519ef1d9bb63</TypeRef>
+					<TypeRef>@160797fb981947b3a3cb2f6b5e890fac</TypeRef>
+					<TypeRef>@9d5c56bb64c64f16a222f544925c2850</TypeRef>
+					<TypeRef>@a0196363eb3c488dbc18d32710dff6ae</TypeRef>
+					<TypeRef>@9ec482f6fbac433d9cfb7a2e7c25b0d1</TypeRef>
+					<TypeRef>@8817aac5bf5e4c16b9456d7670ea5d29</TypeRef>
+					<TypeRef>@6276843413984657a1ed731f441a0d78</TypeRef>
+					<TypeRef>@18b5707224734ec3a3e80bcc2ab203af</TypeRef>
+					<TypeRef>@23781948325945b388d3b3fd2f68ba8b</TypeRef>
+					<TypeRef>@c179f9d9029c4cf6b12c349f0fc3576a</TypeRef>
+					<TypeRef>@de8c9a208b4e4861ad9d3c8657fd8527</TypeRef>
+					<TypeRef>@7196124430ba4dce94011aa5cb29f24c</TypeRef>
+					<TypeRef>@7b2718f8489e472384d4e863f26df9c0</TypeRef>
+					<TypeRef>@c9028b697b364cdea204e6b5bd399053</TypeRef>
+					<TypeRef>@b26355db24d74399ace2a9316b12c03c</TypeRef>
+					<TypeRef>@0896d7131fd5485bbc4d05f0fb948a02</TypeRef>
+					<TypeRef>@6111353169c344a7a4904664f92f41d6</TypeRef>
+				</Constraints>
+			</Generic>
+		</p.TypeReference>
+		<p.TypeReference TypeId="37dfba799550404c8f761efc78a1f223">
+			<Composite Id="1" Name="Data Collector SR" ReferenceClass="" Interface="" GenericTypeDefinition="@8584206000d3450eb67d30be7daeca16">
+				<ClosedGenericParameters>
+					<TypeRef>UFXP(1.47)</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ecb69b8a6a75451299fe2df17fbafbf5">
+			<Composite Id="1" Name="DiSIC data collector Setting" ReferenceClass="" Interface="" GenericTypeDefinition="@9617d53d690a4d96a79265cccd7ee5cc">
+				<ClosedGenericParameters>
+					<TypeRef>@ed933bb8cdef469f90ddb3a8ae2473ba</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="62fa2540c56a40d293cdc61c5e9aa87e">
+			<Composite Id="1" Name="IFPGAReferenceDataType" ReferenceClass="" Interface="" GenericTypeDefinition="Void" BaseType="Void" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="c2e32c45ae4646d782ea813788f6667f">
+			<Composite Id="1" Name="KUL DiSIC Setting" ReferenceClass="" Interface="" GenericTypeDefinition="@10605e2e29f24f54b91bb6df4951abe8">
+				<ClosedGenericParameters>
+					<TypeRef>@64163d60613b44a8b925f9559fe07378</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c3753cb1d78d45018f301713389f07ad">
+			<Composite Id="1" Name="PHYparameters" ReferenceClass="" Interface="" GenericTypeDefinition="@ecb6d65208184ee9a6dfd98a0b77b066">
+				<ClosedGenericParameters>
+					<TypeRef>@4f2c8fdfb8ac4dfcbb3b2e43a1eb55b9</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="691f0cebf2e64014800e0a4c1cdac7d6">
+			<Composite Id="1" Name="PHYparameters_RX" ReferenceClass="" Interface="" GenericTypeDefinition="@d7ed30ae6d18492083097fc530bc9711">
+				<ClosedGenericParameters>
+					<TypeRef>@0c82e0a28a064eb9abf82c6a421a33a0</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="dab114862dee43d2b710519ef1d9bb63">
+			<Composite Id="1" Name="reg.host read.data 0" ReferenceClass="" Interface="" GenericTypeDefinition="@6a2ce0b854f74c30b3161fea80504671">
+				<ClosedGenericParameters>
+					<TypeRef>@36799b6a42ac4d3abedd2fdfac89e96b</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="160797fb981947b3a3cb2f6b5e890fac">
+			<Composite Id="1" Name="reg.host read.go rcvd 0" ReferenceClass="" Interface="" GenericTypeDefinition="@7b3a8c92ea284593a73b4720e92c2071">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9d5c56bb64c64f16a222f544925c2850">
+			<Composite Id="1" Name="reg.notify host.go 0" ReferenceClass="" Interface="" GenericTypeDefinition="@eab0892e4a074b88aca3164ed243ee23">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="a0196363eb3c488dbc18d32710dff6ae">
+			<Composite Id="1" Name="reg.notify host.go rcvd 0" ReferenceClass="" Interface="" GenericTypeDefinition="@aa40a1d908f24fd5b33ca6f1c58d363a">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9ec482f6fbac433d9cfb7a2e7c25b0d1">
+			<Composite Id="1" Name="reg.reset 0" ReferenceClass="" Interface="" GenericTypeDefinition="@3210d7ad97504e9ea26c716739913093">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8817aac5bf5e4c16b9456d7670ea5d29">
+			<Composite Id="1" Name="RF 0/Rx/Enable" ReferenceClass="" Interface="" GenericTypeDefinition="@75323bb5a5b84c0ea54a6b957111c3f9">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6276843413984657a1ed731f441a0d78">
+			<Composite Id="1" Name="RF 0/Tx/Enable" ReferenceClass="" Interface="" GenericTypeDefinition="@ad0c7b9300c34948abb305bb4fb9d16d">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="18b5707224734ec3a3e80bcc2ab203af">
+			<Composite Id="1" Name="RF 1/Rx/Enable" ReferenceClass="" Interface="" GenericTypeDefinition="@f7e8ddc1473b4ae19be6afa9fe454aa6">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="23781948325945b388d3b3fd2f68ba8b">
+			<Composite Id="1" Name="RF 1/Tx/Enable" ReferenceClass="" Interface="" GenericTypeDefinition="@6c1fc14d16574469915a33612940db83">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c179f9d9029c4cf6b12c349f0fc3576a">
+			<Composite Id="1" Name="RX_Data_With TX busy" ReferenceClass="" Interface="" GenericTypeDefinition="@b939df4fb45e47439fede11674d66430">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="de8c9a208b4e4861ad9d3c8657fd8527">
+			<Composite Id="1" Name="TransmiteData" ReferenceClass="" Interface="" GenericTypeDefinition="@59b87513ddc04f1e98f9f93ccb7d2063">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7196124430ba4dce94011aa5cb29f24c">
+			<Composite Id="1" Name="TX.PHYbusy" ReferenceClass="" Interface="" GenericTypeDefinition="@9029f636eb1c43e7bee83ecbbbd7cbe7">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7b2718f8489e472384d4e863f26df9c0">
+			<Composite Id="1" Name="Write modulated data to memory" ReferenceClass="" Interface="" GenericTypeDefinition="@b915c068c6664ba2ae5c4a0aabe7c871">
+				<ClosedGenericParameters>
+					<TypeRef>Boolean</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="c9028b697b364cdea204e6b5bd399053">
+			<Composite Id="1" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0" ReferenceClass="" Interface="" GenericTypeDefinition="@efb71925bca54d968eabc5c8e2044897">
+				<ClosedGenericParameters>
+					<TypeRef>UInt64[]</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b26355db24d74399ace2a9316b12c03c">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::Modulated data from host" ReferenceClass="" Interface="" GenericTypeDefinition="@9dc4102a807b47abb60559fd6ef32423">
+				<ClosedGenericParameters>
+					<TypeRef>UInt32[]</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0896d7131fd5485bbc4d05f0fb948a02">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::RX_data" ReferenceClass="" Interface="" GenericTypeDefinition="@b208466e6de4450292d0bbb78358c30f">
+				<ClosedGenericParameters>
+					<TypeRef>UInt32[]</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6111353169c344a7a4904664f92f41d6">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::dx to host" ReferenceClass="" Interface="" GenericTypeDefinition="@78dbc2805d154399b1fe3479e43d119f">
+				<ClosedGenericParameters>
+					<TypeRef>UInt64[]</TypeRef>
+				</ClosedGenericParameters>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="8584206000d3450eb67d30be7daeca16">
+			<Composite Id="1" Name="Data Collector SR" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Data Collector SR" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9617d53d690a4d96a79265cccd7ee5cc">
+			<Composite Id="1" Name="DiSIC data collector Setting" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="DiSIC data collector Setting" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ed933bb8cdef469f90ddb3a8ae2473ba">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Canceller on 120M?" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="x" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Tx busy send Zero" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="10605e2e29f24f54b91bb6df4951abe8">
+			<Composite Id="1" Name="KUL DiSIC Setting" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="KUL DiSIC Setting" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="64163d60613b44a8b925f9559fe07378">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Offset Q" DataType="Int16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Offset I" DataType="Int16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="mu_in" DataType="FXP(0.28)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Update_Sample" DataType="UInt16" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Freez_coff" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="Update_coff" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name=" RST" DataType="Boolean" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ecb6d65208184ee9a6dfd98a0b77b066">
+			<Composite Id="1" Name="PHYparameters" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="PHYparameters" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="4f2c8fdfb8ac4dfcbb3b2e43a1eb55b9">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="delay" DataType="FXP(0.18)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="input sample rate" DataType="UFXP(1.47)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="frequency shift" DataType="FXP(0.48)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="phase" DataType="FXP(0.21)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="impairments" DataType="@ea2adf2eadae44108072a58279921186" />
+					<Field FieldAccessPolicy="ReadWrite" Name="gain" DataType="@793ab63061b7405199a8087bc35d3232" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="d7ed30ae6d18492083097fc530bc9711">
+			<Composite Id="1" Name="PHYparameters_RX" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="PHYparameters_RX" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="0c82e0a28a064eb9abf82c6a421a33a0">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="delay" DataType="FXP(0.18)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="output sample rate" DataType="UFXP(1.47)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="frequency shift" DataType="FXP(0.48)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="phase" DataType="FXP(0.21)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="impairments" DataType="@ea2adf2eadae44108072a58279921186" />
+					<Field FieldAccessPolicy="ReadWrite" Name="gain" DataType="@793ab63061b7405199a8087bc35d3232" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6a2ce0b854f74c30b3161fea80504671">
+			<Composite Id="1" Name="reg.host read.data 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reg.host read.data 0" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="36799b6a42ac4d3abedd2fdfac89e96b">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="go" DataType="Boolean" />
+					<Field FieldAccessPolicy="ReadWrite" Name="data" DataType="UInt32" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="7b3a8c92ea284593a73b4720e92c2071">
+			<Composite Id="1" Name="reg.host read.go rcvd 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reg.host read.go rcvd 0" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="eab0892e4a074b88aca3164ed243ee23">
+			<Composite Id="1" Name="reg.notify host.go 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reg.notify host.go 0" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="aa40a1d908f24fd5b33ca6f1c58d363a">
+			<Composite Id="1" Name="reg.notify host.go rcvd 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reg.notify host.go rcvd 0" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="3210d7ad97504e9ea26c716739913093">
+			<Composite Id="1" Name="reg.reset 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="reg.reset 0" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="75323bb5a5b84c0ea54a6b957111c3f9">
+			<Composite Id="1" Name="RF 0/Rx/Enable" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0/Rx/Enable" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="ad0c7b9300c34948abb305bb4fb9d16d">
+			<Composite Id="1" Name="RF 0/Tx/Enable" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 0/Tx/Enable" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="f7e8ddc1473b4ae19be6afa9fe454aa6">
+			<Composite Id="1" Name="RF 1/Rx/Enable" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1/Rx/Enable" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="6c1fc14d16574469915a33612940db83">
+			<Composite Id="1" Name="RF 1/Tx/Enable" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="RF 1/Tx/Enable" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b939df4fb45e47439fede11674d66430">
+			<Composite Id="1" Name="RX_Data_With TX busy" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="RX_Data_With TX busy" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="59b87513ddc04f1e98f9f93ccb7d2063">
+			<Composite Id="1" Name="TransmiteData" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="TransmiteData" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9029f636eb1c43e7bee83ecbbbd7cbe7">
+			<Composite Id="1" Name="TX.PHYbusy" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="TX.PHYbusy" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b915c068c6664ba2ae5c4a0aabe7c871">
+			<Composite Id="1" Name="Write modulated data to memory" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="Write modulated data to memory" DataType="@2a389940002e45919cb9b4bdb6fedd53" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="efb71925bca54d968eabc5c8e2044897">
+			<Composite Id="1" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0.Configure" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0.Start" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0.Stop" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="5" IsStatic="False" IsConstructor="False" Name="NI::SDR::RegisterBusV1FPGA::niInstr Register Bus v0.grsc::reg.host instruction fifo 0.Write" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="9dc4102a807b47abb60559fd6ef32423">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::Modulated data from host" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::Modulated data from host.Configure" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::Modulated data from host.Start" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::Modulated data from host.Stop" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="5" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::Modulated data from host.Write" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="b208466e6de4450292d0bbb78358c30f">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::RX_data" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::RX_data.Configure" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::RX_data.Read" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::RX_data.Start" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="5" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::RX_data.Stop" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="78dbc2805d154399b1fe3479e43d119f">
+			<Composite Id="1" Name="USRP Resources::USRP Resources.grsc::dx to host" ReferenceClass="" Interface="">
+				<GenericTypeDefinition>
+					<Composite RefId="1" />
+				</GenericTypeDefinition>
+				<GenericParameters>
+					<Generic GenericName="T" />
+				</GenericParameters>
+				<BaseType>Void</BaseType>
+				<Members>
+					<Function Id="2" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::dx to host.Configure" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="3" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::dx to host.Read" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="4" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::dx to host.Start" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+					<Function Id="5" IsStatic="False" IsConstructor="False" Name="USRP Resources::USRP Resources.grsc::dx to host.Stop" ReturnType="Void">
+						<DeclaringType>
+							<Composite RefId="1" />
+						</DeclaringType>
+						<GenericTypeDefinition>Void</GenericTypeDefinition>
+					</Function>
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="2a389940002e45919cb9b4bdb6fedd53">
+			<Generic GenericName="T" />
+		</p.TypeReference>
+		<p.TypeReference TypeId="ea2adf2eadae44108072a58279921186">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="inline gain I" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="inline gain Q" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="cross gain I" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="cross gain Q" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="pre-gain offset I" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="pre-gain offset Q" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="post-gain offset I" DataType="FXP(1.17)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="post-gain offset Q" DataType="FXP(1.17)" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+		<p.TypeReference TypeId="793ab63061b7405199a8087bc35d3232">
+			<Composite Id="1" Name="" Cluster="" GenericTypeDefinition="Void" BaseType="Void">
+				<Members>
+					<Field FieldAccessPolicy="ReadWrite" Name="gain I" DataType="FXP(3.21)" />
+					<Field FieldAccessPolicy="ReadWrite" Name="gain Q" DataType="FXP(3.21)" />
+				</Members>
+			</Composite>
+		</p.TypeReference>
+	</DataTypeReferenceTable>
+</SourceFile>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CompilationResults.xml Version="3">
+  <BuildInformation>
+    <Family>kintex7</Family>
+    <CompileServer>localhost</CompileServer>
+    <ResourceThreshold>80</ResourceThreshold>
+  </BuildInformation>
+  <CompileStatus State="Canceled">
+    <CurrentStep>Synthesize - Vivado</CurrentStep>
+    <LostTime>0:00:00:00.0000000</LostTime>
+  </CompileStatus>
+  <CompileSteps>
+    <Step Name="Analyzing Diagrams">
+      <Status>Done</Status>
+      <Duration>0:00:00:14.6210201</Duration>
+    </Step>
+    <Step Name="Building">
+      <Status>Done</Status>
+      <Duration>0:00:00:26.9335539</Duration>
+    </Step>
+    <Step Name="Transferring">
+      <Status>Done</Status>
+      <Duration>0:00:00:05.2207853</Duration>
+    </Step>
+    <Step Name="Waiting">
+      <Status>Done</Status>
+      <Duration>0:00:00:11.9019102</Duration>
+    </Step>
+    <Step Name="CoreGenerator">
+      <Status>Done</Status>
+      <Duration>0:00:00:01.7891611</Duration>
+    </Step>
+    <Step Name="Synthesize - Vivado">
+      <Status>InProgress</Status>
+      <Duration>0:00:01:41.9506823</Duration>
+    </Step>
+    <Step Name="Optimize Logic">
+      <Status>NotStarted</Status>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Place">
+      <Status>NotStarted</Status>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Optimize Timing">
+      <Status>NotStarted</Status>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Route">
+      <Status>NotStarted</Status>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+    <Step Name="Generate Programming File">
+      <Status>NotStarted</Status>
+      <Duration>0:00:00:00.0000000</Duration>
+    </Step>
+  </CompileSteps>
+  <ReportList />
+  <ErrorList />
+</CompilationResults.xml>
