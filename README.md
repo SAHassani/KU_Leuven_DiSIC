@@ -1,4 +1,4 @@
-# VHDL_based Linear Digital Self-interference Canceller ( > 37 dB)
+# VHDL_based Linear Digital Self-interference Canceller ( > 30 dB)
 ---------
 Please contact [Networked Systems Group](https://www.esat.kuleuven.be/telemic/research/NetworkedSystems) for
 * Non-linear digital self-interference canceller.
