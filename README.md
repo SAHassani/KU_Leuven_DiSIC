@@ -5,7 +5,7 @@ Please contact [Networked Systems Group](https://www.esat.kuleuven.be/telemic/re
 * Radar-capable IBFD System.
 
 ## Demo Video
-Will be available soon!
+https://www.youtube.com/watch?v=mXJouo4y0HY
 
 ## Source code
 Available as a [Xilinx Vivado 2018.3](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/vivado-design-tools/2018-3.html) project.
